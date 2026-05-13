@@ -1,0 +1,6 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "Carte_puissance-rescue")(type "KiCad")(uri "${KIPRJMOD}/Carte_puissance-rescue.kicad_sym")(options "")(descr ""))
+  (lib (name "TSR_3-24xxN")(type "KiCad")(uri "${KIPRJMOD}/libs/TSR_3-24xxN/KiCad/TSR_3-24xxN.kicad_sym")(options "")(descr ""))
+  (lib (name "MCXA")(type "KiCad")(uri "${KIPRJMOD}/libs/MCXA153/MCXA.kicad_sym")(options "")(descr ""))
+)
