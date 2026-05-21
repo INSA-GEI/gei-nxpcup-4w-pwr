@@ -687,6 +687,12 @@
       "fields_ordered": [
         {
           "group_by": false,
+          "label": "Qty",
+          "name": "${QUANTITY}",
+          "show": true
+        },
+        {
+          "group_by": false,
           "label": "Reference",
           "name": "Reference",
           "show": true
@@ -705,28 +711,46 @@
         },
         {
           "group_by": false,
-          "label": "Footprint",
-          "name": "Footprint",
+          "label": "Manufacturer",
+          "name": "Manufacturer",
           "show": true
         },
         {
           "group_by": false,
-          "label": "Qty",
-          "name": "${QUANTITY}",
+          "label": "Part Number",
+          "name": "Part Number",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Footprint",
+          "name": "Footprint",
           "show": true
         },
         {
           "group_by": true,
           "label": "DNP",
           "name": "${DNP}",
-          "show": true
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
-      "name": "Grouped By Value",
+      "name": "",
       "sort_asc": true,
-      "sort_field": "Référence"
+      "sort_field": "Reference"
     },
     "connection_grid_size": 50.0,
     "drawing": {
@@ -772,6 +796,14 @@
     [
       "aaa0f7a4-a021-413b-80cf-aab59bb3339a",
       "Root"
+    ],
+    [
+      "4ebf8b14-4fd3-46f9-9345-d294b03d40c9",
+      "CPU"
+    ],
+    [
+      "63de67ba-dfa1-4c66-8572-1a30f5cab1df",
+      "IO"
     ]
   ],
   "text_variables": {}
