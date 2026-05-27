@@ -1,0 +1,44 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "9ee23af7-0bd4-43e6-a4c8-380b8742a121")
+	(paper "A4")
+	(lib_symbols)
+	(text "Harnais alimentation Carte FRDM-IMX8MP\n------------------------------------------------------------------------------\nReference           Fabriquant   Qté     Remarque\nB2B-XH-A(LF)(SN)    JST          1       Remplace le connecteur J1 de la\n                                         carte FRDM-IMX8MP qui est introuvable\nSXH-001T-P0.6N      JST          4       Contact pour fil de #26 à #22 AWG\nXHP-2               JST          2       Logement de cable\n\n"
+		(exclude_from_sim no)
+		(at 19.558 71.12 0)
+		(effects
+			(font
+				(face "Liberation Mono")
+				(size 2.54 2.54)
+			)
+			(justify left)
+		)
+		(uuid "710de5f0-da78-4385-ab78-dd702419e48f")
+	)
+	(text "Nappe communication I2C avec FRDM-IMX8MP\n------------------------------------------------------------\nReference              Fabriquant       qté          Remarque\nIDSD-05-D-02.00-T-G    Samtec           1            Nappe IDC 5*2 pins, 5cm de long"
+		(exclude_from_sim no)
+		(at 19.304 99.568 0)
+		(effects
+			(font
+				(face "Liberation Mono")
+				(size 2.54 2.54)
+			)
+			(justify left)
+		)
+		(uuid "adeb8bdf-f146-4880-a64e-a164fe764e21")
+	)
+	(text "Liste des composants externes"
+		(exclude_from_sim no)
+		(at 149.86 31.496 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 6.35 6.35)
+				(bold yes)
+			)
+		)
+		(uuid "cfe7d4f2-eebf-49f6-ad96-aeada51fcb92")
+	)
+)

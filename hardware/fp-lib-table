@@ -5,4 +5,6 @@
   (lib (name "Seeed Studio 110990037")(type "KiCad")(uri "${KIPRJMOD}/libs/Seeed Studio 110990037")(options "")(descr ""))
   (lib (name "DF3A-5P-2DS")(type "KiCad")(uri "${KIPRJMOD}/libs/DF3A-5P-2DS/KiCad")(options "")(descr ""))
   (lib (name "3568")(type "KiCad")(uri "${KIPRJMOD}/libs/3568/KiCad")(options "")(descr ""))
+  (lib (name "Battery_Pads")(type "KiCad")(uri "${KIPRJMOD}/libs/Battery_Pads/Battery_Pads.pretty")(options "")(descr ""))
+  (lib (name "TL1265BQSCLR")(type "KiCad")(uri "${KIPRJMOD}/libs/TL1265BQSCLR/KiCad")(options "")(descr ""))
 )

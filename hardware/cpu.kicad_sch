@@ -2192,6 +2192,102 @@
 				)
 			)
 		)
+		(symbol "power:PWR_FLAG"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
 	)
 	(junction
 		(at 200.66 26.67)
@@ -2701,6 +2797,16 @@
 		)
 		(uuid "568a2bc5-3095-4f2a-a59c-967f465f7ac3")
 	)
+	(polyline
+		(pts
+			(xy 190.5 129.54) (xy 283.21 129.54)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "56bd98d2-3688-45f2-a409-52c4790983de")
+	)
 	(wire
 		(pts
 			(xy 166.37 39.37) (xy 173.99 39.37)
@@ -2720,6 +2826,16 @@
 			(type default)
 		)
 		(uuid "6003823c-f16c-4d9c-ac57-6821fe87b95c")
+	)
+	(polyline
+		(pts
+			(xy 190.5 73.66) (xy 190.5 165.1)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "6d6f110c-05de-450a-a134-1a4f35b2de57")
 	)
 	(wire
 		(pts
@@ -2851,6 +2967,16 @@
 		)
 		(uuid "891fd621-a2c0-4f15-82a9-03c199f426a2")
 	)
+	(polyline
+		(pts
+			(xy 283.21 73.66) (xy 190.5 73.66)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "8c8a2117-1a98-482e-9303-3ecc6d6c827a")
+	)
 	(wire
 		(pts
 			(xy 34.29 105.41) (xy 46.99 105.41)
@@ -2870,6 +2996,16 @@
 			(type default)
 		)
 		(uuid "9e0b40c5-99f5-4d51-8294-6c6694e693f0")
+	)
+	(wire
+		(pts
+			(xy 187.96 24.13) (xy 187.96 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e2fdeb3-c20e-4dc9-a22c-f4e56b1e907d")
 	)
 	(wire
 		(pts
@@ -3100,6 +3236,28 @@
 			(type default)
 		)
 		(uuid "fd0bd27a-de5c-42ca-a1d5-a2de6617720e")
+	)
+	(text "Decouplage MCU\nUne capa par pin VDD"
+		(exclude_from_sim no)
+		(at 260.35 134.62 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "628b4f7f-713d-4d69-ac68-5e94629d0b44")
+	)
+	(text "Connecteur \nDebug ARM-SWD"
+		(exclude_from_sim no)
+		(at 265.684 125.222 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a1bc7a24-0b4f-4f0a-953f-1628e7a8a782")
 	)
 	(label "nRESET"
 		(at 260.35 105.41 180)
@@ -5288,6 +5446,72 @@
 			(project "Carte_puissance"
 				(path "/aaa0f7a4-a021-413b-80cf-aab59bb3339a/4ebf8b14-4fd3-46f9-9345-d294b03d40c9"
 					(reference "C18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 187.96 24.13 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f66366d4-116f-4825-95d4-cf8f2796871a")
+		(property "Reference" "#FLG5"
+			(at 187.96 22.225 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 187.96 19.7104 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 187.96 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 187.96 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 187.96 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bb5f02f6-64c6-4f18-8566-075495d249fe")
+		)
+		(instances
+			(project "Carte_puissance"
+				(path "/aaa0f7a4-a021-413b-80cf-aab59bb3339a/4ebf8b14-4fd3-46f9-9345-d294b03d40c9"
+					(reference "#FLG5")
 					(unit 1)
 				)
 			)

@@ -1,0 +1,55 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "7cead7e9-188c-4253-afb7-b848b37d74a9")
+	(paper "A4")
+	(lib_symbols)
+	(polyline
+		(pts
+			(xy 116.84 38.1) (xy 116.84 194.31)
+		)
+		(stroke
+			(width 1.27)
+			(type default)
+		)
+		(uuid "dd9a2b20-38d5-4f32-a2d4-b903caba9613")
+	)
+	(text "Reprise de l'ancienne carte Alamak.\nPassage par pilotage I2C pour etre \ncontrollée depuis un SBC (une carte\nFRDM-IMX8MP)\n\nPassage à une commande unidirectionnelle des moteurs\n\nAjout de protection sur les sorties et les entrées\n\nUtilisation uniquement du signal PHA des encodeurs\n(timers CTIMER0 et CTIMER1 utilisés en compteur)"
+		(exclude_from_sim no)
+		(at 18.034 79.756 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 2.54 2.54)
+				(color 0 0 0 1)
+			)
+			(justify left)
+		)
+		(uuid "901e7271-7da2-4178-8a0f-68dcbd47d411")
+	)
+	(text "Version 2.0"
+		(exclude_from_sim no)
+		(at 53.848 47.244 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 3.81 3.81)
+				(bold yes)
+			)
+		)
+		(uuid "947604b0-0c4c-4fa3-bec3-1504e4f61eb6")
+	)
+	(text "Revisions"
+		(exclude_from_sim no)
+		(at 152.146 22.352 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 6.35 6.35)
+				(bold yes)
+			)
+		)
+		(uuid "e981eda6-9b74-4637-ac4b-48b72bea4edb")
+	)
+)
