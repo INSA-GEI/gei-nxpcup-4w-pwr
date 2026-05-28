@@ -31,12 +31,8 @@ extern "C" {
 #define LPI2C0_PERIPHERAL LPI2C0
 /* Definition of clock source */
 #define LPI2C0_CLOCK_FREQ 24000000UL
-/* Transfer buffer size */
-#define LPI2C0_SLAVE_BUFFER_SIZE 1
 /* Definition of follower address */
-#define LPI2C0_SLAVE_ADDRESS_0 66
-/* Definition of alternative follower address */
-#define LPI2C0_SLAVE_ADDRESS_1 0
+#define LPI2C0_MASTER_SLAVE_ADDRESS 0
 /* Definition of peripheral ID */
 #define FLEXPWM0_PERIPHERAL FLEXPWM0
 /* Definition of submodule 0 ID */
@@ -93,15 +89,6 @@ extern "C" {
 #define CTIMER1_PWM_PERIOD_CH kCTIMER_Match_0
 /* Alias for ADC0 peripheral */
 #define ADC0_PERIPHERAL ADC0
-/* BOARD_InitPeripherals defines for SysTick */
-/* Definition of clock source frequency. */
-#define SYSTICK_CLK_FREQ 96000000UL
-/* Definition of clock source frequency. */
-#define SYSTICK_TICKS 960000UL
-/* SysTick interrupt vector ID (number). */
-#define SYSTICK_TIMER_REFERENCE_IRQN SysTick_IRQn
-/* SysTick interrupt handler identifier. */
-#define SYSTICK_TIMER_REFERENCE_IRQHANDLER SysTick_Handler
 /* Alias for GPIO1 peripheral */
 #define GPIO1_GPIO GPIO1
 /* Alias for PORT1 */
@@ -118,10 +105,7 @@ extern "C" {
 /***********************************************************************************************************************
  * Global variables
  **********************************************************************************************************************/
-extern const lpi2c_slave_config_t LPI2C0_slaveConfig;
-extern lpi2c_slave_transfer_t LPI2C0_slaveTransfer;
-extern uint8_t LPI2C0_slaveBuffer[LPI2C0_SLAVE_BUFFER_SIZE];
-extern lpi2c_slave_handle_t LPI2C0_slaveHandle;
+extern const lpi2c_master_config_t LPI2C0_masterConfig;
 extern pwm_config_t FLEXPWM0_MOTORS_config;
 
 extern pwm_signal_param_t FLEXPWM0_MOTORS_pwm_function_config[2];
@@ -137,6 +121,7 @@ extern const ctimer_config_t CTIMER0_config;
 extern const ctimer_config_t CTIMER1_config;
 extern const lpadc_config_t ADC0_config;
 extern lpadc_conv_command_config_t ADC0_commandsConfig[1];
+extern lpadc_conv_trigger_config_t ADC0_triggersConfig[1];
 extern const lpuart_config_t LPUART0_config;
 
 /***********************************************************************************************************************

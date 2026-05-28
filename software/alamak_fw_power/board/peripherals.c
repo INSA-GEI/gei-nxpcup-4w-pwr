@@ -70,7 +70,6 @@ instance:
   - nvic:
     - interrupt_table:
       - 0: []
-      - 1: []
     - interrupts: []
  * BE CAREFUL MODIFYING THIS COMMENT - IT IS YAML SETTINGS FOR TOOLS **********/
 /* clang-format on */
@@ -87,79 +86,56 @@ static void NVIC_init(void) {
 instance:
 - name: 'LPI2C0'
 - type: 'lpi2c'
-- mode: 'slave'
+- mode: 'master'
 - custom_name_enabled: 'false'
 - type_id: 'lpi2c_2.2.0'
 - functional_group: 'BOARD_InitPeripherals'
 - peripheral: 'LPI2C0'
 - config_sets:
-  - slave:
-    - mode: 'transfer'
-    - config:
-      - enableSlave: 'true'
-      - address0: '0x42'
-      - address1: '0'
-      - addressMatchMode: 'kLPI2C_MatchAddress0'
-      - filterDozeEnable: 'true'
-      - filterEnable: 'true'
-      - enableGeneralCall: 'false'
-      - sclStall:
-        - enableAck: 'false'
-        - enableTx: 'true'
-        - enableRx: 'true'
-        - enableAddress: 'false'
-      - ignoreAck: 'false'
-      - enableReceivedAddressRead: 'false'
-      - sdaGlitchFilterWidth_ns: '0'
-      - sclGlitchFilterWidth_ns: '0'
-      - dataValidDelay_ns: '0'
-      - clockHoldTime_ns: '0'
-      - edmaRequestSources: ''
-    - transfer:
-      - enable_custom_handle: 'false'
-      - callback:
-        - name: ''
-        - userData: ''
-      - blocking_buffer_slave: 'false'
-      - enable_custom_buffer: 'false'
-      - dataSize: '1'
   - main:
     - clockSource: 'Lpi2cClock'
     - clockSourceFreq: 'ClocksTool_DefaultInit'
   - interrupt_vector: []
+  - master:
+    - mode: 'polling'
+    - config:
+      - enableMaster: 'true'
+      - enableDoze: 'true'
+      - debugEnable: 'false'
+      - ignoreAck: 'true'
+      - pinConfig: 'kLPI2C_2PinOpenDrain'
+      - baudRate_Hz: '100000'
+      - busIdleTimeout_ns: '0'
+      - pinLowTimeout_ns: '0'
+      - sdaGlitchFilterWidth_ns: '0'
+      - sclGlitchFilterWidth_ns: '0'
+      - hostRequest:
+        - enable: 'false'
+        - source: 'kLPI2C_HostRequestExternalPin'
+        - polarity: 'kLPI2C_HostRequestPinActiveHigh'
+      - edmaRequestSources: ''
  * BE CAREFUL MODIFYING THIS COMMENT - IT IS YAML SETTINGS FOR TOOLS **********/
 /* clang-format on */
-const lpi2c_slave_config_t LPI2C0_slaveConfig = {
-  .enableSlave = true,
-  .address0 = 0x42U,
-  .address1 = 0U,
-  .addressMatchMode = kLPI2C_MatchAddress0,
-  .filterDozeEnable = true,
-  .filterEnable = true,
-  .enableGeneralCall = false,
-  .sclStall = {
-    .enableAck = false,
-    .enableTx = true,
-    .enableRx = true,
-    .enableAddress = false
-  },
-  .ignoreAck = false,
-  .enableReceivedAddressRead = false,
-  .sdaGlitchFilterWidth_ns = 0UL,
-  .sclGlitchFilterWidth_ns = 0UL,
-  .dataValidDelay_ns = 0UL,
-  .clockHoldTime_ns = 0UL
+const lpi2c_master_config_t LPI2C0_masterConfig = {
+  .enableMaster = true,
+  .enableDoze = true,
+  .debugEnable = false,
+  .ignoreAck = true,
+  .pinConfig = kLPI2C_2PinOpenDrain,
+  .baudRate_Hz = 100000UL,
+  .busIdleTimeout_ns = 0UL,
+  .pinLowTimeout_ns = 0UL,
+  .sdaGlitchFilterWidth_ns = 0U,
+  .sclGlitchFilterWidth_ns = 0U,
+  .hostRequest = {
+    .enable = false,
+    .source = kLPI2C_HostRequestExternalPin,
+    .polarity = kLPI2C_HostRequestPinActiveHigh
+  }
 };
-lpi2c_slave_transfer_t LPI2C0_slaveTransfer = {
-  .data = LPI2C0_slaveBuffer,
-  .dataSize = 1
-};
-lpi2c_slave_handle_t LPI2C0_slaveHandle;
-uint8_t LPI2C0_slaveBuffer[LPI2C0_SLAVE_BUFFER_SIZE];
 
 static void LPI2C0_init(void) {
-  LPI2C_SlaveInit(LPI2C0_PERIPHERAL, &LPI2C0_slaveConfig, LPI2C0_CLOCK_FREQ);
-  LPI2C_SlaveTransferCreateHandle(LPI2C0_PERIPHERAL, &LPI2C0_slaveHandle, NULL, NULL);
+  LPI2C_MasterInit(LPI2C0_PERIPHERAL, &LPI2C0_masterConfig, LPI2C0_CLOCK_FREQ);
 }
 
 /***********************************************************************************************************************
@@ -190,11 +166,11 @@ instance:
           - pairOperation: 'kPWM_Independent'
           - operationMode: 'kPWM_SignedCenterAligned'
           - initializationControl: 'kPWM_Initialize_LocalSync'
-          - reloadLogic: 'kPWM_ReloadImmediate'
+          - reloadLogic: 'kPWM_ReloadPwmFullCycle'
           - reloadSelect: 'kPWM_LocalReload'
           - reloadFrequency: 'kPWM_LoadEveryOportunity'
           - forceTrigger: 'kPWM_Force_Local'
-          - enableDebugMode: 'false'
+          - enableDebugMode: 'true'
           - outputTrigger_sel: ''
           - loadOK: 'true'
           - startCounter: 'true'
@@ -255,11 +231,11 @@ instance:
           - operationMode: 'kPWM_SignedCenterAligned'
           - initializationControl: 'kPWM_Initialize_LocalSync'
           - phaseDly: '0'
-          - reloadLogic: 'kPWM_ReloadImmediate'
+          - reloadLogic: 'kPWM_ReloadPwmFullCycle'
           - reloadSelect: 'kPWM_LocalReload'
           - reloadFrequency: 'kPWM_LoadEveryOportunity'
           - forceTrigger: 'kPWM_Force_Local'
-          - enableDebugMode: 'false'
+          - enableDebugMode: 'true'
           - outputTrigger_sel: ''
           - loadOK: 'true'
           - startCounter: 'true'
@@ -309,30 +285,30 @@ instance:
           - 0:
             - fault_id: 'Fault0'
             - faultClearingMode: 'kPWM_Automatic'
-            - faultLevelR: 'low'
+            - faultLevelR: 'high'
             - enableCombinationalPathR: 'filtered'
-            - recoverMode: 'kPWM_NoRecovery'
+            - recoverMode: 'kPWM_RecoverHalfAndFullCycle'
             - fault_int_source: 'false'
           - 1:
             - fault_id: 'Fault1'
             - faultClearingMode: 'kPWM_Automatic'
-            - faultLevelR: 'low'
+            - faultLevelR: 'high'
             - enableCombinationalPathR: 'filtered'
-            - recoverMode: 'kPWM_NoRecovery'
+            - recoverMode: 'kPWM_RecoverHalfAndFullCycle'
             - fault_int_source: 'false'
           - 2:
             - fault_id: 'Fault2'
             - faultClearingMode: 'kPWM_Automatic'
-            - faultLevelR: 'low'
+            - faultLevelR: 'high'
             - enableCombinationalPathR: 'filtered'
-            - recoverMode: 'kPWM_NoRecovery'
+            - recoverMode: 'kPWM_RecoverHalfAndFullCycle'
             - fault_int_source: 'false'
           - 3:
             - fault_id: 'Fault3'
             - faultClearingMode: 'kPWM_Automatic'
-            - faultLevelR: 'low'
+            - faultLevelR: 'high'
             - enableCombinationalPathR: 'filtered'
-            - recoverMode: 'kPWM_NoRecovery'
+            - recoverMode: 'kPWM_RecoverHalfAndFullCycle'
             - fault_int_source: 'false'
     - fault_interruptEn: 'false'
     - fault_interrupt:
@@ -356,11 +332,11 @@ pwm_config_t FLEXPWM0_MOTORS_config = {
   .prescale = kPWM_Prescale_Divide_1,
   .pairOperation = kPWM_Independent,
   .initializationControl = kPWM_Initialize_LocalSync,
-  .reloadLogic = kPWM_ReloadImmediate,
+  .reloadLogic = kPWM_ReloadPwmFullCycle,
   .reloadSelect = kPWM_LocalReload,
   .reloadFrequency = kPWM_LoadEveryOportunity,
   .forceTrigger = kPWM_Force_Local,
-  .enableDebugMode = false,
+  .enableDebugMode = true,
 };
 
 pwm_signal_param_t FLEXPWM0_MOTORS_pwm_function_config[2]= {
@@ -387,11 +363,11 @@ pwm_config_t FLEXPWM0_SERVO_config = {
   .prescale = kPWM_Prescale_Divide_64,
   .pairOperation = kPWM_Independent,
   .initializationControl = kPWM_Initialize_LocalSync,
-  .reloadLogic = kPWM_ReloadImmediate,
+  .reloadLogic = kPWM_ReloadPwmFullCycle,
   .reloadSelect = kPWM_LocalReload,
   .reloadFrequency = kPWM_LoadEveryOportunity,
   .forceTrigger = kPWM_Force_Local,
-  .enableDebugMode = false,
+  .enableDebugMode = true,
 };
 
 pwm_signal_param_t FLEXPWM0_SERVO_pwm_function_config[1]= {
@@ -412,27 +388,27 @@ const pwm_fault_input_filter_param_t FLEXPWM0_faultInputFilter_config = {
 };
 const pwm_fault_param_t FLEXPWM0_Fault0_fault_config = {
   .faultClearingMode = kPWM_Automatic,
-  .faultLevel = false,
+  .faultLevel = true,
   .enableCombinationalPath = true,
-  .recoverMode = kPWM_NoRecovery
+  .recoverMode = kPWM_RecoverHalfAndFullCycle
 };
 const pwm_fault_param_t FLEXPWM0_Fault1_fault_config = {
   .faultClearingMode = kPWM_Automatic,
-  .faultLevel = false,
+  .faultLevel = true,
   .enableCombinationalPath = true,
-  .recoverMode = kPWM_NoRecovery
+  .recoverMode = kPWM_RecoverHalfAndFullCycle
 };
 const pwm_fault_param_t FLEXPWM0_Fault2_fault_config = {
   .faultClearingMode = kPWM_Automatic,
-  .faultLevel = false,
+  .faultLevel = true,
   .enableCombinationalPath = true,
-  .recoverMode = kPWM_NoRecovery
+  .recoverMode = kPWM_RecoverHalfAndFullCycle
 };
 const pwm_fault_param_t FLEXPWM0_Fault3_fault_config = {
   .faultClearingMode = kPWM_Automatic,
-  .faultLevel = false,
+  .faultLevel = true,
   .enableCombinationalPath = true,
-  .recoverMode = kPWM_NoRecovery
+  .recoverMode = kPWM_RecoverHalfAndFullCycle
 };
 
 static void FLEXPWM0_init(void) {
@@ -599,7 +575,14 @@ instance:
         - hardwareCompareValueLow: '0'
         - conversionResoultuionMode: 'kLPADC_ConversionResolutionStandard'
         - enableWaitTrigger: 'false'
-    - lpadcConvTriggerConfig: []
+    - lpadcConvTriggerConfig:
+      - 0:
+        - user_triggerId: ''
+        - triggerId: '0'
+        - targetCommandId: '1'
+        - delayPower: '0'
+        - priority: 'false'
+        - enableHardwareTrigger: 'false'
     - IRQ_cfg:
       - interrupt_type: ''
       - enable_irq: 'false'
@@ -639,45 +622,22 @@ lpadc_conv_command_config_t ADC0_commandsConfig[1] = {
     .enableWaitTrigger = false
   }
 };
+lpadc_conv_trigger_config_t ADC0_triggersConfig[1] = {
+  {
+    .targetCommandId = 1,
+    .delayPower = 0UL,
+    .priority = 1,
+    .enableHardwareTrigger = false
+  }
+};
 
 static void ADC0_init(void) {
   /* Initialize LPADC converter */
   LPADC_Init(ADC0_PERIPHERAL, &ADC0_config);
   /* Configure conversion command 1. */
   LPADC_SetConvCommandConfig(ADC0_PERIPHERAL, 1, &ADC0_commandsConfig[0]);
-}
-
-/***********************************************************************************************************************
- * SysTick initialization code
- **********************************************************************************************************************/
-/* clang-format off */
-/* TEXT BELOW IS USED AS SETTING FOR TOOLS *************************************
-instance:
-- name: 'SysTick'
-- type: 'systick'
-- mode: 'GENERAL'
-- custom_name_enabled: 'false'
-- type_id: 'systick'
-- functional_group: 'BOARD_InitPeripherals'
-- peripheral: 'SysTick'
-- config_sets:
-  - fsl_systick:
-    - timingConfig:
-      - clockSource: 'ProcessorClock'
-      - clockSourceFreq: 'ClocksTool_DefaultInit'
-      - reload: '10 ms'
-    - interrupt:
-      - IRQn: 'SysTick_IRQn'
-      - enable_custom_name: 'false'
-    - quick_selection: 'QS_SYSTICK_1'
- * BE CAREFUL MODIFYING THIS COMMENT - IT IS YAML SETTINGS FOR TOOLS **********/
-/* clang-format on */
-
-static void SysTick_init(void) {
-  /* Initialize the systick module. */
-  SysTick->LOAD = (uint32_t)(SYSTICK_TICKS - 1UL);
-  SysTick->VAL = 0UL;
-  SysTick->CTRL = SysTick_CTRL_CLKSOURCE_Msk | SysTick_CTRL_TICKINT_Msk | SysTick_CTRL_ENABLE_Msk;
+  /* Configure trigger 0. */
+  LPADC_SetConvTriggerConfig(ADC0_PERIPHERAL, 0, &ADC0_triggersConfig[0]);
 }
 
 /***********************************************************************************************************************
@@ -786,7 +746,6 @@ void BOARD_InitPeripherals(void)
   CTIMER0_init();
   CTIMER1_init();
   ADC0_init();
-  SysTick_init();
   GPIO1_init();
   LPUART0_init();
 }

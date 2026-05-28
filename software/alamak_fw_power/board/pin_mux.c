@@ -55,8 +55,10 @@ void BOARD_InitBootPins(void)
 BOARD_InitPins:
 - options: {callFromInitBoot: 'true', coreID: cm33_core0, enableClock: 'true'}
 - pin_list:
-  - {pin_num: '3', peripheral: LPI2C0, signal: SCL, pin_signal: P1_9/LPUART1_TXD/LPI2C0_SCL/CT_INP9/CT0_MAT3/I3C0_SCL}
-  - {pin_num: '2', peripheral: LPI2C0, signal: SDA, pin_signal: P1_8/WUU0_IN10/LPUART1_RXD/LPI2C0_SDA/CT_INP8/CT0_MAT2/I3C0_SDA}
+  - {pin_num: '3', peripheral: LPI2C0, signal: SCL, pin_signal: P1_9/LPUART1_TXD/LPI2C0_SCL/CT_INP9/CT0_MAT3/I3C0_SCL, open_drain: disable, drive_strength: low, pull_select: up,
+    pull_enable: enable}
+  - {pin_num: '2', peripheral: LPI2C0, signal: SDA, pin_signal: P1_8/WUU0_IN10/LPUART1_RXD/LPI2C0_SDA/CT_INP8/CT0_MAT2/I3C0_SDA, open_drain: disable, drive_strength: low,
+    pull_select: up, pull_enable: enable}
   - {pin_num: '16', peripheral: CTIMER0, signal: 'CAPTURE, 0', pin_signal: P2_2/TRIG_IN6/LPUART0_RTS_B/LPUART2_TXD/CT_INP12/CT2_MAT2/ADC0_A4/CMP0_IN0, identifier: ENCODER_A_PHA}
   - {pin_num: '20', peripheral: ADC0, signal: 'A, 3', pin_signal: P2_6/TRIG_OUT4/LPSPI1_PCS1/CT_INP18/CT1_MAT2/ADC0_A3}
   - {pin_num: '44', peripheral: FlexPWM0, signal: 'A, 0', pin_signal: P3_6/CLKOUT/LPSPI1_PCS3/PWM0_A0/FREQME_CLK_OUT1, direction: OUTPUT}
@@ -82,7 +84,7 @@ BOARD_InitPins:
   - {pin_num: '59', peripheral: GPIO1, signal: 'GPIO, 3', pin_signal: P1_3/WUU0_IN7/TRIG_OUT1/LPSPI0_PCS0/LPI2C0_SCLS/CT1_MAT1/CT_INP1/ADC0_A19/CMP0_IN1, direction: OUTPUT,
     slew_rate: slow}
   - {pin_num: '62', peripheral: GPIO1, signal: 'GPIO, 4', pin_signal: P1_4/WUU0_IN8/FREQME_CLK_IN0/LPSPI0_PCS3/LPUART2_RXD/CT1_MAT2/ADC0_A20/CMP0_IN2, direction: INPUT,
-    gpio_per_interrupt: kGPIO_InterruptFallingEdge}
+    gpio_per_interrupt: kGPIO_InterruptFallingEdge, pull_select: up, pull_enable: enable}
   - {pin_num: '63', peripheral: GPIO1, signal: 'GPIO, 5', pin_signal: P1_5/FREQME_CLK_IN1/LPSPI0_PCS2/LPUART2_TXD/CT1_MAT3/ADC0_A21/CMP1_IN2, direction: OUTPUT, gpio_init_state: 'true'}
   - {pin_num: '17', peripheral: CTIMER1, signal: 'CAPTURE, 1', pin_signal: P2_3/WUU0_IN19/TRIG_IN7/LPUART0_CTS_B/LPUART2_RXD/CT_INP13/CT2_MAT3/ADC0_A2/CMP1_IN0}
  * BE CAREFUL MODIFYING THIS COMMENT - IT IS YAML SETTINGS FOR TOOLS ***********
@@ -250,7 +252,13 @@ void BOARD_InitPins(void)
 
     PORT1->PCR[4] = ((PORT1->PCR[4] &
                       /* Mask bits to zero which are setting */
-                      (~(PORT_PCR_IBE_MASK)))
+                      (~(PORT_PCR_PS_MASK | PORT_PCR_PE_MASK | PORT_PCR_IBE_MASK)))
+
+                     /* Pull Select: Enables internal pullup resistor. */
+                     | PORT_PCR_PS(PCR_PS_ps1)
+
+                     /* Pull Enable: Enables. */
+                     | PORT_PCR_PE(PCR_PE_pe1)
 
                      /* Input Buffer Enable: Enables. */
                      | PORT_PCR_IBE(PCR_IBE_ibe1));
@@ -268,22 +276,48 @@ void BOARD_InitPins(void)
     /* PORT1_8 (pin 2) is configured as LPI2C0_SDA */
     PORT_SetPinMux(BOARD_INITPINS_I2C_SDA_PORT, BOARD_INITPINS_I2C_SDA_PIN, kPORT_MuxAlt3);
 
-    PORT1->PCR[8] = ((PORT1->PCR[8] &
-                      /* Mask bits to zero which are setting */
-                      (~(PORT_PCR_IBE_MASK)))
+    PORT1->PCR[8] =
+        ((PORT1->PCR[8] &
+          /* Mask bits to zero which are setting */
+          (~(PORT_PCR_PS_MASK | PORT_PCR_PE_MASK | PORT_PCR_ODE_MASK | PORT_PCR_DSE_MASK | PORT_PCR_IBE_MASK)))
 
-                     /* Input Buffer Enable: Enables. */
-                     | PORT_PCR_IBE(PCR_IBE_ibe1));
+         /* Pull Select: Enables internal pullup resistor. */
+         | PORT_PCR_PS(PCR_PS_ps1)
+
+         /* Pull Enable: Enables. */
+         | PORT_PCR_PE(PCR_PE_pe1)
+
+         /* Open Drain Enable: Disables. */
+         | PORT_PCR_ODE(PCR_ODE_ode0)
+
+         /* Drive Strength Enable: Low. */
+         | PORT_PCR_DSE(PCR_DSE_dse0)
+
+         /* Input Buffer Enable: Enables. */
+         | PORT_PCR_IBE(PCR_IBE_ibe1));
 
     /* PORT1_9 (pin 3) is configured as LPI2C0_SCL */
     PORT_SetPinMux(BOARD_INITPINS_I2C_SCL_PORT, BOARD_INITPINS_I2C_SCL_PIN, kPORT_MuxAlt3);
 
-    PORT1->PCR[9] = ((PORT1->PCR[9] &
-                      /* Mask bits to zero which are setting */
-                      (~(PORT_PCR_IBE_MASK)))
+    PORT1->PCR[9] =
+        ((PORT1->PCR[9] &
+          /* Mask bits to zero which are setting */
+          (~(PORT_PCR_PS_MASK | PORT_PCR_PE_MASK | PORT_PCR_ODE_MASK | PORT_PCR_DSE_MASK | PORT_PCR_IBE_MASK)))
 
-                     /* Input Buffer Enable: Enables. */
-                     | PORT_PCR_IBE(PCR_IBE_ibe1));
+         /* Pull Select: Enables internal pullup resistor. */
+         | PORT_PCR_PS(PCR_PS_ps1)
+
+         /* Pull Enable: Enables. */
+         | PORT_PCR_PE(PCR_PE_pe1)
+
+         /* Open Drain Enable: Disables. */
+         | PORT_PCR_ODE(PCR_ODE_ode0)
+
+         /* Drive Strength Enable: Low. */
+         | PORT_PCR_DSE(PCR_DSE_dse0)
+
+         /* Input Buffer Enable: Enables. */
+         | PORT_PCR_IBE(PCR_IBE_ibe1));
 
     PORT2->PCR[0] = ((PORT2->PCR[0] &
                       /* Mask bits to zero which are setting */

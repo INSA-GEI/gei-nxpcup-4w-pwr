@@ -25,8 +25,12 @@ extern "C" {
  */
 void BOARD_InitBootPins(void);
 
+#define PCR_DSE_dse0 0x00u          /*!<@brief Drive Strength Enable: Low */
 #define PCR_IBE_ibe0 0x00u          /*!<@brief Input Buffer Enable: Disables */
 #define PCR_IBE_ibe1 0x01u          /*!<@brief Input Buffer Enable: Enables */
+#define PCR_ODE_ode0 0x00u          /*!<@brief Open Drain Enable: Disables */
+#define PCR_PE_pe1 0x01u            /*!<@brief Pull Enable: Enables */
+#define PCR_PS_ps1 0x01u            /*!<@brief Pull Select: Enables internal pullup resistor */
 #define PCR_SRE_sre1 0x01u          /*!<@brief Slew Rate Enable: Slow */
 #define PORT0_PCR0_MUX_mux01 0x01u  /*!<@brief Pin Multiplex Control: Alternative 1 (chip-specific) */
 #define PORT0_PCR1_MUX_mux01 0x01u  /*!<@brief Pin Multiplex Control: Alternative 1 (chip-specific) */

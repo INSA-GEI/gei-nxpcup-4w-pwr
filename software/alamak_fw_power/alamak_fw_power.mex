@@ -123,8 +123,22 @@
                   </dependency>
                </dependencies>
                <pins>
-                  <pin peripheral="LPI2C0" signal="SCL" pin_num="3" pin_signal="P1_9/LPUART1_TXD/LPI2C0_SCL/CT_INP9/CT0_MAT3/I3C0_SCL"/>
-                  <pin peripheral="LPI2C0" signal="SDA" pin_num="2" pin_signal="P1_8/WUU0_IN10/LPUART1_RXD/LPI2C0_SDA/CT_INP8/CT0_MAT2/I3C0_SDA"/>
+                  <pin peripheral="LPI2C0" signal="SCL" pin_num="3" pin_signal="P1_9/LPUART1_TXD/LPI2C0_SCL/CT_INP9/CT0_MAT3/I3C0_SCL">
+                     <pin_features>
+                        <pin_feature name="open_drain" value="disable"/>
+                        <pin_feature name="drive_strength" value="low"/>
+                        <pin_feature name="pull_select" value="up"/>
+                        <pin_feature name="pull_enable" value="enable"/>
+                     </pin_features>
+                  </pin>
+                  <pin peripheral="LPI2C0" signal="SDA" pin_num="2" pin_signal="P1_8/WUU0_IN10/LPUART1_RXD/LPI2C0_SDA/CT_INP8/CT0_MAT2/I3C0_SDA">
+                     <pin_features>
+                        <pin_feature name="open_drain" value="disable"/>
+                        <pin_feature name="drive_strength" value="low"/>
+                        <pin_feature name="pull_select" value="up"/>
+                        <pin_feature name="pull_enable" value="enable"/>
+                     </pin_features>
+                  </pin>
                   <pin peripheral="CTIMER0" signal="CAPTURE, 0" pin_num="16" pin_signal="P2_2/TRIG_IN6/LPUART0_RTS_B/LPUART2_TXD/CT_INP12/CT2_MAT2/ADC0_A4/CMP0_IN0">
                      <pin_features>
                         <pin_feature name="identifier" value="ENCODER_A_PHA"/>
@@ -183,6 +197,8 @@
                      <pin_features>
                         <pin_feature name="direction" value="INPUT"/>
                         <pin_feature name="gpio_per_interrupt" value="kGPIO_InterruptFallingEdge"/>
+                        <pin_feature name="pull_select" value="up"/>
+                        <pin_feature name="pull_enable" value="enable"/>
                      </pin_features>
                   </pin>
                   <pin peripheral="GPIO1" signal="GPIO, 5" pin_num="63" pin_signal="P1_5/FREQME_CLK_IN1/LPSPI0_PCS2/LPUART2_TXD/CT1_MAT3/ADC0_A21/CMP1_IN2">
@@ -633,11 +649,6 @@
                         <data type="Boolean">true</data>
                      </feature>
                   </dependency>
-                  <dependency resourceType="ClockOutput" resourceId="System_clock" description="System_clock is inactive." problem_level="2" source="Peripherals:BOARD_InitPeripherals">
-                     <feature name="frequency" evaluation="greaterThan">
-                        <data type="Frequency" unit="Hz">0</data>
-                     </feature>
-                  </dependency>
                   <dependency resourceType="ClockOutput" resourceId="LPUART0_clock" description="LPUART0_clock is inactive." problem_level="2" source="Peripherals:BOARD_InitPeripherals">
                      <feature name="frequency" evaluation="greaterThan">
                         <data type="Frequency" unit="Hz">0</data>
@@ -659,54 +670,39 @@
                      <config_set name="nvic">
                         <array name="interrupt_table">
                            <struct name="0"/>
-                           <struct name="1"/>
                         </array>
                         <array name="interrupts"/>
                      </config_set>
                   </instance>
-                  <instance name="LPI2C0" uuid="e194b696-ff74-499c-8ae9-68be90a06278" type="lpi2c" type_id="lpi2c_2.2.0" mode="slave" peripheral="LPI2C0" enabled="true" comment="" custom_name_enabled="false" editing_lock="false">
-                     <config_set name="slave">
-                        <setting name="mode" value="transfer"/>
-                        <struct name="config">
-                           <setting name="enableSlave" value="true"/>
-                           <setting name="address0" value="0x42"/>
-                           <setting name="address1" value="0"/>
-                           <setting name="addressMatchMode" value="kLPI2C_MatchAddress0"/>
-                           <setting name="filterDozeEnable" value="true"/>
-                           <setting name="filterEnable" value="true"/>
-                           <setting name="enableGeneralCall" value="false"/>
-                           <struct name="sclStall">
-                              <setting name="enableAck" value="false"/>
-                              <setting name="enableTx" value="true"/>
-                              <setting name="enableRx" value="true"/>
-                              <setting name="enableAddress" value="false"/>
-                           </struct>
-                           <setting name="ignoreAck" value="false"/>
-                           <setting name="enableReceivedAddressRead" value="false"/>
-                           <setting name="sdaGlitchFilterWidth_ns" value="0"/>
-                           <setting name="sclGlitchFilterWidth_ns" value="0"/>
-                           <setting name="dataValidDelay_ns" value="0"/>
-                           <setting name="clockHoldTime_ns" value="0"/>
-                           <set name="edmaRequestSources">
-                              <selected/>
-                           </set>
-                        </struct>
-                        <struct name="transfer">
-                           <setting name="enable_custom_handle" value="false"/>
-                           <struct name="callback">
-                              <setting name="name" value=""/>
-                              <setting name="userData" value=""/>
-                           </struct>
-                           <setting name="blocking_buffer_slave" value="false"/>
-                           <setting name="enable_custom_buffer" value="false"/>
-                           <setting name="dataSize" value="1"/>
-                        </struct>
-                     </config_set>
+                  <instance name="LPI2C0" uuid="e194b696-ff74-499c-8ae9-68be90a06278" type="lpi2c" type_id="lpi2c_2.2.0" mode="master" peripheral="LPI2C0" enabled="true" comment="" custom_name_enabled="false" editing_lock="false">
                      <config_set name="main">
                         <setting name="clockSource" value="Lpi2cClock"/>
                         <setting name="clockSourceFreq" value="ClocksTool_DefaultInit"/>
                      </config_set>
                      <config_set name="interrupt_vector"/>
+                     <config_set name="master">
+                        <setting name="mode" value="polling"/>
+                        <struct name="config">
+                           <setting name="enableMaster" value="true"/>
+                           <setting name="enableDoze" value="true"/>
+                           <setting name="debugEnable" value="false"/>
+                           <setting name="ignoreAck" value="true"/>
+                           <setting name="pinConfig" value="kLPI2C_2PinOpenDrain"/>
+                           <setting name="baudRate_Hz" value="100000"/>
+                           <setting name="busIdleTimeout_ns" value="0"/>
+                           <setting name="pinLowTimeout_ns" value="0"/>
+                           <setting name="sdaGlitchFilterWidth_ns" value="0"/>
+                           <setting name="sclGlitchFilterWidth_ns" value="0"/>
+                           <struct name="hostRequest">
+                              <setting name="enable" value="false"/>
+                              <setting name="source" value="kLPI2C_HostRequestExternalPin"/>
+                              <setting name="polarity" value="kLPI2C_HostRequestPinActiveHigh"/>
+                           </struct>
+                           <set name="edmaRequestSources">
+                              <selected/>
+                           </set>
+                        </struct>
+                     </config_set>
                   </instance>
                   <instance name="FLEXPWM0" uuid="69bebc89-96fa-4296-851f-147b5f8ec534" type="pwm" type_id="pwm_2.6.0" mode="general" peripheral="FLEXPWM0" enabled="true" comment="" custom_name_enabled="false" editing_lock="false">
                      <config_set name="fsl_pwm">
@@ -723,11 +719,11 @@
                                  <setting name="pairOperation" value="kPWM_Independent"/>
                                  <setting name="operationMode" value="kPWM_SignedCenterAligned"/>
                                  <setting name="initializationControl" value="kPWM_Initialize_LocalSync"/>
-                                 <setting name="reloadLogic" value="kPWM_ReloadImmediate"/>
+                                 <setting name="reloadLogic" value="kPWM_ReloadPwmFullCycle"/>
                                  <setting name="reloadSelect" value="kPWM_LocalReload"/>
                                  <setting name="reloadFrequency" value="kPWM_LoadEveryOportunity"/>
                                  <setting name="forceTrigger" value="kPWM_Force_Local"/>
-                                 <setting name="enableDebugMode" value="false"/>
+                                 <setting name="enableDebugMode" value="true"/>
                                  <set name="outputTrigger_sel">
                                     <selected/>
                                  </set>
@@ -814,11 +810,11 @@
                                  <setting name="operationMode" value="kPWM_SignedCenterAligned"/>
                                  <setting name="initializationControl" value="kPWM_Initialize_LocalSync"/>
                                  <setting name="phaseDly" value="0"/>
-                                 <setting name="reloadLogic" value="kPWM_ReloadImmediate"/>
+                                 <setting name="reloadLogic" value="kPWM_ReloadPwmFullCycle"/>
                                  <setting name="reloadSelect" value="kPWM_LocalReload"/>
                                  <setting name="reloadFrequency" value="kPWM_LoadEveryOportunity"/>
                                  <setting name="forceTrigger" value="kPWM_Force_Local"/>
-                                 <setting name="enableDebugMode" value="false"/>
+                                 <setting name="enableDebugMode" value="true"/>
                                  <set name="outputTrigger_sel">
                                     <selected/>
                                  </set>
@@ -890,33 +886,33 @@
                                  <struct name="0">
                                     <setting name="fault_id" value="Fault0"/>
                                     <setting name="faultClearingMode" value="kPWM_Automatic"/>
-                                    <setting name="faultLevelR" value="low"/>
+                                    <setting name="faultLevelR" value="high"/>
                                     <setting name="enableCombinationalPathR" value="filtered"/>
-                                    <setting name="recoverMode" value="kPWM_NoRecovery"/>
+                                    <setting name="recoverMode" value="kPWM_RecoverHalfAndFullCycle"/>
                                     <setting name="fault_int_source" value="false"/>
                                  </struct>
                                  <struct name="1">
                                     <setting name="fault_id" value="Fault1"/>
                                     <setting name="faultClearingMode" value="kPWM_Automatic"/>
-                                    <setting name="faultLevelR" value="low"/>
+                                    <setting name="faultLevelR" value="high"/>
                                     <setting name="enableCombinationalPathR" value="filtered"/>
-                                    <setting name="recoverMode" value="kPWM_NoRecovery"/>
+                                    <setting name="recoverMode" value="kPWM_RecoverHalfAndFullCycle"/>
                                     <setting name="fault_int_source" value="false"/>
                                  </struct>
                                  <struct name="2">
                                     <setting name="fault_id" value="Fault2"/>
                                     <setting name="faultClearingMode" value="kPWM_Automatic"/>
-                                    <setting name="faultLevelR" value="low"/>
+                                    <setting name="faultLevelR" value="high"/>
                                     <setting name="enableCombinationalPathR" value="filtered"/>
-                                    <setting name="recoverMode" value="kPWM_NoRecovery"/>
+                                    <setting name="recoverMode" value="kPWM_RecoverHalfAndFullCycle"/>
                                     <setting name="fault_int_source" value="false"/>
                                  </struct>
                                  <struct name="3">
                                     <setting name="fault_id" value="Fault3"/>
                                     <setting name="faultClearingMode" value="kPWM_Automatic"/>
-                                    <setting name="faultLevelR" value="low"/>
+                                    <setting name="faultLevelR" value="high"/>
                                     <setting name="enableCombinationalPathR" value="filtered"/>
-                                    <setting name="recoverMode" value="kPWM_NoRecovery"/>
+                                    <setting name="recoverMode" value="kPWM_RecoverHalfAndFullCycle"/>
                                     <setting name="fault_int_source" value="false"/>
                                  </struct>
                               </array>
@@ -1021,7 +1017,16 @@
                               <setting name="enableWaitTrigger" value="false"/>
                            </struct>
                         </array>
-                        <array name="lpadcConvTriggerConfig"/>
+                        <array name="lpadcConvTriggerConfig">
+                           <struct name="0">
+                              <setting name="user_triggerId" value=""/>
+                              <setting name="triggerId" value="0"/>
+                              <setting name="targetCommandId" value="1"/>
+                              <setting name="delayPower" value="0"/>
+                              <setting name="priority" value="false"/>
+                              <setting name="enableHardwareTrigger" value="false"/>
+                           </struct>
+                        </array>
                         <struct name="IRQ_cfg">
                            <set name="interrupt_type">
                               <selected/>
@@ -1037,7 +1042,7 @@
                         </struct>
                      </config_set>
                   </instance>
-                  <instance name="SysTick" uuid="49cb1e6a-33dc-4ecc-b433-a040d866a915" type="systick" type_id="systick" mode="GENERAL" peripheral="SysTick" enabled="true" comment="" custom_name_enabled="false" editing_lock="false">
+                  <instance name="SysTick" uuid="49cb1e6a-33dc-4ecc-b433-a040d866a915" type="systick" type_id="systick" mode="GENERAL" peripheral="SysTick" enabled="false" comment="" custom_name_enabled="false" editing_lock="false">
                      <config_set name="fsl_systick" quick_selection="QS_SYSTICK_1">
                         <struct name="timingConfig">
                            <setting name="clockSource" value="ProcessorClock"/>

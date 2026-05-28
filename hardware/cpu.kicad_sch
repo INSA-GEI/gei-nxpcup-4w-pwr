@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "ALAMAK - CPU")
-		(date "2026-05-21")
-		(rev "2.0")
+		(date "2026-05-28")
+		(rev "2.1")
 		(company "INSA - GEI")
 	)
 	(lib_symbols
@@ -2308,10 +2308,34 @@
 		(uuid "2e6b9494-b4af-4b7f-bcc4-5bdd3c403cbd")
 	)
 	(junction
+		(at 251.46 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "30582cb2-6f34-48fb-8e64-d3c3112a1c90")
+	)
+	(junction
+		(at 207.01 111.76)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "314b22d2-f3fd-47ee-906a-d5694c266b01")
+	)
+	(junction
 		(at 173.99 179.07)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "362b7e48-7abb-4d85-93b8-9817468e59d8")
+	)
+	(junction
+		(at 207.01 100.33)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3a8c350d-3d34-4802-8e6d-4da71475fb06")
+	)
+	(junction
+		(at 246.38 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "41e8088d-3345-4e63-9cb3-586d9e1f739e")
 	)
 	(junction
 		(at 173.99 29.21)
@@ -2332,12 +2356,6 @@
 		(uuid "6458a980-f8c0-457f-a185-1b9bb38cdc1c")
 	)
 	(junction
-		(at 212.09 100.33)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6f2482c5-8846-43aa-8c16-fef5b879c1d2")
-	)
-	(junction
 		(at 224.79 154.94)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2356,10 +2374,10 @@
 		(uuid "95f37705-820c-4a85-a45a-1a20337d6469")
 	)
 	(junction
-		(at 212.09 102.87)
+		(at 251.46 97.79)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "a9af3de2-1b9d-48fb-83ef-caf39914d691")
+		(uuid "9cba0f7c-5669-4dbe-a592-d86f8fe446f7")
 	)
 	(junction
 		(at 238.76 147.32)
@@ -2380,13 +2398,19 @@
 		(uuid "c452ad64-7c52-456b-a71b-330cbbdba6b2")
 	)
 	(junction
+		(at 256.54 105.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ca562876-e6e7-49ce-88c4-c5911e38b30f")
+	)
+	(junction
 		(at 252.73 154.94)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cc536207-56b6-4c41-bb05-d6bf6f99ed8f")
 	)
 	(junction
-		(at 205.74 95.25)
+		(at 200.66 95.25)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "dedbb76f-8e40-4dd8-913c-b4c7d3874d65")
@@ -2414,6 +2438,10 @@
 	(no_connect
 		(at 46.99 90.17)
 		(uuid "127b217c-ff69-4bce-a18f-5bdaf4858623")
+	)
+	(no_connect
+		(at 234.95 102.87)
+		(uuid "1640475e-4382-4a49-8e66-5ddaf811e455")
 	)
 	(no_connect
 		(at 46.99 123.19)
@@ -2470,10 +2498,6 @@
 	(no_connect
 		(at 46.99 85.09)
 		(uuid "99136bec-7f74-497b-8c40-1d047fb7ba4d")
-	)
-	(no_connect
-		(at 234.95 102.87)
-		(uuid "9b56518e-afb0-4a17-a24e-625c6fe78606")
 	)
 	(no_connect
 		(at 46.99 143.51)
@@ -2659,6 +2683,16 @@
 	)
 	(wire
 		(pts
+			(xy 246.38 83.82) (xy 246.38 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "31b64145-e5e0-4b44-8e70-c9d2341f60de")
+	)
+	(wire
+		(pts
 			(xy 210.82 147.32) (xy 224.79 147.32)
 		)
 		(stroke
@@ -2666,6 +2700,16 @@
 			(type default)
 		)
 		(uuid "320e841c-6ca1-4256-b0eb-00d05ff86c58")
+	)
+	(wire
+		(pts
+			(xy 251.46 80.01) (xy 256.54 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3783def6-3bbf-4543-ae66-dd179fd84e8e")
 	)
 	(wire
 		(pts
@@ -2679,7 +2723,7 @@
 	)
 	(wire
 		(pts
-			(xy 234.95 97.79) (xy 238.76 97.79)
+			(xy 234.95 97.79) (xy 251.46 97.79)
 		)
 		(stroke
 			(width 0)
@@ -2719,16 +2763,6 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 95.25) (xy 260.35 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "400b34ad-eab5-402e-a538-47dd01c3d5ec")
-	)
-	(wire
-		(pts
 			(xy 34.29 69.85) (xy 46.99 69.85)
 		)
 		(stroke
@@ -2759,7 +2793,7 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 87.63) (xy 205.74 95.25)
+			(xy 200.66 87.63) (xy 200.66 95.25)
 		)
 		(stroke
 			(width 0)
@@ -2779,7 +2813,7 @@
 	)
 	(wire
 		(pts
-			(xy 234.95 95.25) (xy 238.76 95.25)
+			(xy 234.95 95.25) (xy 246.38 95.25)
 		)
 		(stroke
 			(width 0)
@@ -2819,7 +2853,7 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 97.79) (xy 212.09 100.33)
+			(xy 207.01 97.79) (xy 207.01 100.33)
 		)
 		(stroke
 			(width 0)
@@ -2836,16 +2870,6 @@
 			(type dash)
 		)
 		(uuid "6d6f110c-05de-450a-a134-1a4f35b2de57")
-	)
-	(wire
-		(pts
-			(xy 205.74 102.87) (xy 212.09 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "707f89b7-7241-4c68-b495-963609df00bd")
 	)
 	(wire
 		(pts
@@ -2869,16 +2893,6 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 97.79) (xy 260.35 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "762ba133-64c7-4619-935e-28565350339c")
-	)
-	(wire
-		(pts
 			(xy 173.99 176.53) (xy 173.99 179.07)
 		)
 		(stroke
@@ -2889,13 +2903,23 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 102.87) (xy 212.09 109.22)
+			(xy 207.01 100.33) (xy 207.01 111.76)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "78bbce8a-013a-4df8-9b3b-4e97caabc471")
+	)
+	(wire
+		(pts
+			(xy 246.38 95.25) (xy 278.13 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7bb43650-31ac-4e4b-9834-1c30b48b19a7")
 	)
 	(wire
 		(pts
@@ -2916,16 +2940,6 @@
 			(type default)
 		)
 		(uuid "7e5ffcd7-36c4-47af-8d67-6717b1e7ba1f")
-	)
-	(wire
-		(pts
-			(xy 246.38 100.33) (xy 260.35 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7ec9fd8f-8b07-4e12-b248-3d2b97f21004")
 	)
 	(wire
 		(pts
@@ -2979,6 +2993,26 @@
 	)
 	(wire
 		(pts
+			(xy 207.01 111.76) (xy 212.09 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "918b4f76-2fdb-45e2-af2b-9daec7f4deb5")
+	)
+	(wire
+		(pts
+			(xy 256.54 91.44) (xy 256.54 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9297e78f-ed6b-4628-8cd9-ea181697d197")
+	)
+	(wire
+		(pts
 			(xy 34.29 105.41) (xy 46.99 105.41)
 		)
 		(stroke
@@ -2986,6 +3020,16 @@
 			(type default)
 		)
 		(uuid "9a57b848-4247-4579-81bb-3ef8d4473e8f")
+	)
+	(wire
+		(pts
+			(xy 200.66 102.87) (xy 200.66 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ad81020-a9b0-41aa-ab34-e835d611c11c")
 	)
 	(wire
 		(pts
@@ -3039,13 +3083,43 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 95.25) (xy 205.74 95.25)
+			(xy 212.09 95.25) (xy 200.66 95.25)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "a7fc7b06-be20-4c05-b306-cbea2962d64b")
+	)
+	(wire
+		(pts
+			(xy 251.46 97.79) (xy 251.46 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac6a9df3-e796-489d-ba6d-cf90f40983c2")
+	)
+	(wire
+		(pts
+			(xy 246.38 91.44) (xy 246.38 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aef3e38c-8425-447b-924c-b986d8b56cbd")
+	)
+	(wire
+		(pts
+			(xy 246.38 80.01) (xy 251.46 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af866a6a-e0db-42bc-8b74-cf4f11f5edc8")
 	)
 	(wire
 		(pts
@@ -3059,23 +3133,13 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 105.41) (xy 260.35 105.41)
+			(xy 207.01 111.76) (xy 200.66 111.76)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b870f79a-ce24-4a62-8e6e-6095882ea1e4")
-	)
-	(wire
-		(pts
-			(xy 212.09 100.33) (xy 212.09 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bcd5b07b-47b9-4da9-a5ba-a22ef2e6d562")
+		(uuid "bbdcd308-e748-4a71-9689-8ded3892f62e")
 	)
 	(wire
 		(pts
@@ -3119,7 +3183,27 @@
 	)
 	(wire
 		(pts
-			(xy 234.95 100.33) (xy 238.76 100.33)
+			(xy 212.09 111.76) (xy 212.09 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf76fc4c-7ae0-44de-9002-481c0127f7ba")
+	)
+	(wire
+		(pts
+			(xy 251.46 97.79) (xy 278.13 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d29bc58d-4587-4113-ad0e-8be79ba14b56")
+	)
+	(wire
+		(pts
+			(xy 234.95 100.33) (xy 278.13 100.33)
 		)
 		(stroke
 			(width 0)
@@ -3136,6 +3220,16 @@
 			(type default)
 		)
 		(uuid "e209369f-f202-4bcd-a7cb-878fe9845d10")
+	)
+	(wire
+		(pts
+			(xy 256.54 105.41) (xy 278.13 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3c36193-a4aa-4b10-b359-c3188b23587c")
 	)
 	(wire
 		(pts
@@ -3156,6 +3250,16 @@
 			(type default)
 		)
 		(uuid "ea0f3b33-2b64-45de-920b-d8fd443ac1c8")
+	)
+	(wire
+		(pts
+			(xy 207.01 97.79) (xy 212.09 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed6558e6-ded3-4aeb-a3c6-fdf29a9fb8a1")
 	)
 	(wire
 		(pts
@@ -3209,7 +3313,7 @@
 	)
 	(wire
 		(pts
-			(xy 234.95 105.41) (xy 238.76 105.41)
+			(xy 234.95 105.41) (xy 256.54 105.41)
 		)
 		(stroke
 			(width 0)
@@ -3226,6 +3330,26 @@
 			(type default)
 		)
 		(uuid "f842fc79-0513-4819-a390-a9b69c100273")
+	)
+	(wire
+		(pts
+			(xy 256.54 80.01) (xy 256.54 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb8b71eb-fa15-427c-bcb9-5ce485f73aa6")
+	)
+	(wire
+		(pts
+			(xy 207.01 100.33) (xy 212.09 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fbfe5cea-f818-4ee3-8b63-c118a946b2ca")
 	)
 	(wire
 		(pts
@@ -3260,7 +3384,7 @@
 		(uuid "a1bc7a24-0b4f-4f0a-953f-1628e7a8a782")
 	)
 	(label "nRESET"
-		(at 260.35 105.41 180)
+		(at 278.13 105.41 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3270,7 +3394,7 @@
 		(uuid "00ff35b1-8ea1-4899-9587-30c20050816d")
 	)
 	(label "SWO"
-		(at 260.35 100.33 180)
+		(at 278.13 100.33 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3280,7 +3404,7 @@
 		(uuid "0f558bf5-d36b-41c9-a73a-33f5f9f66108")
 	)
 	(label "SWCLK"
-		(at 260.35 97.79 180)
+		(at 278.13 97.79 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3290,7 +3414,7 @@
 		(uuid "239f183b-4b09-410e-ada6-dbff7e1d680f")
 	)
 	(label "SWDIO"
-		(at 260.35 95.25 180)
+		(at 278.13 95.25 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3570,95 +3694,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 242.57 97.79 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "0616d7df-63b3-4011-9a3f-e52bf1241cbe")
-		(property "Reference" "R8"
-			(at 239.014 96.774 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100R"
-			(at 250.698 96.774 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 242.57 99.568 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.mouser.fr/datasheet/3/72/1/PYU_RT_1_TO_0_01_ROHS_L.pdf"
-			(at 242.57 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 242.57 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Yageo"
-			(at 242.57 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Number" "RT0805DRE07100RL"
-			(at 242.57 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "20dad991-fe18-4740-8ecc-bce94f7cb995")
-		)
-		(pin "2"
-			(uuid "8c5f3c0c-4711-48a6-a2fd-9f899088da22")
-		)
-		(instances
-			(project "Carte_puissance"
-				(path "/aaa0f7a4-a021-413b-80cf-aab59bb3339a/4ebf8b14-4fd3-46f9-9345-d294b03d40c9"
-					(reference "R8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3.3V")
-		(at 205.74 87.63 0)
+		(at 200.66 87.63 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3666,7 +3703,7 @@
 		(dnp no)
 		(uuid "103a9882-217b-4942-a552-5f5629c5fc7d")
 		(property "Reference" "#PWR19"
-			(at 205.74 91.44 0)
+			(at 200.66 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3675,7 +3712,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 206.121 83.2358 0)
+			(at 201.041 83.2358 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3683,7 +3720,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 205.74 87.63 0)
+			(at 200.66 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3692,7 +3729,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 205.74 87.63 0)
+			(at 200.66 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3701,7 +3738,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 205.74 87.63 0)
+			(at 200.66 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3877,15 +3914,15 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 242.57 100.33 90)
+		(at 251.46 111.76 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "2634d92a-ad39-44b4-8ef7-a9699de2ae4b")
-		(property "Reference" "R9"
-			(at 239.014 99.314 90)
+		(uuid "1e12371a-4b5b-4df0-b43e-3eaaa3c47192")
+		(property "Reference" "R8"
+			(at 249.174 110.744 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3893,8 +3930,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100R"
-			(at 250.698 99.314 90)
+		(property "Value" "100K"
+			(at 254 109.22 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3903,7 +3940,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 242.57 102.108 90)
+			(at 253.238 111.76 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3912,7 +3949,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.mouser.fr/datasheet/3/72/1/PYU_RT_1_TO_0_01_ROHS_L.pdf"
-			(at 242.57 100.33 0)
+			(at 251.46 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3921,7 +3958,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 242.57 100.33 0)
+			(at 251.46 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3930,7 +3967,7 @@
 			)
 		)
 		(property "Manufacturer" "Yageo"
-			(at 242.57 100.33 0)
+			(at 251.46 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3939,7 +3976,7 @@
 			)
 		)
 		(property "Part Number" "RT0805DRE07100RL"
-			(at 242.57 100.33 0)
+			(at 251.46 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3948,15 +3985,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "49d7de74-2efc-46f3-b5fe-e34764a2d1d2")
+			(uuid "1d621d42-f2ac-44dc-b1d3-0a503dd71b61")
 		)
 		(pin "2"
-			(uuid "aec8f2c5-81fa-4e7e-800a-9f4a337e606d")
+			(uuid "8f213ed6-8792-4e58-a79e-c9676e45fdae")
 		)
 		(instances
 			(project "Carte_puissance"
 				(path "/aaa0f7a4-a021-413b-80cf-aab59bb3339a/4ebf8b14-4fd3-46f9-9345-d294b03d40c9"
-					(reference "R9")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -4202,7 +4239,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 205.74 99.06 0)
+		(at 200.66 99.06 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4211,7 +4248,7 @@
 		(dnp no)
 		(uuid "3f2a2cc7-365d-4989-8898-94ca91620f1b")
 		(property "Reference" "C19"
-			(at 202.819 97.8916 0)
+			(at 197.739 97.8916 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4220,7 +4257,7 @@
 			)
 		)
 		(property "Value" "470nF"
-			(at 202.819 100.203 0)
+			(at 197.739 100.203 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4229,7 +4266,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 204.7748 102.87 0)
+			(at 199.6948 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4238,7 +4275,7 @@
 			)
 		)
 		(property "Datasheet" "https://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL21B474KBFNNN"
-			(at 205.74 99.06 0)
+			(at 200.66 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4247,7 +4284,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 205.74 99.06 0)
+			(at 200.66 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4256,7 +4293,7 @@
 			)
 		)
 		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 205.74 99.06 0)
+			(at 200.66 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4265,7 +4302,7 @@
 			)
 		)
 		(property "Part Number" "CL21B474KBFNNNE"
-			(at 205.74 99.06 0)
+			(at 200.66 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4561,16 +4598,16 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 212.09 109.22 0)
+		(lib_id "power:+3.3V")
+		(at 251.46 80.01 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "6399e666-4c97-404f-8583-825f5a2b4723")
-		(property "Reference" "#PWR18"
-			(at 212.09 115.57 0)
+		(uuid "5b7e681a-4195-47ac-94e4-181b81e00821")
+		(property "Reference" "#PWR67"
+			(at 251.46 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4578,8 +4615,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 212.217 113.6142 0)
+		(property "Value" "+3.3V"
+			(at 251.841 75.6158 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4587,7 +4624,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 212.09 109.22 0)
+			(at 251.46 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4596,7 +4633,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 212.09 109.22 0)
+			(at 251.46 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4605,7 +4642,72 @@
 			)
 		)
 		(property "Description" ""
-			(at 212.09 109.22 0)
+			(at 251.46 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0fef4902-6bce-4aca-8be7-d8da2bd21a5d")
+		)
+		(instances
+			(project "Carte_puissance"
+				(path "/aaa0f7a4-a021-413b-80cf-aab59bb3339a/4ebf8b14-4fd3-46f9-9345-d294b03d40c9"
+					(reference "#PWR67")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 207.01 111.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6399e666-4c97-404f-8583-825f5a2b4723")
+		(property "Reference" "#PWR18"
+			(at 207.01 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 207.137 116.1542 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 207.01 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 207.01 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 207.01 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4772,6 +4874,158 @@
 			(project "Carte_puissance"
 				(path "/aaa0f7a4-a021-413b-80cf-aab59bb3339a/4ebf8b14-4fd3-46f9-9345-d294b03d40c9"
 					(reference "C17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 251.46 115.57 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "78b43fa0-1c0e-4bff-bdb6-b4188d2529e1")
+		(property "Reference" "#PWR68"
+			(at 251.46 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 251.587 119.9642 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 251.46 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 251.46 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 251.46 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "50d61870-80bc-4a9b-a4f0-ca74b767b7c8")
+		)
+		(instances
+			(project "Carte_puissance"
+				(path "/aaa0f7a4-a021-413b-80cf-aab59bb3339a/4ebf8b14-4fd3-46f9-9345-d294b03d40c9"
+					(reference "#PWR68")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 256.54 87.63 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7de42937-ec24-4df8-adec-2dfdc3679208")
+		(property "Reference" "R10"
+			(at 254.254 85.598 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100K"
+			(at 258.826 85.09 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 258.318 87.63 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.fr/datasheet/3/72/1/PYU_RT_1_TO_0_01_ROHS_L.pdf"
+			(at 256.54 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 256.54 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 256.54 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "RT0805DRE07100RL"
+			(at 256.54 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "549e20e5-6dad-4b67-9a90-1b318ac7ef88")
+		)
+		(pin "2"
+			(uuid "8b349363-2987-4ce2-abe1-d942044c1475")
+		)
+		(instances
+			(project "Carte_puissance"
+				(path "/aaa0f7a4-a021-413b-80cf-aab59bb3339a/4ebf8b14-4fd3-46f9-9345-d294b03d40c9"
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -5039,93 +5293,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 242.57 105.41 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "9e829d76-ab8c-4bec-8b6f-1ae9e96ea882")
-		(property "Reference" "R10"
-			(at 239.776 104.394 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100R"
-			(at 250.698 104.394 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 242.57 107.188 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.mouser.fr/datasheet/3/72/1/PYU_RT_1_TO_0_01_ROHS_L.pdf"
-			(at 242.57 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 242.57 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Yageo"
-			(at 242.57 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Number" "RT0805DRE07100RL"
-			(at 242.57 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9a58e731-7097-402e-a07f-cbbddfdd71da")
-		)
-		(pin "2"
-			(uuid "719a967b-a1bb-4857-81b9-7dc9752da880")
-		)
-		(instances
-			(project "Carte_puissance"
-				(path "/aaa0f7a4-a021-413b-80cf-aab59bb3339a/4ebf8b14-4fd3-46f9-9345-d294b03d40c9"
-					(reference "R10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 224.79 151.13 0)
 		(unit 1)
@@ -5279,15 +5446,15 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 242.57 95.25 90)
+		(at 246.38 87.63 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "bed2daad-05e4-4315-8e0e-e90362bf3fa5")
+		(uuid "ceffe51a-7d89-4630-8041-7aceae465b3b")
 		(property "Reference" "R7"
-			(at 239.014 94.234 90)
+			(at 244.094 86.106 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5295,8 +5462,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100R"
-			(at 250.698 93.98 90)
+		(property "Value" "100K"
+			(at 248.666 85.09 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5305,7 +5472,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 242.57 97.028 90)
+			(at 248.158 87.63 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5314,7 +5481,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.mouser.fr/datasheet/3/72/1/PYU_RT_1_TO_0_01_ROHS_L.pdf"
-			(at 242.57 95.25 0)
+			(at 246.38 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5323,7 +5490,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 242.57 95.25 0)
+			(at 246.38 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5332,7 +5499,7 @@
 			)
 		)
 		(property "Manufacturer" "Yageo"
-			(at 242.57 95.25 0)
+			(at 246.38 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5341,7 +5508,7 @@
 			)
 		)
 		(property "Part Number" "RT0805DRE07100RL"
-			(at 242.57 95.25 0)
+			(at 246.38 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5350,10 +5517,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "c86f2f13-f590-4fb7-a361-4772841de7a7")
+			(uuid "903f018b-1479-4472-a4a7-604faacaaa39")
 		)
 		(pin "2"
-			(uuid "02448216-0e05-42f6-9330-d3664e2dfe42")
+			(uuid "65d8c577-54e7-4e98-ac61-3e7f31f3f68f")
 		)
 		(instances
 			(project "Carte_puissance"
@@ -5446,6 +5613,93 @@
 			(project "Carte_puissance"
 				(path "/aaa0f7a4-a021-413b-80cf-aab59bb3339a/4ebf8b14-4fd3-46f9-9345-d294b03d40c9"
 					(reference "C18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 212.09 106.68 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "dd02bbba-e93b-456d-b5ae-c7c89ee9db06")
+		(property "Reference" "R9"
+			(at 209.804 105.156 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2.2K"
+			(at 214.63 104.14 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 213.868 106.68 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.fr/datasheet/3/72/1/PYU_RT_1_TO_0_01_ROHS_L.pdf"
+			(at 212.09 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 212.09 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 212.09 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "RT0805DRE07100RL"
+			(at 212.09 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "07b38b68-ca58-4071-8de0-ae5422244d6c")
+		)
+		(pin "2"
+			(uuid "351e6071-79dd-4b6f-8611-b4ecb092553d")
+		)
+		(instances
+			(project "Carte_puissance"
+				(path "/aaa0f7a4-a021-413b-80cf-aab59bb3339a/4ebf8b14-4fd3-46f9-9345-d294b03d40c9"
+					(reference "R9")
 					(unit 1)
 				)
 			)
