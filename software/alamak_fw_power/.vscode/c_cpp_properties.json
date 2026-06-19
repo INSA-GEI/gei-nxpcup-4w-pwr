@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/data/Travail/Depots-Git/gei-mobile-robotic/gei-nxpcup-4w-pwr/software/alamak_fw_power/board",
+                "/data/Travail/Depots-Git/gei-mobile-robotic/gei-nxpcup-4w-pwr/software/alamak_fw_power/CMSIS",
+                "/data/Travail/Depots-Git/gei-mobile-robotic/gei-nxpcup-4w-pwr/software/alamak_fw_power/CMSIS/m-profile",
+                "/data/Travail/Depots-Git/gei-mobile-robotic/gei-nxpcup-4w-pwr/software/alamak_fw_power/component/**",
+                "/data/Travail/Depots-Git/gei-mobile-robotic/gei-nxpcup-4w-pwr/software/alamak_fw_power/device/**",
+                "/data/Travail/Depots-Git/gei-mobile-robotic/gei-nxpcup-4w-pwr/software/alamak_fw_power/drivers",
+                "/data/Travail/Depots-Git/gei-mobile-robotic/gei-nxpcup-4w-pwr/software/alamak_fw_power/source",
+                "/data/Travail/Depots-Git/gei-mobile-robotic/gei-nxpcup-4w-pwr/software/alamak_fw_power/startup",
+                "/data/Travail/Depots-Git/gei-mobile-robotic/gei-nxpcup-4w-pwr/software/alamak_fw_power/utilities/**"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c17",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "linux-gcc-x64"
+        }
+    ],
+    "version": 4
+}

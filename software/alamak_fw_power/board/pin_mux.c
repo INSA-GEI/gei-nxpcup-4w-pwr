@@ -82,7 +82,7 @@ BOARD_InitPins:
   - {pin_num: '58', peripheral: GPIO1, signal: 'GPIO, 2', pin_signal: P1_2/TRIG_OUT0/LPSPI0_SDI/LPI2C0_SDAS/CT1_MAT0/CT_INP0/ADC0_A18, direction: OUTPUT, gpio_init_state: 'true',
     slew_rate: slow}
   - {pin_num: '59', peripheral: GPIO1, signal: 'GPIO, 3', pin_signal: P1_3/WUU0_IN7/TRIG_OUT1/LPSPI0_PCS0/LPI2C0_SCLS/CT1_MAT1/CT_INP1/ADC0_A19/CMP0_IN1, direction: OUTPUT,
-    slew_rate: slow}
+    gpio_init_state: 'false', slew_rate: slow}
   - {pin_num: '62', peripheral: GPIO1, signal: 'GPIO, 4', pin_signal: P1_4/WUU0_IN8/FREQME_CLK_IN0/LPSPI0_PCS3/LPUART2_RXD/CT1_MAT2/ADC0_A20/CMP0_IN2, direction: INPUT,
     gpio_per_interrupt: kGPIO_InterruptFallingEdge, pull_select: up, pull_enable: enable}
   - {pin_num: '63', peripheral: GPIO1, signal: 'GPIO, 5', pin_signal: P1_5/FREQME_CLK_IN1/LPSPI0_PCS2/LPUART2_TXD/CT1_MAT3/ADC0_A21/CMP1_IN2, direction: OUTPUT, gpio_init_state: 'true'}

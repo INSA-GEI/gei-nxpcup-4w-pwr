@@ -70,6 +70,8 @@ instance:
   - nvic:
     - interrupt_table:
       - 0: []
+      - 1: []
+      - 2: []
     - interrupts: []
  * BE CAREFUL MODIFYING THIS COMMENT - IT IS YAML SETTINGS FOR TOOLS **********/
 /* clang-format on */
@@ -86,56 +88,77 @@ static void NVIC_init(void) {
 instance:
 - name: 'LPI2C0'
 - type: 'lpi2c'
-- mode: 'master'
+- mode: 'slave'
 - custom_name_enabled: 'false'
 - type_id: 'lpi2c_2.2.0'
 - functional_group: 'BOARD_InitPeripherals'
 - peripheral: 'LPI2C0'
 - config_sets:
+  - slave:
+    - mode: 'interrupts'
+    - config:
+      - enableSlave: 'true'
+      - address0: '0x42'
+      - address1: '0'
+      - addressMatchMode: 'kLPI2C_MatchAddress0'
+      - filterDozeEnable: 'true'
+      - filterEnable: 'true'
+      - enableGeneralCall: 'false'
+      - sclStall:
+        - enableAck: 'false'
+        - enableTx: 'true'
+        - enableRx: 'true'
+        - enableAddress: 'false'
+      - ignoreAck: 'false'
+      - enableReceivedAddressRead: 'false'
+      - sdaGlitchFilterWidth_ns: '0'
+      - sclGlitchFilterWidth_ns: '0'
+      - dataValidDelay_ns: '0'
+      - clockHoldTime_ns: '0'
+      - edmaRequestSources: ''
+    - interrupts:
+      - flags: 'kLPI2C_SlaveTxReadyFlag kLPI2C_SlaveRxReadyFlag kLPI2C_SlaveAddressValidFlag kLPI2C_SlaveTransmitAckFlag kLPI2C_SlaveRepeatedStartDetectFlag kLPI2C_SlaveStopDetectFlag
+        kLPI2C_SlaveBitErrFlag kLPI2C_SlaveAddressMatch0Flag kLPI2C_SlaveGeneralCallFlag kLPI2C_SlaveBusBusyFlag'
   - main:
     - clockSource: 'Lpi2cClock'
     - clockSourceFreq: 'ClocksTool_DefaultInit'
-  - interrupt_vector: []
-  - master:
-    - mode: 'polling'
-    - config:
-      - enableMaster: 'true'
-      - enableDoze: 'true'
-      - debugEnable: 'false'
-      - ignoreAck: 'true'
-      - pinConfig: 'kLPI2C_2PinOpenDrain'
-      - baudRate_Hz: '100000'
-      - busIdleTimeout_ns: '0'
-      - pinLowTimeout_ns: '0'
-      - sdaGlitchFilterWidth_ns: '0'
-      - sclGlitchFilterWidth_ns: '0'
-      - hostRequest:
-        - enable: 'false'
-        - source: 'kLPI2C_HostRequestExternalPin'
-        - polarity: 'kLPI2C_HostRequestPinActiveHigh'
-      - edmaRequestSources: ''
+  - interrupt_vector:
+    - enable_irq: 'true'
+    - interrupt:
+      - IRQn: 'LPI2C0_IRQn'
+      - enable_interrrupt: 'enabled'
+      - enable_priority: 'false'
+      - priority: '0'
+      - enable_custom_name: 'false'
  * BE CAREFUL MODIFYING THIS COMMENT - IT IS YAML SETTINGS FOR TOOLS **********/
 /* clang-format on */
-const lpi2c_master_config_t LPI2C0_masterConfig = {
-  .enableMaster = true,
-  .enableDoze = true,
-  .debugEnable = false,
-  .ignoreAck = true,
-  .pinConfig = kLPI2C_2PinOpenDrain,
-  .baudRate_Hz = 100000UL,
-  .busIdleTimeout_ns = 0UL,
-  .pinLowTimeout_ns = 0UL,
-  .sdaGlitchFilterWidth_ns = 0U,
-  .sclGlitchFilterWidth_ns = 0U,
-  .hostRequest = {
-    .enable = false,
-    .source = kLPI2C_HostRequestExternalPin,
-    .polarity = kLPI2C_HostRequestPinActiveHigh
-  }
+const lpi2c_slave_config_t LPI2C0_slaveConfig = {
+  .enableSlave = true,
+  .address0 = 0x42U,
+  .address1 = 0U,
+  .addressMatchMode = kLPI2C_MatchAddress0,
+  .filterDozeEnable = true,
+  .filterEnable = true,
+  .enableGeneralCall = false,
+  .sclStall = {
+    .enableAck = false,
+    .enableTx = true,
+    .enableRx = true,
+    .enableAddress = false
+  },
+  .ignoreAck = false,
+  .enableReceivedAddressRead = false,
+  .sdaGlitchFilterWidth_ns = 0UL,
+  .sclGlitchFilterWidth_ns = 0UL,
+  .dataValidDelay_ns = 0UL,
+  .clockHoldTime_ns = 0UL
 };
 
 static void LPI2C0_init(void) {
-  LPI2C_MasterInit(LPI2C0_PERIPHERAL, &LPI2C0_masterConfig, LPI2C0_CLOCK_FREQ);
+  LPI2C_SlaveInit(LPI2C0_PERIPHERAL, &LPI2C0_slaveConfig, LPI2C0_CLOCK_FREQ);
+  LPI2C_SlaveEnableInterrupts(LPI2C0_PERIPHERAL, kLPI2C_SlaveTxReadyFlag | kLPI2C_SlaveRxReadyFlag | kLPI2C_SlaveAddressValidFlag | kLPI2C_SlaveTransmitAckFlag | kLPI2C_SlaveRepeatedStartDetectFlag | kLPI2C_SlaveStopDetectFlag | kLPI2C_SlaveBitErrFlag | kLPI2C_SlaveAddressMatch0Flag | kLPI2C_SlaveGeneralCallFlag | kLPI2C_SlaveBusBusyFlag);
+  /* Enable interrupt LPI2C0_IRQN request in the NVIC */
+  EnableIRQ(LPI2C0_IRQN);
 }
 
 /***********************************************************************************************************************
@@ -641,6 +664,38 @@ static void ADC0_init(void) {
 }
 
 /***********************************************************************************************************************
+ * SysTick initialization code
+ **********************************************************************************************************************/
+/* clang-format off */
+/* TEXT BELOW IS USED AS SETTING FOR TOOLS *************************************
+instance:
+- name: 'SysTick'
+- type: 'systick'
+- mode: 'GENERAL'
+- custom_name_enabled: 'false'
+- type_id: 'systick'
+- functional_group: 'BOARD_InitPeripherals'
+- peripheral: 'SysTick'
+- config_sets:
+  - fsl_systick:
+    - timingConfig:
+      - clockSource: 'ProcessorClock'
+      - clockSourceFreq: 'ClocksTool_DefaultInit'
+      - reload: '1 ms'
+    - interrupt:
+      - IRQn: 'SysTick_IRQn'
+      - enable_custom_name: 'false'
+ * BE CAREFUL MODIFYING THIS COMMENT - IT IS YAML SETTINGS FOR TOOLS **********/
+/* clang-format on */
+
+static void SysTick_init(void) {
+  /* Initialize the systick module. */
+  SysTick->LOAD = (uint32_t)(SYSTICK_TICKS - 1UL);
+  SysTick->VAL = 0UL;
+  SysTick->CTRL = SysTick_CTRL_CLKSOURCE_Msk | SysTick_CTRL_TICKINT_Msk | SysTick_CTRL_ENABLE_Msk;
+}
+
+/***********************************************************************************************************************
  * GPIO1 initialization code
  **********************************************************************************************************************/
 /* clang-format off */
@@ -746,6 +801,7 @@ void BOARD_InitPeripherals(void)
   CTIMER0_init();
   CTIMER1_init();
   ADC0_init();
+  SysTick_init();
   GPIO1_init();
   LPUART0_init();
 }

@@ -32,7 +32,13 @@ extern "C" {
 /* Definition of clock source */
 #define LPI2C0_CLOCK_FREQ 24000000UL
 /* Definition of follower address */
-#define LPI2C0_MASTER_SLAVE_ADDRESS 0
+#define LPI2C0_SLAVE_ADDRESS_0 66
+/* Definition of alternative follower address */
+#define LPI2C0_SLAVE_ADDRESS_1 0
+/* LPI2C0 interrupt vector ID (number). */
+#define LPI2C0_IRQN LPI2C0_IRQn
+/* LPI2C0 interrupt handler identifier. */
+#define LPI2C0_IRQHANDLER LPI2C0_IRQHandler
 /* Definition of peripheral ID */
 #define FLEXPWM0_PERIPHERAL FLEXPWM0
 /* Definition of submodule 0 ID */
@@ -89,6 +95,15 @@ extern "C" {
 #define CTIMER1_PWM_PERIOD_CH kCTIMER_Match_0
 /* Alias for ADC0 peripheral */
 #define ADC0_PERIPHERAL ADC0
+/* BOARD_InitPeripherals defines for SysTick */
+/* Definition of clock source frequency. */
+#define SYSTICK_CLK_FREQ 96000000UL
+/* Definition of clock source frequency. */
+#define SYSTICK_TICKS 96000UL
+/* SysTick interrupt vector ID (number). */
+#define SYSTICK_TIMER_REFERENCE_IRQN SysTick_IRQn
+/* SysTick interrupt handler identifier. */
+#define SYSTICK_TIMER_REFERENCE_IRQHANDLER SysTick_Handler
 /* Alias for GPIO1 peripheral */
 #define GPIO1_GPIO GPIO1
 /* Alias for PORT1 */
@@ -105,7 +120,7 @@ extern "C" {
 /***********************************************************************************************************************
  * Global variables
  **********************************************************************************************************************/
-extern const lpi2c_master_config_t LPI2C0_masterConfig;
+extern const lpi2c_slave_config_t LPI2C0_slaveConfig;
 extern pwm_config_t FLEXPWM0_MOTORS_config;
 
 extern pwm_signal_param_t FLEXPWM0_MOTORS_pwm_function_config[2];

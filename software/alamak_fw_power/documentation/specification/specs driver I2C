@@ -1,0 +1,42 @@
+J'utilise le MCU NXP MCXA153
+J'utilise l'IDE MCUXpresso v25.6
+J'ai besoin d'un driver I2C esclave sur interruption
+Le bus I2C utilisé est LPI2C0, SCL sur P1.9 et SDA sur P1.8
+LPI2C0 Clock est à 24 Mhz et SYSTEM Clock est à 96 Mhz
+Vitesse du bus I2C: 100 Khz, adresse I2C de l'esclave: 0x42
+Je veux que le driver leve un flag global (gI2CChanged) lorsque le maitre modifie le contenu de registres.
+Liste des registres à implementer (tous les registres sont 8 bits):
+
+Adresse | Nom       | R et/ou W | Description
+0x0     | ID        | RO        | Identifiant de la carte, toujours egal à 0x10
+0x1     | SR        | RO        | Indicateurs (flag/bits) en provenance de la carte PWR
+0x2     | VBAT_1R   | RO        | Mesure VBAT (8 bits poids faible)
+0x3     | VBAT_2R   | RO        | Mesure VBAT (8 bits poids fort)
+0x4     | ODO1_1R   | RO        | Mesure odometrie voie 1 (octet 1 (poids faible))
+0x5     | ODO1_2R   | RO        | Mesure odometrie voie 1 (octet 2 )
+0x6     | ODO1_3R   | RO        | Mesure odometrie voie 1 (octet 3 )
+0x7     | ODO1_4R   | RO        | Mesure odometrie voie 1 (octet 4 (poids fort))
+0x8     | ODO2_1R   | RO        | Mesure odometrie voie 2 (octet 1 (poids faible))
+0x9     | ODO2_2R   | RO        | Mesure odometrie voie 2 (octet 2 )
+0xA     | ODO2_3R   | RO        | Mesure odometrie voie 2 (octet 3 )
+0xB     | ODO2_4R   | RO        | Mesure odometrie voie 2 (octet 4 (poids fort))
+0xC     | MOT1_1R   | RW        | Lecture/commande moteur 1 (octet 1 (poids faible))
+0xD     | MOT1_2R   | RW        | Lecture/commande moteur 1 (octet 2 (poids fort))
+0xE     | MOT2_1R   | RW        | Lecture/commande moteur 2 (octet 1 (poids faible))
+0xF     | MOT2_2R   | RW        | Lecture/commande moteur 2 (octet 2 (poids fort))
+0x10    | DIR_1R    | RW        | Lecture/commande direction (octet 1 (poids faible))
+0x11    | DIR_2R    | RW        | Lecture/commande direction (octet 2 (poids fort))
+0x12    | CR        | RW        | Lecture/ecriture registre de controle
+
+Si le maitre ecrit sur des registres RO, l'ecriture doit etre ignorée sans lever d'erreur.
+L'ecriture et la lecture multiple en I2C doit etre possible.
+Si le maitre lit ou ecrit au delà du registre SR, le compteur retour à 0 (registre ID)
+gI2CChanged ne change que si une valeur RW change reellement
+Les registres ne sont pas accessible directement (privés au driver) mais le driver doit fournir des getter/setter pour y acceder
+Le code doit etre ecrit en C (GCC) et utiliser le standard GNU C17
+Utilise les fonctions HAL contenues dans le SDK FRDM_MCXA153 (version 3.15 ou superieur), ne manipule pas directement les registres des peripheriques.
+Et n'invente pas des fonctions du SDK
+
+JE te joint un exemple du SDK (lpi2c_interrupt_b2b_transfer) et le header du driver fsl_lpi2c
+genere moi deux fichier i2c_slave.c et i2c_slave.h ainsi que la documentation (manuel technique)
+ 

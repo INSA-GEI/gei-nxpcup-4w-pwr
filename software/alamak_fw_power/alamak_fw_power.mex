@@ -190,6 +190,7 @@
                   <pin peripheral="GPIO1" signal="GPIO, 3" pin_num="59" pin_signal="P1_3/WUU0_IN7/TRIG_OUT1/LPSPI0_PCS0/LPI2C0_SCLS/CT1_MAT1/CT_INP1/ADC0_A19/CMP0_IN1">
                      <pin_features>
                         <pin_feature name="direction" value="OUTPUT"/>
+                        <pin_feature name="gpio_init_state" value="false"/>
                         <pin_feature name="slew_rate" value="slow"/>
                      </pin_features>
                   </pin>
@@ -649,6 +650,11 @@
                         <data type="Boolean">true</data>
                      </feature>
                   </dependency>
+                  <dependency resourceType="ClockOutput" resourceId="System_clock" description="System_clock is inactive." problem_level="2" source="Peripherals:BOARD_InitPeripherals">
+                     <feature name="frequency" evaluation="greaterThan">
+                        <data type="Frequency" unit="Hz">0</data>
+                     </feature>
+                  </dependency>
                   <dependency resourceType="ClockOutput" resourceId="LPUART0_clock" description="LPUART0_clock is inactive." problem_level="2" source="Peripherals:BOARD_InitPeripherals">
                      <feature name="frequency" evaluation="greaterThan">
                         <data type="Frequency" unit="Hz">0</data>
@@ -670,37 +676,68 @@
                      <config_set name="nvic">
                         <array name="interrupt_table">
                            <struct name="0"/>
+                           <struct name="1"/>
+                           <struct name="2"/>
                         </array>
                         <array name="interrupts"/>
                      </config_set>
                   </instance>
-                  <instance name="LPI2C0" uuid="e194b696-ff74-499c-8ae9-68be90a06278" type="lpi2c" type_id="lpi2c_2.2.0" mode="master" peripheral="LPI2C0" enabled="true" comment="" custom_name_enabled="false" editing_lock="false">
+                  <instance name="LPI2C0" uuid="e194b696-ff74-499c-8ae9-68be90a06278" type="lpi2c" type_id="lpi2c_2.2.0" mode="slave" peripheral="LPI2C0" enabled="true" comment="" custom_name_enabled="false" editing_lock="false">
+                     <config_set name="slave">
+                        <setting name="mode" value="interrupts"/>
+                        <struct name="config">
+                           <setting name="enableSlave" value="true"/>
+                           <setting name="address0" value="0x42"/>
+                           <setting name="address1" value="0"/>
+                           <setting name="addressMatchMode" value="kLPI2C_MatchAddress0"/>
+                           <setting name="filterDozeEnable" value="true"/>
+                           <setting name="filterEnable" value="true"/>
+                           <setting name="enableGeneralCall" value="false"/>
+                           <struct name="sclStall">
+                              <setting name="enableAck" value="false"/>
+                              <setting name="enableTx" value="true"/>
+                              <setting name="enableRx" value="true"/>
+                              <setting name="enableAddress" value="false"/>
+                           </struct>
+                           <setting name="ignoreAck" value="false"/>
+                           <setting name="enableReceivedAddressRead" value="false"/>
+                           <setting name="sdaGlitchFilterWidth_ns" value="0"/>
+                           <setting name="sclGlitchFilterWidth_ns" value="0"/>
+                           <setting name="dataValidDelay_ns" value="0"/>
+                           <setting name="clockHoldTime_ns" value="0"/>
+                           <set name="edmaRequestSources">
+                              <selected/>
+                           </set>
+                        </struct>
+                        <struct name="interrupts">
+                           <set name="flags">
+                              <selected>
+                                 <id>kLPI2C_SlaveTxReadyFlag</id>
+                                 <id>kLPI2C_SlaveRxReadyFlag</id>
+                                 <id>kLPI2C_SlaveAddressValidFlag</id>
+                                 <id>kLPI2C_SlaveTransmitAckFlag</id>
+                                 <id>kLPI2C_SlaveRepeatedStartDetectFlag</id>
+                                 <id>kLPI2C_SlaveStopDetectFlag</id>
+                                 <id>kLPI2C_SlaveBitErrFlag</id>
+                                 <id>kLPI2C_SlaveAddressMatch0Flag</id>
+                                 <id>kLPI2C_SlaveGeneralCallFlag</id>
+                                 <id>kLPI2C_SlaveBusBusyFlag</id>
+                              </selected>
+                           </set>
+                        </struct>
+                     </config_set>
                      <config_set name="main">
                         <setting name="clockSource" value="Lpi2cClock"/>
                         <setting name="clockSourceFreq" value="ClocksTool_DefaultInit"/>
                      </config_set>
-                     <config_set name="interrupt_vector"/>
-                     <config_set name="master">
-                        <setting name="mode" value="polling"/>
-                        <struct name="config">
-                           <setting name="enableMaster" value="true"/>
-                           <setting name="enableDoze" value="true"/>
-                           <setting name="debugEnable" value="false"/>
-                           <setting name="ignoreAck" value="true"/>
-                           <setting name="pinConfig" value="kLPI2C_2PinOpenDrain"/>
-                           <setting name="baudRate_Hz" value="100000"/>
-                           <setting name="busIdleTimeout_ns" value="0"/>
-                           <setting name="pinLowTimeout_ns" value="0"/>
-                           <setting name="sdaGlitchFilterWidth_ns" value="0"/>
-                           <setting name="sclGlitchFilterWidth_ns" value="0"/>
-                           <struct name="hostRequest">
-                              <setting name="enable" value="false"/>
-                              <setting name="source" value="kLPI2C_HostRequestExternalPin"/>
-                              <setting name="polarity" value="kLPI2C_HostRequestPinActiveHigh"/>
-                           </struct>
-                           <set name="edmaRequestSources">
-                              <selected/>
-                           </set>
+                     <config_set name="interrupt_vector">
+                        <setting name="enable_irq" value="true"/>
+                        <struct name="interrupt">
+                           <setting name="IRQn" value="LPI2C0_IRQn"/>
+                           <setting name="enable_interrrupt" value="enabled"/>
+                           <setting name="enable_priority" value="false"/>
+                           <setting name="priority" value="0"/>
+                           <setting name="enable_custom_name" value="false"/>
                         </struct>
                      </config_set>
                   </instance>
@@ -1042,12 +1079,12 @@
                         </struct>
                      </config_set>
                   </instance>
-                  <instance name="SysTick" uuid="49cb1e6a-33dc-4ecc-b433-a040d866a915" type="systick" type_id="systick" mode="GENERAL" peripheral="SysTick" enabled="false" comment="" custom_name_enabled="false" editing_lock="false">
-                     <config_set name="fsl_systick" quick_selection="QS_SYSTICK_1">
+                  <instance name="SysTick" uuid="49cb1e6a-33dc-4ecc-b433-a040d866a915" type="systick" type_id="systick" mode="GENERAL" peripheral="SysTick" enabled="true" comment="" custom_name_enabled="false" editing_lock="false">
+                     <config_set name="fsl_systick">
                         <struct name="timingConfig">
                            <setting name="clockSource" value="ProcessorClock"/>
                            <setting name="clockSourceFreq" value="ClocksTool_DefaultInit"/>
-                           <setting name="reload" value="10 ms"/>
+                           <setting name="reload" value="1 ms"/>
                         </struct>
                         <struct name="interrupt">
                            <setting name="IRQn" value="SysTick_IRQn"/>
