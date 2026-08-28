@@ -1,6 +1,11 @@
-/*
- * i2c_slave.c
- * Description : Implémentation du driver I2C esclave sur LPI2C0.
+/**
+ * @brief Fichier source du driver I2C esclave sur LPI2C0.
+ * 
+ * Ce fichier implémente un driver I2C esclave pour le microcontrôleur MCXA153, utilisant le périphérique LPI2C0. Il gère la communication avec un maître I2C, permettant la lecture et l'écriture de registres définis dans l'énumération `i2c_reg_index_t`. Le driver utilise des callbacks pour gérer les événements de transfert I2C, tels que la réception et la transmission de données, ainsi que la gestion des conditions de démarrage et d'arrêt.
+ * 
+ * @author dimercur
+ * @date 24 juin 2026
+ * @version 1.0
  */
 
 #include "i2c_slave_gemini.h"
@@ -8,14 +13,9 @@
 
 #include "app.h"
 
-#define I2C_SLAVE_ADDR         0x42U
-#define LPI2C_CLOCK_FREQ       24000000U
-#define LPI2C_SLAVE_BASE       LPI2C0
-#define RX_BUFFER_SIZE         32U
+#include "configuration.h"
 
 /* Variables globales et privées */
-//volatile bool gI2CChanged = false;
-
 static uint8_t i2c_regs[REG_MAX_IDX + 1];
 static lpi2c_slave_handle_t g_s_handle;
 
@@ -25,13 +25,21 @@ static uint8_t rx_buf[RX_BUFFER_SIZE];
 static uint8_t tx_byte;
 static bool is_receiving = false;
 
-/* Fonction utilitaire : vérifie si un registre est inscriptible par le maître (RW) */
+/**
+ * @brief Fonction utilitaire : vérifie si un registre est inscriptible par le maître (RW)
+ * @param index L'index du registre
+ * @return true si le registre est inscriptible, false sinon
+ */
 static bool is_rw_register(uint8_t index)
 {
     return (index >= REG_MOT1 && index <= REG_CR);
 }
 
-/* * Callback appelé sous interruption par le driver fsl_lpi2c
+/**
+ * @brief Callback appelé sous interruption par le driver fsl_lpi2c
+ * @param base Pointeur vers l'instance LPI2C
+ * @param xfer Pointeur vers la structure de transfert I2C
+ * @param param Pointeur vers les paramètres supplémentaires
  */
 static void lpi2c_slave_callback(LPI2C_Type *base, lpi2c_slave_transfer_t *xfer, void *param)
 {
@@ -109,6 +117,10 @@ static void lpi2c_slave_callback(LPI2C_Type *base, lpi2c_slave_transfer_t *xfer,
     }
 }
 
+/**
+ * @brief Initialise le module I2C esclave.
+ * @return None
+ */
 void I2C_Slave_Init(void)
 {
     lpi2c_slave_config_t slaveConfig;
@@ -116,6 +128,7 @@ void I2C_Slave_Init(void)
     /* Initialisation de la mémoire des registres */
     memset(i2c_regs, 0, sizeof(i2c_regs));
     i2c_regs[REG_ID] = 0x10; /* L'ID carte est toujours 0x10 */
+    i2c_regs[REG_VER] = FW_VERSION; /* La version du firmware est toujours FW_VERSION */
 
     /* Configuration par défaut du SDK */
     LPI2C_SlaveGetDefaultConfig(&slaveConfig);
@@ -138,6 +151,11 @@ void I2C_Slave_Init(void)
                                    kLPI2C_SlaveRepeatedStartEvent);
 }
 
+/**
+ * @brief Getter privé au MCU (application) pour lire la valeur d'un registre.
+ * @param index L'index du registre.
+ * @return La valeur contenue dans le registre.
+ */
 uint8_t I2C_Slave_GetReg(i2c_reg_index_t index)
 {
     if (index <= REG_MAX_IDX) {
@@ -146,10 +164,15 @@ uint8_t I2C_Slave_GetReg(i2c_reg_index_t index)
     return 0;
 }
 
+/**
+ * @brief Setter privé au MCU (application) pour modifier la valeur d'un registre.
+ * @param index L'index du registre.
+ * @param value La nouvelle valeur à assigner.
+ */
 void I2C_Slave_SetReg(i2c_reg_index_t index, uint8_t value)
 {
-    /* L'ID de carte ne doit jamais être écrasé, même par le MCU */
-    if (index > REG_ID && index <= REG_MAX_IDX) {
+    /* L'ID et la version de la carte ne doivent jamais être écrasés, même par le MCU */
+    if (index > REG_VER && index <= REG_MAX_IDX) {
         i2c_regs[index] = value;
     }
 }

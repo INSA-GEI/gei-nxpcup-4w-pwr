@@ -9,7 +9,7 @@
 #define APP_H_
 
 typedef enum {
-    APP_STATE_IMX_BOOT = 0,
+    APP_STATE_STARTUP = 0,
     APP_STATE_RUNNING = 1,
     APP_STATE_IMX_SHUTDOWN = 2,
     APP_STATE_ERROR = 3,
@@ -18,8 +18,8 @@ typedef enum {
     APP_STATE_MAX
 } APP_States_t;
 
-#define APP_VBAT_CRITICAL_THRESHOLD 9100 // mV
-#define APP_VBAT_LOW_THRESHOLD 9500 // mV
+#define APP_VBAT_CRITICAL_THRESHOLD 610 // mV
+#define APP_VBAT_LOW_THRESHOLD 650 // mV
 
 typedef struct {
     APP_States_t state;
@@ -34,7 +34,6 @@ typedef struct {
     uint8_t pwmMot1; // valeur entre 0 et 100 pour le moteur 1
     uint8_t pwmMot2; // valeur entre 0 et 100 pour le moteur 2   
     int8_t pwmServo; // valeur entre -100 et 100 pour le servo
-    bool shutdownRequest; // false = pas de demande, true = demande de shutdown
     bool motorcontrolEnabled; // false = asservissement moteurs désactivés, true = asservissement moteurs activés
 } APP_SystemData_t;
 

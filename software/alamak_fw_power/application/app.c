@@ -16,30 +16,25 @@
 #include "app_functions.h"
 #include "i2c_slave_gemini.h"
 
-uint8_t pwmMot = 0;
-uint16_t pwmServo = 3277;
-uint32_t counter0, counter1;
-lpadc_conv_result_t adc_result;
+#include "configuration.h"
 
 volatile APP_SystemData_t APP_SystemData = {
-	.state = APP_STATE_IMX_BOOT,
-	.evtI2CDataChanged = false,
-	.evtTimer1ms = false,
-	.evtTimer10ms = false,
-	.evtTimer100ms = false,
-	.evtTimer1s = false,
-	.evtShutdown = false,
-	.odometer_1 = 0,
-	.odometer_2 = 0,
-	.shutdownRequest = false,
-	.motorcontrolEnabled = false
+		.state = APP_STATE_STARTUP,
+		.evtI2CDataChanged = false,
+		.evtTimer1ms = false,
+		.evtTimer10ms = false,
+		.evtTimer100ms = false,
+		.evtTimer1s = false,
+		.evtShutdown = false,
+		.odometer_1 = 0,
+		.odometer_2 = 0,
+		.motorcontrolEnabled = false
 };
 
-#define APP_VBAT_FILTERING_MESURES 10
 uint16_t APP_VbatFiltered = 0;
-
 uint16_t APP_VbatFilteringArray[APP_VBAT_FILTERING_MESURES] = {0};
 uint8_t APP_VbatFilteringIndex = 0;
+uint32_t localFiltering=0;
 
 void APP_1msTimerEventCallback(void);
 void APP_10msTimerEventCallback(void);
@@ -55,14 +50,29 @@ void APP_ShutdownEventCallback(void);
  */
 void APP_Init(void)
 {
+	int i=0;
+	uint32_t vbat=0;
+
 	// Check battery level and perform a shutdown if it's too low
-	uint16_t vbat = APP_GetVBat();
-	if (vbat < 3000) {
+#if !DEBUG_NO_VBAT_MESURE_AT_STARTUP
+	// les premieres mesures ADC sont foireuses, donc, campagne de lecture de 16 mesures
+	// pour remettre l'ADC sur pied
+	for (i=0; i<10; i++) {
+		vbat += APP_GetRawADCValue(APP_ADC_CHANNEL_VBAT);
+		SDK_DelayAtLeastUs(100000, CLOCK_GetCoreSysClkFreq());
+	}
+
+	vbat = APP_ConvertADCToVoltage(vbat/10);
+
+	if (vbat < 610) { // VBAT < 6.10 V: Too low
 		PRINTF("Battery too low (%u mV), shutting down...\r\n", vbat);
+#if !DEBUG_NO_SHUTDOWN
 		GPIO_PinWrite(BOARD_INITPINS_ONOFF_KILL_GPIO, BOARD_INITPINS_ONOFF_KILL_PIN, 0U);
+#endif // !DEBUG_NO_SHUTDOWN
 
 		while (1); // Attente de l'arret
 	}
+#endif // !DEBUG_NO_VBAT_MESURE_AT_STARTUP
 
 	// Initialize I2C slave interface
 	I2C_Slave_Init();
@@ -134,7 +144,9 @@ void APP_Run(void)
 		// Handle shutdown event
 		if (APP_SystemData.evtShutdown)
 		{
-			APP_SystemData.evtShutdown = false;
+			APP_SystemData.evtShutdown=false;
+			uint8_t CR_reg = I2C_Slave_GetReg(REG_CR);
+			CR_reg = CR_reg | APP_CR_SHUTDOWN_REQUEST;
 			APP_ShutdownEventCallback();
 		}
 	}
@@ -151,7 +163,7 @@ void APP_I2CDataChangedEventCallback(void)
 	APP_SystemData.pwmMot1 = APP_GetMotorFromI2C(APP_MOTOR_1);
 	APP_SystemData.pwmMot2 = APP_GetMotorFromI2C(APP_MOTOR_2);
 	APP_SystemData.pwmServo = APP_GetDirectionFromI2C();
-	
+
 	/**************************************  
 	 * Process Control Register (CR) bits *
 	 **************************************/
@@ -162,11 +174,8 @@ void APP_I2CDataChangedEventCallback(void)
 	}
 
 	if (CR_reg & APP_CR_SHUTDOWN_REQUEST) {
-		APP_SystemData.shutdownRequest = true;
+		APP_SystemData.evtShutdown = true;
 		APP_SystemData.state = APP_STATE_IMX_SHUTDOWN;
-	} else {
-		APP_SystemData.shutdownRequest = false;
-		APP_SystemData.state = APP_STATE_RUNNING;
 	}
 
 	if (CR_reg & APP_CR_RESET_ODOMETER) {
@@ -184,15 +193,11 @@ void APP_I2CDataChangedEventCallback(void)
 	}
 
 	/* Update PWM values */
-	APP_SetMotorPWM(APP_MOTOR_1, APP_SystemData.pwmMot1);
+	/*APP_SetMotorPWM(APP_MOTOR_1, APP_SystemData.pwmMot1);
 	APP_SetMotorPWM(APP_MOTOR_2, APP_SystemData.pwmMot2);
-	APP_SetDirectionPWM(APP_SystemData.pwmServo);
+	APP_SetDirectionPWM(APP_SystemData.pwmServo);*/
 
-	// PRINTF("I2C data changed !\r\n");
-	// PRINTF("MOT1 = %u\r\n", APP_GetMotorFromI2C(APP_MOTOR_1));
-	// PRINTF("MOT2 = %u\r\n", APP_GetMotorFromI2C(APP_MOTOR_2));
-	// PRINTF("DIR  = %u\r\n", APP_GetDirectionFromI2C());
-	// PRINTF("--------------------\r\n");
+	APP_SetMotorsAndDirection(APP_SystemData.pwmMot1, APP_SystemData.pwmMot2, APP_SystemData.pwmServo);
 }
 
 /**
@@ -207,11 +212,15 @@ void APP_ShutdownEventCallback(void)
 
 	// TODO: A revoir, attendre que l'IMX8 s'arrete de son coté avant de couper l'alimentation
 	/* Activation du shutdown */
+#if !DEBUG_NO_SHUTDOWN
 	if (APP_SystemData.evtShutdown == true)
 	{
 		GPIO_PinWrite(BOARD_INITPINS_ONOFF_KILL_GPIO, BOARD_INITPINS_ONOFF_KILL_PIN, 0U);
 		while (1); // Attente de l'arret
 	}
+#else
+	PRINTF("DEBUG_NO_SHUTDOWN is defined, shutdown is disabled for debugging purposes.\r\n");
+#endif // !DEBUG_NO_SHUTDOWN
 }
 
 /**
@@ -235,28 +244,30 @@ void APP_1msTimerEventCallback(void)
  */
 void APP_10msTimerEventCallback(void)
 {
-	APP_VbatFilteringArray[APP_VbatFilteringIndex] = APP_GetVBat();
+	APP_VbatFilteringArray[APP_VbatFilteringIndex] = APP_GetRawADCValue(APP_ADC_CHANNEL_VBAT);
 	APP_VbatFilteringIndex++;
+
 	if (APP_VbatFilteringIndex >= APP_VBAT_FILTERING_MESURES) {
 		APP_VbatFilteringIndex = 0;
-	}	
 
-	for (uint8_t i = 0; i < APP_VBAT_FILTERING_MESURES; i++) {
-		APP_VbatFiltered += APP_VbatFilteringArray[i];
-	}
-	APP_VbatFiltered /= APP_VBAT_FILTERING_MESURES;
-	APP_VbatFiltered = APP_ConvertADCToVoltage(APP_VbatFiltered);
-	APP_SetVBat(APP_VbatFiltered);
+		for (uint8_t i = 0; i < APP_VBAT_FILTERING_MESURES; i++) {
+			localFiltering += APP_VbatFilteringArray[i];
+		}
 
-	if (APP_VbatFiltered < APP_VBAT_CRITICAL_THRESHOLD) {
-		PRINTF("Battery critical level reached (%u mV), shutting down requested...\r\n", APP_VbatFiltered);
-		// TODO: voir si on peut faire un shutdown soft de l'IMX8 avant de couper l'alimentation
-		APP_SystemData.state = APP_STATE_CRITICAL_LOW_BATTERY;
-		APP_SystemData.shutdownRequest = true;
-	} else if (APP_VbatFiltered < APP_VBAT_LOW_THRESHOLD) {
-		PRINTF("Battery low level reached (%u mV)\r\n", APP_VbatFiltered);
+		localFiltering /= APP_VBAT_FILTERING_MESURES;
+		APP_VbatFiltered = APP_ConvertADCToVoltage(localFiltering);
+		APP_SetVBat(APP_VbatFiltered);
 
-		APP_SystemData.state = APP_STATE_LOW_BATTERY;
+		if (APP_VbatFiltered < APP_VBAT_CRITICAL_THRESHOLD) {
+			PRINTF("Battery critical level reached (%u mV), shutting down requested...\r\n", APP_VbatFiltered);
+			// TODO: voir si on peut faire un shutdown soft de l'IMX8 avant de couper l'alimentation
+			APP_SystemData.state = APP_STATE_CRITICAL_LOW_BATTERY;
+			APP_SystemData.evtShutdown = true;
+		} else if (APP_VbatFiltered < APP_VBAT_LOW_THRESHOLD) {
+			PRINTF("Battery low level reached (%u mV)\r\n", APP_VbatFiltered);
+
+			APP_SystemData.state = APP_STATE_LOW_BATTERY;
+		}
 	}
 }
 
@@ -270,34 +281,33 @@ void APP_100msTimerEventCallback(void)
 
 	// Led management
 	switch (APP_SystemData.state) {
-		case APP_STATE_RUNNING: // Led ON
+	case APP_STATE_RUNNING: // Led ON
+		GPIO_PinWrite(BOARD_INITPINS_ALERT_LED_GPIO, BOARD_INITPINS_ALERT_LED_PIN, 1U);
+		break;
+	case APP_STATE_LOW_BATTERY: // Blink slowly
+		if (ledCounter < 5) {
 			GPIO_PinWrite(BOARD_INITPINS_ALERT_LED_GPIO, BOARD_INITPINS_ALERT_LED_PIN, 1U);
-			break;
-		case APP_STATE_LOW_BATTERY: // Blink slowly
-			if (ledCounter < 5) {
-				GPIO_PinWrite(BOARD_INITPINS_ALERT_LED_GPIO, BOARD_INITPINS_ALERT_LED_PIN, 1U);
-			} else {
-				GPIO_PinWrite(BOARD_INITPINS_ALERT_LED_GPIO, BOARD_INITPINS_ALERT_LED_PIN, 0U);
-			}
-			break;
-		case APP_STATE_CRITICAL_LOW_BATTERY: // blink fast
-			if ((ledCounter/2 % 2) == 0) {
-				GPIO_PinWrite(BOARD_INITPINS_ALERT_LED_GPIO, BOARD_INITPINS_ALERT_LED_PIN, 1U);
-			} else {
-				GPIO_PinWrite(BOARD_INITPINS_ALERT_LED_GPIO, BOARD_INITPINS_ALERT_LED_PIN, 0U);
-			}
-			break;
-		case APP_STATE_IMX_BOOT:
-		case APP_STATE_IMX_SHUTDOWN:
-		    // Flash the LED
-		    if (ledCounter < 2) {
-				GPIO_PinWrite(BOARD_INITPINS_ALERT_LED_GPIO, BOARD_INITPINS_ALERT_LED_PIN, 1U);
-			} else {
-				GPIO_PinWrite(BOARD_INITPINS_ALERT_LED_GPIO, BOARD_INITPINS_ALERT_LED_PIN, 0U);
-			}
-		default: // Led OFF
+		} else {
 			GPIO_PinWrite(BOARD_INITPINS_ALERT_LED_GPIO, BOARD_INITPINS_ALERT_LED_PIN, 0U);
-			break;
+		}
+		break;
+	case APP_STATE_CRITICAL_LOW_BATTERY: // blink fast
+		if ((ledCounter/2 % 2) == 0) {
+			GPIO_PinWrite(BOARD_INITPINS_ALERT_LED_GPIO, BOARD_INITPINS_ALERT_LED_PIN, 1U);
+		} else {
+			GPIO_PinWrite(BOARD_INITPINS_ALERT_LED_GPIO, BOARD_INITPINS_ALERT_LED_PIN, 0U);
+		}
+		break;
+	case APP_STATE_IMX_SHUTDOWN:
+		// Flash the LED
+		if (ledCounter < 2) {
+			GPIO_PinWrite(BOARD_INITPINS_ALERT_LED_GPIO, BOARD_INITPINS_ALERT_LED_PIN, 1U);
+		} else {
+			GPIO_PinWrite(BOARD_INITPINS_ALERT_LED_GPIO, BOARD_INITPINS_ALERT_LED_PIN, 0U);
+		}
+	default: // Led OFF
+		GPIO_PinWrite(BOARD_INITPINS_ALERT_LED_GPIO, BOARD_INITPINS_ALERT_LED_PIN, 0U);
+		break;
 	}
 
 	ledCounter++;
@@ -316,7 +326,7 @@ void APP_1sTimerEventCallback(void)
 	PRINTF("PWM 0B = %u%%\r\n", APP_SystemData.pwmMot2);
 	PRINTF("PWM 1A = %i%%\r\n", APP_SystemData.pwmServo);
 	PRINTF("--------------------\r\n");
-	
+
 	PRINTF("Counter 0 = %lu\r\n", APP_SystemData.odometer_1);
 	PRINTF("Counter 1 = %lu\r\n", APP_SystemData.odometer_2);
 	PRINTF("--------------------\r\n");

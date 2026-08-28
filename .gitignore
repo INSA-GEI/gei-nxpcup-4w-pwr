@@ -62,3 +62,7 @@ dkms.conf
 *-backups/
 *_autosave-*
 fp-info-cache
+*.lck
+
+# DrawIO
+*.bkp

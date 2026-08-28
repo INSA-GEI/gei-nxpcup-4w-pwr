@@ -16,6 +16,8 @@
 #include "app_functions.h"
 #include "i2c_slave_gemini.h"
 
+#include "configuration.h"
+
 typedef struct
 {
     uint16_t adc;
@@ -25,10 +27,21 @@ typedef struct
 static const ADCVoltagePoint_t conversionTable[] =
 {
     {    0,    0 },
-    {18000,  330 },
-    {35000,  500 },
-    {50000,  700 },
-    {65535, 1200 }
+    {18632,  600 },
+	{19297,  650 },
+	{19880,  700 },
+    {20375,  750 },
+    {20830,  800 },
+    {21242,  850 },
+	{21635,  900 },
+	{21972,  950 },
+	{22284,  1000 },
+	{22565,  1050 },
+	{22830,  1100 },
+	{23095,  1150 },
+	{23325,  1200 },
+	{23547,  1250 },
+	{23750,  1300 }
 };
 
 #define NB_POINTS (sizeof(conversionTable) / sizeof(conversionTable[0]))
@@ -140,6 +153,43 @@ int8_t APP_GetDirectionFromI2C(void) {
 
     direction = (int8_t)I2C_Slave_GetReg(REG_DIR);
     return direction;
+}
+
+void APP_SetMotorsAndDirection(uint8_t dutyLeft, uint8_t dutyRight, int8_t direction) {
+#define SERVO_PWM_MIN 3277  // Corresponds to -100%
+#define SERVO_PWM_MAX 6554  // Corresponds to +100%
+
+    int8_t pwmServo = direction;
+    uint16_t pwmAccurateValue = 0;
+
+    uint8_t pwmMotLeft = dutyLeft;
+    uint8_t pwmMotRight = dutyRight;
+
+    if (pwmMotLeft > 100) {
+    	pwmMotLeft = 100; // Limit to 100%
+    }
+
+    if (pwmMotRight > 100) {
+    	pwmMotRight = 100; // Limit to 100%
+    }
+
+    PWM_UpdatePwmDutycycle(FLEXPWM0_PERIPHERAL, kPWM_Module_0, kPWM_PwmA, kPWM_SignedCenterAligned, pwmMotLeft);
+    PWM_UpdatePwmDutycycle(FLEXPWM0_PERIPHERAL, kPWM_Module_0, kPWM_PwmB, kPWM_SignedCenterAligned, pwmMotRight);
+
+    if (pwmServo < -100) {
+        pwmServo = -100; // Limit to -100%
+    } else if (pwmServo > 100) {
+        pwmServo = 100; // Limit to 100%
+    }
+
+    // Map the direction value (-100 to 100) to the accurate PWM range (3277 to 6554)
+    pwmAccurateValue = (uint16_t)(((pwmServo + 100) * (SERVO_PWM_MAX - SERVO_PWM_MIN)) / 200 + SERVO_PWM_MIN);
+
+    /* Update duty cycles for all servo PWM signals, high accuracy needed */
+   	PWM_UpdatePwmDutycycleHighAccuracy(FLEXPWM0_PERIPHERAL, kPWM_Module_1, kPWM_PwmA, kPWM_SignedCenterAligned, pwmAccurateValue);
+
+    /* Set the load okay bit for all submodules to load registers from their buffer */
+	PWM_SetPwmLdok(FLEXPWM0_PERIPHERAL, kPWM_Control_Module_0 | kPWM_Control_Module_1, true);
 }
 
 void APP_SetMotorPWM(APP_MotorIndex_t motorIndex, uint8_t pwmValue) {

@@ -10,13 +10,10 @@
 #include <stdbool.h>
 #include "fsl_lpi2c.h"
 
-/* Flag global mis à true lorsqu'un registre RW est modifié par le maître I2C */
-extern volatile bool gI2CChanged;
-
 /* Définition des index de registres */
 typedef enum {
     REG_ID       = 0x00, /* RO : Identifiant (0x10) */
-    REG_SR       = 0x01, /* RO : Indicateurs PWR */
+    REG_VER      = 0x01, /* RO : FW version */
     REG_VBAT_1R  = 0x02, /* RO : VBAT LSB */
     REG_VBAT_2R  = 0x03, /* RO : VBAT MSB */
     REG_ODO1_1R  = 0x04, /* RO : Odo 1 LSB */

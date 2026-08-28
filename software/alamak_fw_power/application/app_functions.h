@@ -43,6 +43,8 @@ uint8_t APP_GetMotorFromI2C(APP_MotorIndex_t motorIndex);
 
 int8_t APP_GetDirectionFromI2C(void);
 
+void APP_SetMotorsAndDirection(uint8_t dutyLeft, uint8_t dutyRight, int8_t direction);
+
 void APP_SetMotorPWM(APP_MotorIndex_t motorIndex, uint8_t pwmValue);
 
 void APP_SetDirectionPWM(int8_t direction);
