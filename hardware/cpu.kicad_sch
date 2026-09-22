@@ -1976,6 +1976,151 @@
 				)
 			)
 		)
+		(symbol "Switch:SW_Push"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SW"
+				(at 1.27 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "SW_Push"
+				(at 0 -1.524 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Push button switch, generic, two pins"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "switch normally-open pushbutton push-button"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SW_Push_0_1"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.27) (xy 0 3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 1.27) (xy -2.54 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "power:+3.3V"
 			(power)
 			(pin_numbers hide)
@@ -2350,6 +2495,12 @@
 		(uuid "4bca0a02-b9e9-44e0-8558-cc5956a1819a")
 	)
 	(junction
+		(at 26.67 171.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5a27615a-82c2-4d3c-8639-16ec38f80690")
+	)
+	(junction
 		(at 187.96 26.67)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2427,6 +2578,12 @@
 		(color 0 0 0 0)
 		(uuid "fd593006-e789-4916-90d3-4f145a39914e")
 	)
+	(junction
+		(at 34.29 17.78)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fe14adfe-d70e-4196-a00c-62686eef8bb3")
+	)
 	(no_connect
 		(at 46.99 168.91)
 		(uuid "049b4f75-b6d1-48e3-a0e5-3e7a7f2f07cb")
@@ -2474,10 +2631,6 @@
 	(no_connect
 		(at 46.99 181.61)
 		(uuid "7605dfdd-778a-4d67-9a34-e35398f018cd")
-	)
-	(no_connect
-		(at 46.99 171.45)
-		(uuid "7b35fa70-fd8e-4a91-9a81-c41f56206d87")
 	)
 	(no_connect
 		(at 46.99 41.91)
@@ -2573,16 +2726,6 @@
 	)
 	(wire
 		(pts
-			(xy 25.4 26.67) (xy 46.99 26.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "06abb0ed-1ed0-4bd6-9e7f-3839bd78a068")
-	)
-	(wire
-		(pts
 			(xy 210.82 154.94) (xy 224.79 154.94)
 		)
 		(stroke
@@ -2670,6 +2813,26 @@
 			(type default)
 		)
 		(uuid "2a1e1a7d-054c-4006-92bd-896369ce67dd")
+	)
+	(wire
+		(pts
+			(xy 43.18 17.78) (xy 43.18 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2be64b3d-37bb-4cde-a0c0-0fb824591798")
+	)
+	(wire
+		(pts
+			(xy 43.18 26.67) (xy 46.99 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c080398-53e0-4f65-8458-f8b16a2083fb")
 	)
 	(wire
 		(pts
@@ -2823,6 +2986,16 @@
 	)
 	(wire
 		(pts
+			(xy 34.29 17.78) (xy 43.18 17.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53ea26a3-b34f-4a75-8262-9d4ae33ff914")
+	)
+	(wire
+		(pts
 			(xy 34.29 102.87) (xy 46.99 102.87)
 		)
 		(stroke
@@ -2860,6 +3033,16 @@
 			(type default)
 		)
 		(uuid "6003823c-f16c-4d9c-ac57-6821fe87b95c")
+	)
+	(wire
+		(pts
+			(xy 21.59 171.45) (xy 26.67 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "619b0bfc-4367-422e-9e9e-11b65fc424c7")
 	)
 	(polyline
 		(pts
@@ -2910,6 +3093,16 @@
 			(type default)
 		)
 		(uuid "78bbce8a-013a-4df8-9b3b-4e97caabc471")
+	)
+	(wire
+		(pts
+			(xy 22.86 17.78) (xy 34.29 17.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b5ef15f-be02-4e02-9b1f-c2e693aea3e4")
 	)
 	(wire
 		(pts
@@ -3243,6 +3436,16 @@
 	)
 	(wire
 		(pts
+			(xy 26.67 171.45) (xy 46.99 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7d89264-0576-4e07-b1a4-cc7c9932827c")
+	)
+	(wire
+		(pts
 			(xy 173.99 181.61) (xy 173.99 184.15)
 		)
 		(stroke
@@ -3454,7 +3657,7 @@
 		(uuid "babbc8e9-58dd-4d73-aee8-fc1363a3bce0")
 	)
 	(label "nRESET"
-		(at 25.4 26.67 0)
+		(at 22.86 17.78 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3975,7 +4178,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "RT0805DRE07100RL"
+		(property "Part Number" "RT0805FRE10100KL"
 			(at 251.46 111.76 0)
 			(effects
 				(font
@@ -3994,6 +4197,73 @@
 			(project "Carte_puissance"
 				(path "/aaa0f7a4-a021-413b-80cf-aab59bb3339a/4ebf8b14-4fd3-46f9-9345-d294b03d40c9"
 					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 21.59 179.07 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2863348a-e3fc-4124-8688-48d45ede3d49")
+		(property "Reference" "#PWR70"
+			(at 21.59 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 21.59 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 21.59 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 21.59 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 21.59 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "71c5f6c7-2973-41a6-bcb8-380882f583c0")
+		)
+		(instances
+			(project "Carte_puissance"
+				(path "/aaa0f7a4-a021-413b-80cf-aab59bb3339a/4ebf8b14-4fd3-46f9-9345-d294b03d40c9"
+					(reference "#PWR70")
 					(unit 1)
 				)
 			)
@@ -4598,6 +4868,77 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 26.67 166.37 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "54b37acf-0519-41eb-9ea2-2d3b8a2206d1")
+		(property "Reference" "SW1"
+			(at 27.94 166.3699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 27.94 167.6399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_EVQP2"
+			(at 21.59 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 21.59 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 26.67 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6dde3684-ed9b-4db8-9111-812e44b2ee29")
+		)
+		(pin "2"
+			(uuid "ec6a9e9a-a698-4138-9fa7-89a7cbada815")
+		)
+		(instances
+			(project ""
+				(path "/aaa0f7a4-a021-413b-80cf-aab59bb3339a/4ebf8b14-4fd3-46f9-9345-d294b03d40c9"
+					(reference "SW1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3.3V")
 		(at 251.46 80.01 0)
 		(unit 1)
@@ -5007,7 +5348,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "RT0805DRE07100RL"
+		(property "Part Number" "RT0805FRE10100KL"
 			(at 256.54 87.63 0)
 			(effects
 				(font
@@ -5293,6 +5634,93 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 21.59 175.26 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "94cae6c6-7c66-43d6-8b32-fea782bc4d63")
+		(property "Reference" "R16"
+			(at 19.304 174.244 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10K"
+			(at 24.13 172.72 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 23.368 175.26 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.fr/datasheet/3/72/1/PYU_RT_1_TO_0_01_ROHS_L.pdf"
+			(at 21.59 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 21.59 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 21.59 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "RT0805FRE10100KL"
+			(at 21.59 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c5f9f442-4bdd-4af4-93ab-50c0360d8e45")
+		)
+		(pin "2"
+			(uuid "841b5513-4914-4c02-bedf-515af24078a5")
+		)
+		(instances
+			(project "Carte_puissance"
+				(path "/aaa0f7a4-a021-413b-80cf-aab59bb3339a/4ebf8b14-4fd3-46f9-9345-d294b03d40c9"
+					(reference "R16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 224.79 151.13 0)
 		(unit 1)
@@ -5445,6 +5873,77 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 34.29 22.86 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c4f809c2-aa15-4eec-9ef8-48d6976339b5")
+		(property "Reference" "SW2"
+			(at 35.56 22.8599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 35.56 24.1299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_EVQP2"
+			(at 29.21 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 29.21 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 34.29 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d1650165-d76f-403c-a50a-07c2952f3182")
+		)
+		(pin "2"
+			(uuid "464ee1d4-1945-4f5f-a3bc-0549b28ef53e")
+		)
+		(instances
+			(project "Carte_puissance"
+				(path "/aaa0f7a4-a021-413b-80cf-aab59bb3339a/4ebf8b14-4fd3-46f9-9345-d294b03d40c9"
+					(reference "SW2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 246.38 87.63 180)
 		(unit 1)
@@ -5507,7 +6006,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "RT0805DRE07100RL"
+		(property "Part Number" "RT0805FRE10100KL"
 			(at 246.38 87.63 0)
 			(effects
 				(font
@@ -5700,6 +6199,138 @@
 			(project "Carte_puissance"
 				(path "/aaa0f7a4-a021-413b-80cf-aab59bb3339a/4ebf8b14-4fd3-46f9-9345-d294b03d40c9"
 					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 26.67 161.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e373c72e-7c8d-4e05-bc1a-150dbbcbbd3a")
+		(property "Reference" "#PWR71"
+			(at 26.67 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 27.051 156.8958 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 26.67 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 26.67 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 26.67 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "98aa1810-edfc-4f78-b5ae-8628cc4ff14b")
+		)
+		(instances
+			(project "Carte_puissance"
+				(path "/aaa0f7a4-a021-413b-80cf-aab59bb3339a/4ebf8b14-4fd3-46f9-9345-d294b03d40c9"
+					(reference "#PWR71")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 34.29 27.94 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f0496515-393c-4a3a-a8db-d651079673e3")
+		(property "Reference" "#PWR69"
+			(at 34.29 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 34.29 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 34.29 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 34.29 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 34.29 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "131f80bd-36b0-4569-8ab5-e9e8d4228968")
+		)
+		(instances
+			(project "Carte_puissance"
+				(path "/aaa0f7a4-a021-413b-80cf-aab59bb3339a/4ebf8b14-4fd3-46f9-9345-d294b03d40c9"
+					(reference "#PWR69")
 					(unit 1)
 				)
 			)

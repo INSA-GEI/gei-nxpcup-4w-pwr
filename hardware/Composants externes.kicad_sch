@@ -17,7 +17,7 @@
 		)
 		(uuid "710de5f0-da78-4385-ab78-dd702419e48f")
 	)
-	(text "Nappe communication I2C avec FRDM-IMX8MP\n------------------------------------------------------------\nReference              Fabriquant       qté          Remarque\nIDSD-05-D-02.00-T-G    Samtec           1            Nappe IDC 5*2 pins, 5cm de long"
+	(text "Nappe communication I2C avec FRDM-IMX8MP\n------------------------------------------------------------\nReference              Fabriquant       qté          Remarque\nIDSD-05-D-03.00-T-G    Samtec           1            Nappe IDC 5*2 pins, 3 pouces de long\nIDSD-05-D-04.00-T-G    Samtec           1            Nappe IDC 5*2 pins, 4 pouces de long"
 		(exclude_from_sim no)
 		(at 19.304 99.568 0)
 		(effects

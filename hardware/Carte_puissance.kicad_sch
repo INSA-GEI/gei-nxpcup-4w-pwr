@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "ALAMAK Carte Puissance")
-		(date "2026-05-21")
-		(rev "2.0")
+		(date "2026-06-29")
+		(rev "2.3")
 		(company "INSA")
 	)
 	(lib_symbols
@@ -93,14 +93,6 @@
 				)
 			)
 		)
-	)
-	(no_connect
-		(at 139.7 153.67)
-		(uuid "504e2fbe-6fe0-4f4b-b58a-6cf425d37b51")
-	)
-	(no_connect
-		(at 139.7 156.21)
-		(uuid "8f3eb904-71c2-4624-98a1-e420701753fe")
 	)
 	(wire
 		(pts
@@ -958,16 +950,6 @@
 			)
 			(uuid "3083234f-4926-4f4e-a2cf-ba8c9da134dd")
 		)
-		(pin "ENCODER_B_PHB" output
-			(at 139.7 156.21 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "a153667b-b1d3-4246-8acb-b853df4502e3")
-		)
 		(pin "ENCODER_B_PHA" output
 			(at 139.7 124.46 180)
 			(effects
@@ -977,16 +959,6 @@
 				(justify left)
 			)
 			(uuid "876cb99c-c458-41bb-a0de-f710af3145d5")
-		)
-		(pin "ENCODER_A_PHB" output
-			(at 139.7 153.67 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "2ad90138-b8db-4e94-ae95-e6fdbde68ba4")
 		)
 		(pin "UART_TX" input
 			(at 176.53 114.3 90)
