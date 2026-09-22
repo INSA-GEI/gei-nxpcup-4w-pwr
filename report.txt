@@ -1,0 +1,1217 @@
+Info: Traitement du symbole "H1:MountingHole:MountingHole_3.2mm_M3".
+Info: Traitement du symbole "U4:Package_SO:TSSOP-8_3x3mm_P0.65mm".
+Info: Traitement du symbole "R6:Resistor_SMD:R_0805_2012Metric".
+Info: Traitement du symbole "J1:Battery_Pads:Battery_Pads".
+Info: Traitement du symbole "J9:Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical".
+Info: Traitement du symbole "C11:Capacitor_SMD:C_0805_2012Metric".
+Info: Traitement du symbole "H4:MountingHole:MountingHole_3.2mm_M3".
+Info: Traitement du symbole "C24:Capacitor_SMD:C_0805_2012Metric".
+Info: Traitement du symbole "R5:Resistor_SMD:R_0805_2012Metric".
+Info: Traitement du symbole "H3:MountingHole:MountingHole_3.2mm_M3".
+Info: Traitement du symbole "U5:Package_TO_SOT_SMD:SOT-23-5".
+Info: Traitement du symbole "C10:Capacitor_SMD:C_0805_2012Metric".
+Info: Traitement du symbole "J10:Connector_Wire:SolderWire-0.5sqmm_1x03_P4.8mm_D0.9mm_OD2.3mm".
+Info: Traitement du symbole "H2:MountingHole:MountingHole_3.2mm_M3".
+Info: Traitement du symbole "U2:Package_SO:SO-8_3.9x4.9mm_P1.27mm".
+Info: Traitement du symbole "C23:Capacitor_SMD:C_0805_2012Metric".
+Info: Traitement du symbole "C25:Capacitor_SMD:C_0805_2012Metric".
+Info: Traitement du symbole "C9:Capacitor_SMD:C_0805_2012Metric".
+Info: Traitement du symbole "R4:Resistor_SMD:R_0805_2012Metric".
+Info: Traitement du symbole "J11:FTSH-105-01-L-DV-007:FTSH10501LDV007KTR".
+Info: Traitement du symbole "C8:Capacitor_SMD:C_0805_2012Metric".
+Info: Traitement du symbole "R17:Resistor_SMD:R_0805_2012Metric".
+Info: Traitement du symbole "C26:Capacitor_SMD:C_0805_2012Metric".
+Info: Traitement du symbole "R3:Resistor_SMD:R_0805_2012Metric".
+Info: Traitement du symbole "FB2:Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder".
+Info: Traitement du symbole "U1:Package_TO_SOT_SMD:SOT-23-8".
+Info: Traitement du symbole "C7:Capacitor_SMD:C_0805_2012Metric".
+Info: Traitement du symbole "JP1:Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm".
+Info: Traitement du symbole "R2:Resistor_SMD:R_0805_2012Metric".
+Info: Traitement du symbole "C27:Capacitor_SMD:C_0805_2012Metric".
+Info: Traitement du symbole "J3:Connector_JST:JST_VH_B2PS-VH_1x02_P3.96mm_Horizontal".
+Info: Traitement du symbole "C18:Capacitor_SMD:C_0805_2012Metric".
+Info: Traitement du symbole "R11:Resistor_SMD:R_0805_2012Metric".
+Info: Traitement du symbole "J6:Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical_SMD".
+Info: Traitement du symbole "J5:Seeed Studio 110990037:SEEED_110990037".
+Info: Traitement du symbole "C17:Capacitor_SMD:C_0805_2012Metric".
+Info: Traitement du symbole "C19:Capacitor_SMD:C_0805_2012Metric".
+Info: Traitement du symbole "R10:Resistor_SMD:R_0805_2012Metric".
+Info: Traitement du symbole "R12:Resistor_SMD:R_0805_2012Metric".
+Info: Traitement du symbole "C16:Capacitor_SMD:CP_Elec_10x10".
+Info: Traitement du symbole "J4:Connector_JST:JST_VH_B2PS-VH_1x02_P3.96mm_Horizontal".
+Info: Traitement du symbole "C20:Capacitor_SMD:C_0805_2012Metric".
+Info: Traitement du symbole "R9:Resistor_SMD:R_0805_2012Metric".
+Info: Traitement du symbole "R13:Resistor_SMD:R_0805_2012Metric".
+Info: Traitement du symbole "C15:Capacitor_SMD:C_0805_2012Metric".
+Info: Traitement du symbole "R16:Resistor_SMD:R_0805_2012Metric".
+Info: Traitement du symbole "J7:SHDRRA5W60P0X200_1X5_1200X720X530P".
+Info: Traitement du symbole "C21:Capacitor_SMD:C_0805_2012Metric".
+Info: Traitement du symbole "R8:Resistor_SMD:R_0805_2012Metric".
+Info: Traitement du symbole "C14:Capacitor_SMD:C_0805_2012Metric".
+Info: Traitement du symbole "R14:Resistor_SMD:R_0805_2012Metric".
+Info: Traitement du symbole "J2:Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical".
+Info: Traitement du symbole "C22:Capacitor_SMD:C_0805_2012Metric".
+Info: Traitement du symbole "R7:Resistor_SMD:R_0805_2012Metric".
+Info: Traitement du symbole "C13:Capacitor_SMD:C_0805_2012Metric".
+Info: Traitement du symbole "J8:SHDRRA5W60P0X200_1X5_1200X720X530P".
+Info: Traitement du symbole "U3:Package_QFP:LQFP-64_10x10mm_P0.5mm".
+Info: Traitement du symbole "C12:Capacitor_SMD:C_0805_2012Metric".
+Info: Traitement du symbole "R15:Resistor_SMD:R_0805_2012Metric".
+Info: Traitement du symbole "Q1:Package_TO_SOT_SMD:TO-252-2".
+Info: Traitement du symbole "R1:Resistor_SMD:R_0805_2012Metric".
+Info: Traitement du symbole "C5:Capacitor_SMD:C_0805_2012Metric".
+Info: Traitement du symbole "D1:LED_SMD:LED_0805_2012Metric".
+Info: Traitement du symbole "R19:Resistor_SMD:R_0805_2012Metric".
+Info: Traitement du symbole "F1:3568:3568".
+Info: Traitement du symbole "PS2:TSR_3-24xxN:TSR324xxN".
+Info: Traitement du symbole "R23:Resistor_SMD:R_0805_2012Metric".
+Info: Traitement du symbole "C4:Capacitor_SMD:C_0805_2012Metric".
+Info: Traitement du symbole "D2:LED_SMD:LED_0805_2012Metric".
+Info: Traitement du symbole "C1:Capacitor_SMD:C_0805_2012Metric".
+Info: Traitement du symbole "Q4:Package_TO_SOT_SMD:TO-252-2".
+Info: Traitement du symbole "FB1:Capacitor_SMD:C_2220_5750Metric".
+Info: Traitement du symbole "C3:Capacitor_SMD:C_0805_2012Metric".
+Info: Traitement du symbole "R20:Resistor_SMD:R_0805_2012Metric".
+Info: Traitement du symbole "D5:Diode_SMD:D_SOD-123".
+Info: Traitement du symbole "R22:Resistor_SMD:R_0805_2012Metric".
+Info: Traitement du symbole "D3:Package_TO_SOT_SMD:TO-277A".
+Info: Traitement du symbole "C2:Capacitor_SMD:CP_Elec_10x10".
+Info: Traitement du symbole "Q3:Package_TO_SOT_SMD:TO-252-2".
+Info: Traitement du symbole "Q2:Package_SO:SOP-8_5.28x5.23mm_P1.27mm".
+Info: Traitement du symbole "D4:Package_TO_SOT_SMD:TO-277A".
+Info: Traitement du symbole "R21:Resistor_SMD:R_0805_2012Metric".
+Info: Traitement du symbole "R18:Resistor_SMD:R_0805_2012Metric".
+Info: Traitement du symbole "SW1:Button_Switch_THT:SW_TH_Tactile_Omron_B3F-10xx".
+Info: Traitement du symbole "PS1:TSR_3-24xxN:TSR324xxN".
+Info: Traitement du symbole "C6:Capacitor_SMD:C_0805_2012Metric".
+Mis à jour R17 fichier de feuille en io.kicad_sch.
+Change la référence schématique de REF** en R14.
+Mise a Jour des Champs de R20.
+Filtres d'empreinte R17 mis à jour en 'R_*'.
+Filtres d'empreinte R12 mis à jour en 'R_*'.
+Connecter R12 pin 1 à +3.3V.
+Connecter R12 pin 2 à /CPU/I2C_SCL.
+Mise à jour R20 association de symbole de  à /63de67ba-dfa1-4c66-8572-1a30f5cab1df/4e60a805-66c7-41a8-bf99-1e744c8a34dc.
+Modifie valeur R20 de R_0805_2012Metric en 10R.
+Ajouté R13 (empreinte 'Resistor_SMD:R_0805_2012Metric').
+Change la référence schématique de REF** en R13.
+Modifie valeur R13 de R_0805_2012Metric en 4.7K.
+Mise à jour R13 association de symbole de  à /63de67ba-dfa1-4c66-8572-1a30f5cab1df/da5607ca-e402-44f0-8305-ccb332a472a7.
+Connecter R19 pin 2 à GND.
+Change la référence schématique de REF** en R20.
+Mise a Jour des Champs de R13.
+Mis à jour R17 nom de feuille en IO.
+Ajouté R20 (empreinte 'Resistor_SMD:R_0805_2012Metric').
+Mis à jour R13 nom de feuille en IO.
+Mis à jour R13 fichier de feuille en io.kicad_sch.
+Ajouté R18 (empreinte 'Resistor_SMD:R_0805_2012Metric').
+Filtres d'empreinte R13 mis à jour en 'R_*'.
+Connecter R13 pin 1 à +3.3V.
+Connecter R13 pin 2 à /CPU/I2C_SDA.
+Mise a Jour des Champs de R17.
+Ajouté R14 (empreinte 'Resistor_SMD:R_0805_2012Metric').
+Filtres d'empreinte R20 mis à jour en 'R_*'.
+Change la référence schématique de REF** en R11.
+Modifie valeur R11 de R_0805_2012Metric en 100R.
+Mise à jour R11 association de symbole de  à /63de67ba-dfa1-4c66-8572-1a30f5cab1df/5a5c2fc4-b64e-4343-b3a0-0db957dad5be.
+Mise a Jour des Champs de R11.
+Mis à jour R11 nom de feuille en IO.
+Mis à jour R11 fichier de feuille en io.kicad_sch.
+Connecter R20 pin 1 à /CPU/CMD_CAMERA_LED.
+Ajout net /CPU/CMD_CAMERA_LED.
+Filtres d'empreinte R11 mis à jour en 'R_*'.
+Connecter R20 pin 2 à Net-(Q2-G).
+Connecter R11 pin 1 à Net-(J6-Pin_4).
+Ajout net /CPU/ONOFF_IMX8MP.
+Mis à jour R12 fichier de feuille en io.kicad_sch.
+Mis à jour R20 fichier de feuille en io.kicad_sch.
+Connecter R11 pin 2 à /CPU/ONOFF_IMX8MP.
+Connecter R17 pin 2 à GND.
+Ajouté R12 (empreinte 'Resistor_SMD:R_0805_2012Metric').
+Change la référence schématique de REF** en R12.
+Modifie valeur R12 de R_0805_2012Metric en 4.7K.
+Mise à jour R12 association de symbole de  à /63de67ba-dfa1-4c66-8572-1a30f5cab1df/05870972-df41-414c-a6b9-72451efc8337.
+Connecter R17 pin 1 à Net-(D2-K).
+Mise a Jour des Champs de R12.
+Mis à jour R20 nom de feuille en IO.
+Mis à jour R12 nom de feuille en IO.
+Mis à jour R9 nom de feuille en CPU.
+Mise à jour R18 association de symbole de  à /63de67ba-dfa1-4c66-8572-1a30f5cab1df/c333325a-7730-488f-a12c-cedfbd72f6cf.
+Mis à jour R15 nom de feuille en IO.
+Mis à jour R15 fichier de feuille en io.kicad_sch.
+Filtres d'empreinte R15 mis à jour en 'R_*'.
+Change la référence schématique de REF** en R19.
+Ajouté R17 (empreinte 'Resistor_SMD:R_0805_2012Metric').
+Mise a Jour des Champs de R18.
+Ajouté attribut de fabrication 'Ne pas placer' pour R15 .
+Ajouté R19 (empreinte 'Resistor_SMD:R_0805_2012Metric').
+Connecter R18 pin 1 à VCC.
+Connecter R15 pin 2 à /IO/I2C3_SDA.
+Connecter R15 pin 1 à /IO/3V3_IMX8MP.
+Connecter R18 pin 2 à /CPU/MESURE_ADC.
+Mise a Jour des Champs de R15.
+Filtres d'empreinte R18 mis à jour en 'R_*'.
+Ajouté R16 (empreinte 'Resistor_SMD:R_0805_2012Metric').
+Change la référence schématique de REF** en R16.
+Connecter R16 pin 1 à Net-(D1-K).
+Connecter R16 pin 2 à GND.
+Mis à jour R18 fichier de feuille en io.kicad_sch.
+Filtres d'empreinte R16 mis à jour en 'R_*'.
+Modifie valeur R16 de R_0805_2012Metric en 330R.
+Mise à jour R16 association de symbole de  à /63de67ba-dfa1-4c66-8572-1a30f5cab1df/39459430-f72d-4338-96ab-9568b59949ed.
+Mis à jour R18 nom de feuille en IO.
+Mise a Jour des Champs de R16.
+Mis à jour R16 nom de feuille en IO.
+Connecter R14 pin 2 à /IO/I2C3_SCL.
+Mis à jour R16 fichier de feuille en io.kicad_sch.
+Connecter R19 pin 1 à /CPU/MESURE_ADC.
+Mise à jour R17 association de symbole de  à /63de67ba-dfa1-4c66-8572-1a30f5cab1df/c93a03e7-f7d8-4956-9404-77585f16f109.
+Filtres d'empreinte R19 mis à jour en 'R_*'.
+Change la référence schématique de REF** en R18.
+Mise à jour R14 association de symbole de  à /63de67ba-dfa1-4c66-8572-1a30f5cab1df/07288048-3d55-45e5-8b96-344174dfd528.
+Mise a Jour des Champs de R14.
+Mis à jour R14 nom de feuille en IO.
+Mis à jour R14 fichier de feuille en io.kicad_sch.
+Filtres d'empreinte R14 mis à jour en 'R_*'.
+Mis à jour R19 fichier de feuille en io.kicad_sch.
+Ajouté attribut de fabrication 'Ne pas placer' pour R14 .
+Modifie valeur R14 de R_0805_2012Metric en 4.7K.
+Connecter R14 pin 1 à /IO/3V3_IMX8MP.
+Modifie valeur R17 de R_0805_2012Metric en 750R.
+Change la référence schématique de REF** en R17.
+Mis à jour R19 nom de feuille en IO.
+Mise a Jour des Champs de R19.
+Modifie valeur R18 de R_0805_2012Metric en 18K.
+Ajouté R15 (empreinte 'Resistor_SMD:R_0805_2012Metric').
+Change la référence schématique de REF** en R15.
+Mise à jour R19 association de symbole de  à /63de67ba-dfa1-4c66-8572-1a30f5cab1df/97d50b4f-8cef-48ad-a48e-d5d7c3f5a12e.
+Modifie valeur R19 de R_0805_2012Metric en 10K.
+Modifie valeur R15 de R_0805_2012Metric en 4.7K.
+Mise à jour R15 association de symbole de  à /63de67ba-dfa1-4c66-8572-1a30f5cab1df/5fc2fcac-c120-4a18-bf88-1c1e9f46bdbb.
+Connecter R1 pin 2 à Net-(Q1-G).
+Filtres d'empreinte R2 mis à jour en 'R_*'.
+Mis à jour R2 fichier de feuille en puissance.kicad_sch.
+Mis à jour R2 nom de feuille en Puissance.
+Mise a Jour des Champs de R2.
+Mise à jour R2 association de symbole de  à /79ff172e-6092-41ef-91e3-a41ed4e55444/b1cb0c73-878a-4c22-b88a-4c1c5124282c.
+Modifie valeur R2 de R_0805_2012Metric en 100K.
+Change la référence schématique de REF** en R2.
+Ajouté R2 (empreinte 'Resistor_SMD:R_0805_2012Metric').
+Connecter R1 pin 1 à Net-(Q1-S).
+Connecter R2 pin 2 à Net-(Q1-G).
+Filtres d'empreinte R1 mis à jour en 'R_*'.
+Mis à jour R1 fichier de feuille en puissance.kicad_sch.
+Mis à jour R1 nom de feuille en Puissance.
+Mise a Jour des Champs de R1.
+Mise à jour R1 association de symbole de  à /79ff172e-6092-41ef-91e3-a41ed4e55444/d1572456-2be8-4115-a0cd-ad0f33ccbde3.
+Modifie valeur R1 de R_0805_2012Metric en 100K.
+Change la référence schématique de REF** en R1.
+Ajouté R1 (empreinte 'Resistor_SMD:R_0805_2012Metric').
+Mis à jour R3 fichier de feuille en puissance.kicad_sch.
+Mise à jour R4 association de symbole de  à /79ff172e-6092-41ef-91e3-a41ed4e55444/7f9e6814-4480-4616-a3b0-1a12e366eee6.
+Modifie valeur R4 de R_0805_2012Metric en 10K.
+Change la référence schématique de REF** en R4.
+Ajouté R4 (empreinte 'Resistor_SMD:R_0805_2012Metric').
+Connecter R3 pin 1 à +3.3V.
+Connecter R3 pin 2 à /CPU/~{ONOFF_INT}.
+Ajout net /CPU/~{ONOFF_INT}.
+Filtres d'empreinte R3 mis à jour en 'R_*'.
+Connecter Q4 pin 2 à Net-(D4-A).
+Mis à jour R3 nom de feuille en Puissance.
+Mise a Jour des Champs de R3.
+Mise à jour R3 association de symbole de  à /79ff172e-6092-41ef-91e3-a41ed4e55444/4897ddfc-229a-4af2-885d-8897595f3e1f.
+Modifie valeur R3 de R_0805_2012Metric en 10K.
+Change la référence schématique de REF** en R3.
+Ajouté R3 (empreinte 'Resistor_SMD:R_0805_2012Metric').
+Connecter R2 pin 1 à Net-(U1-EN/~{EN}).
+Ajout net Net-(U1-EN/~{EN}).
+Change la référence schématique de REF** en Q3.
+Connecter Q3 pin 2 à Net-(D3-A).
+Connecter Q3 pin 3 à GNDPWR.
+Connecter Q3 pin 1 à Net-(Q3-G).
+Mis à jour Q3 fichier de feuille en puissance.kicad_sch.
+Mis à jour Q3 nom de feuille en Puissance.
+Mise a Jour des Champs de Q3.
+Mise à jour Q3 association de symbole de  à /79ff172e-6092-41ef-91e3-a41ed4e55444/73963487-4b79-464b-9108-9e65b67f23fa.
+Modifie valeur Q3 de TO-252-2 en IPD30N03S4L-09.
+Connecter Q3 pin 2 à Net-(D3-A).
+Ajouté Q3 (empreinte 'Package_TO_SOT_SMD:TO-252-2').
+Connecter Q2 pin 5 à Net-(J9-Pin_2).
+Connecter Q2 pin 7 à Net-(J9-Pin_2).
+Connecter Q2 pin 4 à Net-(Q2-G).
+Connecter Q2 pin 1 à GNDPWR.
+Connecter Q2 pin 2 à GNDPWR.
+Connecter Q2 pin 6 à Net-(J9-Pin_2).
+Connecter Q2 pin 3 à GNDPWR.
+Mis à jour Q4 nom de feuille en Puissance.
+Connecter Q4 pin 2 à Net-(D4-A).
+Connecter Q4 pin 2 à Net-(D4-A).
+Connecter Q4 pin 2 à Net-(D4-A).
+Connecter Q4 pin 3 à GNDPWR.
+Connecter Q4 pin 1 à Net-(Q4-G).
+Ajout net Net-(Q4-G).
+Connecter Q4 pin 2 à Net-(D4-A).
+Mis à jour Q4 fichier de feuille en puissance.kicad_sch.
+Mise a Jour des Champs de R4.
+Mise a Jour des Champs de Q4.
+Mise à jour Q4 association de symbole de  à /79ff172e-6092-41ef-91e3-a41ed4e55444/6024808e-4964-4859-97df-19d50a09b6b6.
+Modifie valeur Q4 de TO-252-2 en IPD30N03S4L-09.
+Change la référence schématique de REF** en Q4.
+Ajouté Q4 (empreinte 'Package_TO_SOT_SMD:TO-252-2').
+Connecter Q3 pin 2 à Net-(D3-A).
+Connecter Q3 pin 2 à Net-(D3-A).
+Connecter Q3 pin 2 à Net-(D3-A).
+Mis à jour R8 nom de feuille en CPU.
+Mise à jour R9 association de symbole de  à /4ebf8b14-4fd3-46f9-9345-d294b03d40c9/2634d92a-ad39-44b4-8ef7-a9699de2ae4b.
+Modifie valeur R9 de R_0805_2012Metric en 100R.
+Change la référence schématique de REF** en R9.
+Ajouté R9 (empreinte 'Resistor_SMD:R_0805_2012Metric').
+Connecter R8 pin 1 à Net-(J11-Pad4).
+Connecter R8 pin 2 à /CPU/SWCLK.
+Ajout net /CPU/SWCLK.
+Filtres d'empreinte R8 mis à jour en 'R_*'.
+Mis à jour R8 fichier de feuille en cpu.kicad_sch.
+Mise a Jour des Champs de R9.
+Mise a Jour des Champs de R8.
+Mise à jour R8 association de symbole de  à /4ebf8b14-4fd3-46f9-9345-d294b03d40c9/0616d7df-63b3-4011-9a3f-e52bf1241cbe.
+Modifie valeur R8 de R_0805_2012Metric en 100R.
+Change la référence schématique de REF** en R8.
+Ajouté R8 (empreinte 'Resistor_SMD:R_0805_2012Metric').
+Connecter R7 pin 2 à /CPU/SWDIO.
+Ajout net /CPU/SWDIO.
+Connecter R7 pin 1 à Net-(J11-Pad2).
+Modifie valeur R10 de R_0805_2012Metric en 100R.
+Connecter R10 pin 2 à /CPU/nRESET.
+Ajout net /CPU/nRESET.
+Connecter R10 pin 1 à Net-(J11-Pad10).
+Filtres d'empreinte R10 mis à jour en 'R_*'.
+Mis à jour R10 fichier de feuille en cpu.kicad_sch.
+Mis à jour R10 nom de feuille en CPU.
+Mise a Jour des Champs de R10.
+Mise à jour R10 association de symbole de  à /4ebf8b14-4fd3-46f9-9345-d294b03d40c9/9e829d76-ab8c-4bec-8b6f-1ae9e96ea882.
+Filtres d'empreinte R7 mis à jour en 'R_*'.
+Change la référence schématique de REF** en R10.
+Ajouté R10 (empreinte 'Resistor_SMD:R_0805_2012Metric').
+Connecter R9 pin 1 à Net-(J11-Pad6).
+Connecter R9 pin 2 à /CPU/SWO.
+Ajout net /CPU/SWO.
+Filtres d'empreinte R9 mis à jour en 'R_*'.
+Mis à jour R9 fichier de feuille en cpu.kicad_sch.
+Mis à jour R22 nom de feuille en IO.
+Modifie valeur R5 de R_0805_2012Metric en 10R.
+Connecter R5 pin 1 à Net-(Q3-G).
+Connecter R5 pin 2 à Net-(U2-OUT_A).
+Ajout net Net-(U2-OUT_A).
+Filtres d'empreinte R5 mis à jour en 'R_*'.
+Mis à jour R5 fichier de feuille en puissance.kicad_sch.
+Mis à jour R5 nom de feuille en Puissance.
+Mise a Jour des Champs de R5.
+Mise à jour R5 association de symbole de  à /79ff172e-6092-41ef-91e3-a41ed4e55444/0a67d06a-c6de-4a1c-bf31-20c06ea072a2.
+Ajouté R6 (empreinte 'Resistor_SMD:R_0805_2012Metric').
+Change la référence schématique de REF** en R5.
+Ajouté R5 (empreinte 'Resistor_SMD:R_0805_2012Metric').
+Connecter R4 pin 2 à /CPU/~{ONOFF_KILL}.
+Ajout net /CPU/~{ONOFF_KILL}.
+Connecter R4 pin 1 à +3.3V.
+Filtres d'empreinte R4 mis à jour en 'R_*'.
+Mis à jour R4 fichier de feuille en puissance.kicad_sch.
+Mis à jour R4 nom de feuille en Puissance.
+Connecter R6 pin 1 à Net-(U2-OUT_B).
+Mis à jour R7 fichier de feuille en cpu.kicad_sch.
+Mis à jour R7 nom de feuille en CPU.
+Mise a Jour des Champs de R7.
+Mise à jour R7 association de symbole de  à /4ebf8b14-4fd3-46f9-9345-d294b03d40c9/bed2daad-05e4-4315-8e0e-e90362bf3fa5.
+Modifie valeur R7 de R_0805_2012Metric en 100R.
+Change la référence schématique de REF** en R7.
+Ajouté R7 (empreinte 'Resistor_SMD:R_0805_2012Metric').
+Connecter R6 pin 2 à Net-(Q4-G).
+Ajouté R11 (empreinte 'Resistor_SMD:R_0805_2012Metric').
+Ajout net Net-(U2-OUT_B).
+Filtres d'empreinte R6 mis à jour en 'R_*'.
+Mis à jour R6 fichier de feuille en puissance.kicad_sch.
+Mis à jour R6 nom de feuille en Puissance.
+Mise a Jour des Champs de R6.
+Mise à jour R6 association de symbole de  à /79ff172e-6092-41ef-91e3-a41ed4e55444/915108a4-94d6-4e30-ba49-19cf83c85a4c.
+Modifie valeur R6 de R_0805_2012Metric en 10R.
+Change la référence schématique de REF** en R6.
+Mise a Jour des Champs de U4.
+Connecter U4 pin 6 à /IO/I2C3_SCL.
+Connecter U4 pin 4 à /CPU/I2C_SDA.
+Connecter U4 pin 7 à /IO/3V3_IMX8MP.
+Connecter U4 pin 5 à /IO/I2C3_SDA.
+Connecter U4 pin 3 à /CPU/I2C_SCL.
+Connecter U4 pin 8 à +3.3V.
+Filtres d'empreinte U4 mis à jour en 'TSSOP*3x3mm*P0.65mm*'.
+Mis à jour U4 fichier de feuille en io.kicad_sch.
+Mis à jour U4 nom de feuille en IO.
+Connecter U4 pin 1 à GND.
+Mise à jour U4 association de symbole de  à /63de67ba-dfa1-4c66-8572-1a30f5cab1df/0dfdfd93-7b2d-4b22-bfed-b5b8f03a7a8d.
+Modifie valeur U4 de TSSOP-8_3x3mm_P0.65mm en PCA9306DP.
+Change la référence schématique de REF** en U4.
+Ajouté U4 (empreinte 'Package_SO:TSSOP-8_3x3mm_P0.65mm').
+Connecter U3 pin 17 à /CPU/ENCODER_B_PHA.
+Connecter U3 pin 37 à unconnected-(U3-P3_13/LPUART2_CTS_B/CT1_MAT3/PWM0_X1-Pad37).
+Ajout net unconnected-(U3-P3_13/LPUART2_CTS_B/CT1_MAT3/PWM0_X1-Pad37).
+Connecter U3 pin 24 à unconnected-(U3-P2_16/LPSPI1_SDI/LPUART1_RTS_B/CT0_MAT2/ADC0_A6-Pad24).
+Filtres d'empreinte U5 mis à jour en 'SOT* SG-*'.
+Suppression net inutilisé 'GNDA'.
+Suppression net inutilisé '/SERVO_PWM'.
+Suppression net inutilisé '/DISABLE_MOT_L'.
+Suppression net inutilisé '+3V3'.
+Connecter U5 pin 1 à +5V.
+Connecter U5 pin 5 à +5V.
+Connecter U5 pin 4 à Net-(R21-Pad1).
+Connecter U5 pin 3 à GND.
+Connecter U5 pin 2 à /CPU/SERVO_PWM.
+Ajout net unconnected-(U3-P2_16/LPSPI1_SDI/LPUART1_RTS_B/CT0_MAT2/ADC0_A6-Pad24).
+Mis à jour U5 fichier de feuille en io.kicad_sch.
+Mis à jour U5 nom de feuille en IO.
+Mise a Jour des Champs de U5.
+Mise à jour U5 association de symbole de  à /63de67ba-dfa1-4c66-8572-1a30f5cab1df/b62061a5-3430-46db-9193-afe1ef2a6436.
+Modifie valeur U5 de SOT-23-5 en 74AHC1G126.
+Change la référence schématique de REF** en U5.
+Ajouté U5 (empreinte 'Package_TO_SOT_SMD:SOT-23-5').
+Connecter U4 pin 2 à +3.3V.
+Connecter U3 pin 21 à unconnected-(U3-P2_7/TRIG_IN5/CT_INP19/CT1_MAT3/VREFI/ADC0_A7-Pad21).
+Ajout net unconnected-(U3-P3_29/WUU0_IN27/ISPMODE_N/CT_INP3/ADC0_A14-Pad32).
+Connecter U3 pin 22 à unconnected-(U3-P2_12/WUU0_IN20/USB0_VBUS_DET/LPSPI1_SCK/LPUART1_RXD/CT0_MAT0/ADC0_A5-Pad22).
+Ajout net unconnected-(U3-P2_12/WUU0_IN20/USB0_VBUS_DET/LPSPI1_SCK/LPUART1_RXD/CT0_MAT0/ADC0_A5-Pad22).
+Connecter U3 pin 25 à +3.3V.
+Connecter U3 pin 7 à unconnected-(U3-P1_13/TRIG_IN3/LPUART2_TXD/CT2_MAT3/ADC0_A11-Pad7).
+Ajout net unconnected-(U3-P1_13/TRIG_IN3/LPUART2_TXD/CT2_MAT3/ADC0_A11-Pad7).
+Connecter U3 pin 20 à /CPU/MESURE_ADC.
+Connecter U3 pin 27 à unconnected-(U3-USB0_DP/WUU0_IN29-Pad27).
+Ajout net unconnected-(U3-USB0_DP/WUU0_IN29-Pad27).
+Connecter U3 pin 32 à unconnected-(U3-P3_29/WUU0_IN27/ISPMODE_N/CT_INP3/ADC0_A14-Pad32).
+Ajout net unconnected-(U3-P2_7/TRIG_IN5/CT_INP19/CT1_MAT3/VREFI/ADC0_A7-Pad21).
+Connecter U3 pin 40 à unconnected-(U3-P3_10/TRIG_IN5/LPSPI1_SCK/LPUART1_RTS_B/CT1_MAT0/PWM0_A2-Pad40).
+Ajout net unconnected-(U3-P3_10/TRIG_IN5/LPSPI1_SCK/LPUART1_RTS_B/CT1_MAT0/PWM0_A2-Pad40).
+Connecter U3 pin 55 à unconnected-(U3-P0_17/LPI2C0_SCL/LPSPI0_PCS3/CT0_MAT1/UTICK_CAP3/I3C0_SCL-Pad55).
+Ajout net unconnected-(U3-P0_17/LPI2C0_SCL/LPSPI0_PCS3/CT0_MAT1/UTICK_CAP3/I3C0_SCL-Pad55).
+Connecter U3 pin 60 à +3.3V.
+Connecter U3 pin 53 à unconnected-(U3-P0_6/LPI2C0_HREQ/LPSPI0_PCS1/CT_INP2/CMP1_OUT/CLKOUT/ADC0_A15-Pad53).
+Ajout net unconnected-(U3-P0_6/LPI2C0_HREQ/LPSPI0_PCS1/CT_INP2/CMP1_OUT/CLKOUT/ADC0_A15-Pad53).
+Ajout net unconnected-(U3-P3_0/WUU0_IN22/TRIG_IN0/CT_INP16/PWM0_A0-Pad46).
+Connecter U3 pin 18 à unconnected-(U3-P2_4/CT_INP14/CT1_MAT0-Pad18).
+Ajout net unconnected-(U3-P2_4/CT_INP14/CT1_MAT0-Pad18).
+Connecter U3 pin 38 à unconnected-(U3-P3_12/LPUART2_RTS_B/CT1_MAT2/PWM0_X0-Pad38).
+Ajout net unconnected-(U3-P3_12/LPUART2_RTS_B/CT1_MAT2/PWM0_X0-Pad38).
+Connecter U3 pin 36 à unconnected-(U3-P3_14/WUU0_IN25/LPUART2_RXD/CT_INP6/PWM0_X2-Pad36).
+Ajout net unconnected-(U3-P3_14/WUU0_IN25/LPUART2_RXD/CT_INP6/PWM0_X2-Pad36).
+Connecter U3 pin 13 à +3.3V.
+Connecter U3 pin 46 à unconnected-(U3-P3_0/WUU0_IN22/TRIG_IN0/CT_INP16/PWM0_A0-Pad46).
+Suppression net inutilisé 'Net-(D3-K)'.
+Connecter U3 pin 3 à /CPU/I2C_SCL.
+Connecter U3 pin 16 à /CPU/ENCODER_A_PHA.
+Connecter U3 pin 59 à /CPU/CMD_CAMERA_LED.
+Connecter U3 pin 45 à unconnected-(U3-P3_1/TRIG_IN1/CT_INP17/PWM0_B0/FREQME_CLK_OUT0-Pad45).
+Ajout net unconnected-(U3-P3_1/TRIG_IN1/CT_INP17/PWM0_B0/FREQME_CLK_OUT0-Pad45).
+Connecter U3 pin 12 à Net-(U3-VDD_ANA/VREFH).
+Connecter U3 pin 41 à unconnected-(U3-P3_9/TRIG_IN4/LPSPI1_SDI/LPUART1_TXD/CT_INP5/PWM0_B1-Pad41).
+Ajout net unconnected-(U3-P3_9/TRIG_IN4/LPSPI1_SDI/LPUART1_TXD/CT_INP5/PWM0_B1-Pad41).
+Suppression net inutilisé 'unconnected-(U2-P3_10{slash}TRIG_IN5{slash}LPSPI1_SCK{slash}LPUART1_RTS_B{slash}CT1_MAT0{slash}PWM0_A2-Pad40)'.
+Suppression net inutilisé 'unconnected-(U2-P3_29{slash}WUU0_IN27{slash}ISPMODE_N{slash}CT_INP3{slash}ADC0_A14-Pad32)'.
+Suppression net inutilisé 'unconnected-(U2-P3_28{slash}WUU0_IN26{slash}TRIG_IN11{slash}LPI2C0_SDA{slash}CT_INP12-Pad33)'.
+Suppression net inutilisé 'unconnected-(U2-P3_27{slash}TRIG_OUT7{slash}LPI2C0_SCL{slash}CT_INP13-Pad34)'.
+Suppression net inutilisé 'unconnected-(U2-P3_1{slash}TRIG_IN1{slash}CT_INP17{slash}PWM0_B0{slash}FREQME_CLK_OUT0-Pad45)'.
+Suppression net inutilisé 'unconnected-(U2-P3_15{slash}LPUART2_TXD{slash}CT_INP7-Pad35)'.
+Suppression net inutilisé 'unconnected-(U2-P3_14{slash}WUU0_IN25{slash}LPUART2_RXD{slash}CT_INP6{slash}PWM0_X2-Pad36)'.
+Suppression net inutilisé 'unconnected-(U2-P3_13{slash}LPUART2_CTS_B{slash}CT1_MAT3{slash}PWM0_X1-Pad37)'.
+Suppression net inutilisé 'unconnected-(U2-P3_12{slash}LPUART2_RTS_B{slash}CT1_MAT2{slash}PWM0_X0-Pad38)'.
+Suppression net inutilisé 'unconnected-(U2-P3_11{slash}WUU0_IN24{slash}TRIG_IN6{slash}LPSPI1_PCS0{slash}LPUART1_CTS_B{slash}CT1_MAT1{slash}PWM0_B2-Pad39)'.
+Suppression net inutilisé 'unconnected-(U2-P3_30{slash}TRIG_OUT6{slash}CT0_MAT2{slash}ADC0_A13-Pad31)'.
+Suppression net inutilisé 'unconnected-(U2-P3_0{slash}WUU0_IN22{slash}TRIG_IN0{slash}CT_INP16{slash}PWM0_A0-Pad46)'.
+Suppression net inutilisé 'unconnected-(U2-P2_7{slash}TRIG_IN5{slash}CT_INP19{slash}CT1_MAT3{slash}VREFI{slash}ADC0_A7-Pad21)'.
+Suppression net inutilisé 'unconnected-(U2-P2_6{slash}TRIG_OUT4{slash}LPSPI1_PCS1{slash}CT_INP18{slash}CT1_MAT2{slash}ADC0_A3-Pad20)'.
+Suppression net inutilisé 'unconnected-(U2-P2_5{slash}CT_INP15{slash}CT1_MAT1-Pad19)'.
+Suppression net inutilisé 'unconnected-(U2-P2_4{slash}CT_INP14{slash}CT1_MAT0-Pad18)'.
+Suppression net inutilisé 'unconnected-(U2-P2_3{slash}WUU0_IN19{slash}TRIG_IN7{slash}LPUART0_CTS_B{slash}LPUART2_RXD{slash}CT_INP13{slash}CT2_MAT3{slash}ADC0_A2{slash}CMP1_IN0-Pad17)'.
+Suppression net inutilisé 'unconnected-(U2-P2_2{slash}TRIG_IN6{slash}LPUART0_RTS_B{slash}LPUART2_TXD{slash}CT_INP12{slash}CT2_MAT2{slash}ADC0_A4{slash}CMP0_IN0-Pad16)'.
+Suppression net inutilisé 'unconnected-(U2-P2_1{slash}TRIG_IN7{slash}LPUART0_TXD{slash}CT_INP17{slash}CT2_MAT1{slash}ADC0_A1-Pad15)'.
+Suppression net inutilisé 'unconnected-(U2-VDD-Pad29)'.
+Suppression net inutilisé 'unconnected-(U2-VSS-Pad61)'.
+Suppression net inutilisé 'unconnected-(U2-VSS-Pad47)'.
+Suppression net inutilisé 'unconnected-(U2-VSS-Pad28)'.
+Suppression net inutilisé 'unconnected-(U2-VSS-Pad11)'.
+Suppression net inutilisé 'unconnected-(U2-VDD_USB-Pad25)'.
+Suppression net inutilisé 'unconnected-(U2-VDD_ANA{slash}VREFH-Pad12)'.
+Suppression net inutilisé 'unconnected-(U2-VDD-Pad60)'.
+Suppression net inutilisé 'unconnected-(U2-VDD-Pad48)'.
+Suppression net inutilisé 'unconnected-(U2-P2_16{slash}LPSPI1_SDI{slash}LPUART1_RTS_B{slash}CT0_MAT2{slash}ADC0_A6-Pad24)'.
+Suppression net inutilisé 'unconnected-(U2-VDD-Pad13)'.
+Suppression net inutilisé 'unconnected-(U2-USB0_DP{slash}WUU0_IN29-Pad27)'.
+Suppression net inutilisé 'unconnected-(U2-USB0_DM{slash}WUU0_IN28-Pad26)'.
+Suppression net inutilisé 'unconnected-(U2-P3_9{slash}TRIG_IN4{slash}LPSPI1_SDI{slash}LPUART1_TXD{slash}CT_INP5{slash}PWM0_B1-Pad41)'.
+Suppression net inutilisé 'unconnected-(U2-P3_8{slash}WUU0_IN23{slash}TRIG_IN3{slash}LPSPI1_SDO{slash}LPUART1_RXD{slash}CT_INP4{slash}PWM0_A1{slash}CLKOUT-Pad42)'.
+Suppression net inutilisé 'unconnected-(U2-P3_7{slash}TRIG_IN2{slash}LPSPI1_PCS2{slash}PWM0_B0-Pad43)'.
+Suppression net inutilisé 'unconnected-(U2-P3_6{slash}CLKOUT{slash}LPSPI1_PCS3{slash}PWM0_A0{slash}FREQME_CLK_OUT1-Pad44)'.
+Suppression net inutilisé 'unconnected-(U2-P3_31{slash}LPTMR0_ALT2{slash}TRIG_IN10{slash}CT0_MAT3{slash}ADC0_A12-Pad30)'.
+Suppression net inutilisé 'unconnected-(U1-NC-Pad8)'.
+Suppression net inutilisé 'unconnected-(U2-P1_10{slash}LPUART1_RTS_B{slash}LPI2C0_SDAS{slash}CT2_MAT0{slash}ADC0_A8-Pad4)'.
+Suppression net inutilisé 'unconnected-(U2-P1_0{slash}WUU0_IN6{slash}LPTMR0_ALT3{slash}TRIG_IN0{slash}LPSPI0_SDO{slash}LPI2C0_SDA{slash}CT_INP4{slash}CT0_MAT2{slash}ADC0_A16{slash}CMP0_IN3-Pad56)'.
+Suppression net inutilisé 'unconnected-(U2-P0_6{slash}LPI2C0_HREQ{slash}LPSPI0_PCS1{slash}CT_INP2{slash}CMP1_OUT{slash}CLKOUT{slash}ADC0_A15-Pad53)'.
+Suppression net inutilisé 'unconnected-(U2-P0_3{slash}TDI{slash}LPUART0_TXD{slash}LPSPI0_SDO{slash}CT0_MAT1{slash}UTICK_CAP1{slash}CMP0_OUT{slash}CMP1_IN1-Pad52)'.
+Suppression net inutilisé 'unconnected-(U2-P0_2{slash}TDO{slash}SWO{slash}LPUART0_RXD{slash}LPSPI0_SCK{slash}CT0_MAT0{slash}UTICK_CAP0{slash}I3C0_PUR-Pad51)'.
+Suppression net inutilisé 'unconnected-(U2-P0_1{slash}TCLK{slash}SWCLK{slash}LPUART0_CTS_B{slash}LPSPI0_SDI{slash}CT_INP1-Pad50)'.
+Suppression net inutilisé 'unconnected-(U2-P0_17{slash}LPI2C0_SCL{slash}LPSPI0_PCS3{slash}CT0_MAT1{slash}UTICK_CAP3{slash}I3C0_SCL-Pad55)'.
+Suppression net inutilisé 'unconnected-(U2-P0_16{slash}WUU0_IN2{slash}LPI2C0_SDA{slash}LPSPI0_PCS2{slash}CT0_MAT0{slash}UTICK_CAP2{slash}I3C0_SDA-Pad54)'.
+Suppression net inutilisé 'unconnected-(U2-P0_0{slash}TMS{slash}SWDIO{slash}LPUART0_RTS_B{slash}LPSPI0_PCS0{slash}CT_INP0-Pad49)'.
+Suppression net inutilisé 'unconnected-(U2-P1_11{slash}WUU0_IN11{slash}TRIG_OUT2{slash}LPUART1_CTS_B{slash}LPI2C0_SCLS{slash}CT2_MAT1{slash}I3C0_PUR{slash}ADC0_A9-Pad5)'.
+Suppression net inutilisé 'unconnected-(U1-NC-Pad1)'.
+Suppression net inutilisé 'unconnected-(U1-IN_B-Pad4)'.
+Suppression net inutilisé 'unconnected-(U1-IN_A-Pad2)'.
+Suppression net inutilisé 'Net-(U1-OUT_B)'.
+Suppression net inutilisé 'Net-(U1-OUT_A)'.
+Suppression net inutilisé 'Net-(Q3-Pad3)'.
+Suppression net inutilisé 'Net-(Q2-Pad3)'.
+Suppression net inutilisé 'Net-(D5-A)'.
+Suppression net inutilisé 'unconnected-(U2-P1_4{slash}WUU0_IN8{slash}FREQME_CLK_IN0{slash}LPSPI0_PCS3{slash}LPUART2_RXD{slash}CT1_MAT2{slash}ADC0_A20{slash}CMP0_IN2-Pad62)'.
+Suppression net inutilisé 'unconnected-(U2-P2_13{slash}TRIG_IN8{slash}LPSPI1_SDO{slash}LPUART1_TXD{slash}CT0_MAT1-Pad23)'.
+Suppression net inutilisé 'unconnected-(U2-P2_12{slash}WUU0_IN20{slash}USB0_VBUS_DET{slash}LPSPI1_SCK{slash}LPUART1_RXD{slash}CT0_MAT0{slash}ADC0_A5-Pad22)'.
+Suppression net inutilisé 'unconnected-(U2-P2_0{slash}WUU0_IN18{slash}TRIG_IN6{slash}LPUART0_RXD{slash}CT_INP16{slash}CT2_MAT0{slash}ADC0_A0-Pad14)'.
+Suppression net inutilisé 'unconnected-(U2-P1_9{slash}LPUART1_TXD{slash}LPI2C0_SCL{slash}CT_INP9{slash}CT0_MAT3{slash}I3C0_SCL-Pad3)'.
+Suppression net inutilisé 'unconnected-(U2-P1_8{slash}WUU0_IN10{slash}LPUART1_RXD{slash}LPI2C0_SDA{slash}CT_INP8{slash}CT0_MAT2{slash}I3C0_SDA-Pad2)'.
+Suppression net inutilisé 'unconnected-(U2-P1_7{slash}WUU0_IN9{slash}TRIG_OUT2{slash}LPUART2_CTS_B{slash}CT_INP7{slash}ADC0_A23-Pad1)'.
+Suppression net inutilisé 'unconnected-(U2-P1_6{slash}TRIG_IN2{slash}LPSPI0_PCS1{slash}LPUART2_RTS_B{slash}CT_INP6{slash}ADC0_A22-Pad64)'.
+Suppression net inutilisé 'unconnected-(U2-P1_5{slash}FREQME_CLK_IN1{slash}LPSPI0_PCS2{slash}LPUART2_TXD{slash}CT1_MAT3{slash}ADC0_A21{slash}CMP1_IN2-Pad63)'.
+Connecter U3 pin 14 à /CPU/DEBUG_UART_RXD.
+Suppression net inutilisé 'unconnected-(U2-P1_3{slash}WUU0_IN7{slash}TRIG_OUT1{slash}LPSPI0_PCS0{slash}LPI2C0_SCLS{slash}CT1_MAT1{slash}CT_INP1{slash}ADC0_A19{slash}CMP0_IN1-Pad59)'.
+Suppression net inutilisé 'unconnected-(U2-P1_31{slash}TRIG_IN4{slash}LPI2C0_SCL{slash}CT_INP17{slash}I3C0_SCL{slash}EXTAL48M-Pad10)'.
+Suppression net inutilisé 'unconnected-(U2-P1_30{slash}TRIG_OUT3{slash}LPI2C0_SDA{slash}CT_INP16{slash}I3C0_SDA{slash}XTAL48M-Pad9)'.
+Suppression net inutilisé 'unconnected-(U2-P1_2{slash}TRIG_OUT0{slash}LPSPI0_SDI{slash}LPI2C0_SDAS{slash}CT1_MAT0{slash}CT_INP0{slash}ADC0_A18-Pad58)'.
+Suppression net inutilisé 'unconnected-(U2-P1_29{slash}RESET_B{slash}SPC_LPREQ-Pad8)'.
+Suppression net inutilisé 'unconnected-(U2-P1_1{slash}TRIG_IN1{slash}LPSPI0_SCK{slash}LPI2C0_SCL{slash}CT_INP5{slash}CT0_MAT3{slash}ADC0_A17{slash}CMP1_IN3-Pad57)'.
+Suppression net inutilisé 'unconnected-(U2-P1_13{slash}TRIG_IN3{slash}LPUART2_TXD{slash}CT2_MAT3{slash}ADC0_A11-Pad7)'.
+Suppression net inutilisé 'unconnected-(U2-P1_12{slash}WUU0_IN12{slash}LPUART2_RXD{slash}CT2_MAT2{slash}ADC0_A10-Pad6)'.
+Change la référence schématique de REF** en U1.
+Connecter U1 pin 1 à Net-(Q1-S).
+Connecter U1 pin 6 à Net-(U1-EN/~{EN}).
+Connecter U1 pin 3 à unconnected-(U1-ONT-Pad3).
+Ajout net unconnected-(U1-ONT-Pad3).
+Mis à jour U1 fichier de feuille en puissance.kicad_sch.
+Mis à jour U1 nom de feuille en Puissance.
+Mise a Jour des Champs de U1.
+Mise à jour U1 association de symbole de  à /79ff172e-6092-41ef-91e3-a41ed4e55444/4da7d383-48c5-4600-b2b3-cc1900fa678b.
+Modifie valeur U1 de SOT-23-8 en LTC2954CTS8-2#TRMPBF.
+Connecter U1 pin 4 à GNDPWR.
+Ajouté U1 (empreinte 'Package_TO_SOT_SMD:SOT-23-8').
+Connecter SW1 pin 1 à GNDPWR.
+Connecter SW1 pin 1 à GNDPWR.
+Connecter SW1 pin 2 à Net-(SW1A-D).
+Connecter SW1 pin 2 à Net-(SW1A-D).
+Ajout net Net-(SW1A-D).
+Mis à jour SW1 fichier de feuille en puissance.kicad_sch.
+Mis à jour SW1 nom de feuille en Puissance.
+Mise a Jour des Champs de U2.
+Connecter U2 pin 8 à unconnected-(U2-NC-Pad8).
+Ajout net unconnected-(U2-NC-Pad8).
+Connecter U2 pin 3 à GNDPWR.
+Connecter U2 pin 1 à unconnected-(U2-NC-Pad1).
+Ajout net unconnected-(U2-NC-Pad1).
+Filtres d'empreinte U2 mis à jour en 'DIP*W7.62mm* SOIC*3.9x4.9mm*P1.27mm* MSOP*P0.65mm*'.
+Mis à jour U2 fichier de feuille en puissance.kicad_sch.
+Mis à jour U2 nom de feuille en Puissance.
+Mise a Jour des Champs de SW1.
+Mise à jour U2 association de symbole de  à /79ff172e-6092-41ef-91e3-a41ed4e55444/880835a3-5f76-41b9-b55b-42a6707371c2.
+Modifie valeur U2 de SO-8_3.9x4.9mm_P1.27mm en MIC4427.
+Change la référence schématique de REF** en U2.
+Ajouté U2 (empreinte 'Package_SO:SO-8_3.9x4.9mm_P1.27mm').
+Connecter U1 pin 8 à /CPU/~{ONOFF_KILL}.
+Connecter U1 pin 5 à /CPU/~{ONOFF_INT}.
+Connecter U1 pin 2 à Net-(SW1A-D).
+Connecter U1 pin 7 à Net-(U1-PDT).
+Connecter R21 pin 1 à Net-(R21-Pad1).
+Filtres d'empreinte R22 mis à jour en 'R_*'.
+Mis à jour R22 fichier de feuille en io.kicad_sch.
+Connecter PS2 pin 2 à GNDPWR.
+Mise a Jour des Champs de R22.
+Mise à jour R22 association de symbole de  à /63de67ba-dfa1-4c66-8572-1a30f5cab1df/0377432b-ddd6-4edb-9d9c-48b022318a88.
+Modifie valeur R22 de R_0805_2012Metric en 100R.
+Change la référence schématique de REF** en R22.
+Ajouté R22 (empreinte 'Resistor_SMD:R_0805_2012Metric').
+Connecter R21 pin 2 à Net-(J10-Pin_1).
+Connecter R22 pin 2 à Net-(J7-Pad3).
+Ajout net Net-(R21-Pad1).
+Filtres d'empreinte R21 mis à jour en 'R_*'.
+Mis à jour R21 fichier de feuille en io.kicad_sch.
+Mis à jour R21 nom de feuille en IO.
+Mise a Jour des Champs de R21.
+Mise à jour R21 association de symbole de  à /63de67ba-dfa1-4c66-8572-1a30f5cab1df/9502fd80-3039-40e5-a435-78f9f4798b23.
+Modifie valeur R21 de R_0805_2012Metric en 100R.
+Change la référence schématique de REF** en R21.
+Mis à jour R23 fichier de feuille en io.kicad_sch.
+Mise à jour SW1 association de symbole de  à /79ff172e-6092-41ef-91e3-a41ed4e55444/c9497cee-8f9e-4160-92eb-0b46d327aa07.
+Modifie valeur SW1 de SW_TH_Tactile_Omron_B3F-10xx en B3F-1022.
+Change la référence schématique de REF** en SW1.
+Ajouté SW1 (empreinte 'Button_Switch_THT:SW_TH_Tactile_Omron_B3F-10xx').
+Connecter R23 pin 2 à Net-(J8-Pad3).
+Connecter R23 pin 1 à /CPU/ENCODER_B_PHA.
+Ajout net /CPU/ENCODER_B_PHA.
+Filtres d'empreinte R23 mis à jour en 'R_*'.
+Connecter U2 pin 6 à +BATT.
+Mis à jour R23 nom de feuille en IO.
+Mise a Jour des Champs de R23.
+Mise à jour R23 association de symbole de  à /63de67ba-dfa1-4c66-8572-1a30f5cab1df/3c946990-2514-41a6-9e77-e7b29f462b46.
+Modifie valeur R23 de R_0805_2012Metric en 100R.
+Change la référence schématique de REF** en R23.
+Ajouté R23 (empreinte 'Resistor_SMD:R_0805_2012Metric').
+Connecter R22 pin 1 à /CPU/ENCODER_A_PHA.
+Ajout net /CPU/ENCODER_A_PHA.
+Connecter U3 pin 29 à +3.3V.
+Ajout net unconnected-(U3-P3_15/LPUART2_TXD/CT_INP7-Pad35).
+Connecter U3 pin 56 à unconnected-(U3-P1_0/WUU0_IN6/LPTMR0_ALT3/TRIG_IN0/LPSPI0_SDO/LPI2C0_SDA/CT_INP4/CT0_MAT2/ADC0_A16/CMP0_IN3-Pad56).
+Ajout net unconnected-(U3-P1_0/WUU0_IN6/LPTMR0_ALT3/TRIG_IN0/LPSPI0_SDO/LPI2C0_SDA/CT_INP4/CT0_MAT2/ADC0_A16/CMP0_IN3-Pad56).
+Connecter U3 pin 10 à unconnected-(U3-P1_31/TRIG_IN4/LPI2C0_SCL/CT_INP17/I3C0_SCL/EXTAL48M-Pad10).
+Ajout net unconnected-(U3-P1_31/TRIG_IN4/LPI2C0_SCL/CT_INP17/I3C0_SCL/EXTAL48M-Pad10).
+Connecter U3 pin 63 à /CPU/~{ONOFF_KILL}.
+Connecter U3 pin 19 à unconnected-(U3-P2_5/CT_INP15/CT1_MAT1-Pad19).
+Ajout net unconnected-(U3-P2_5/CT_INP15/CT1_MAT1-Pad19).
+Connecter U3 pin 28 à GND.
+Connecter U3 pin 35 à unconnected-(U3-P3_15/LPUART2_TXD/CT_INP7-Pad35).
+Connecter U3 pin 34 à unconnected-(U3-P3_27/TRIG_OUT7/LPI2C0_SCL/CT_INP13-Pad34).
+Ajout net unconnected-(U3-P3_27/TRIG_OUT7/LPI2C0_SCL/CT_INP13-Pad34).
+Connecter U3 pin 64 à unconnected-(U3-P1_6/TRIG_IN2/LPSPI0_PCS1/LPUART2_RTS_B/CT_INP6/ADC0_A22-Pad64).
+Ajout net unconnected-(U3-P1_6/TRIG_IN2/LPSPI0_PCS1/LPUART2_RTS_B/CT_INP6/ADC0_A22-Pad64).
+Connecter U3 pin 33 à unconnected-(U3-P3_28/WUU0_IN26/TRIG_IN11/LPI2C0_SDA/CT_INP12-Pad33).
+Ajout net unconnected-(U3-P3_28/WUU0_IN26/TRIG_IN11/LPI2C0_SDA/CT_INP12-Pad33).
+Connecter U3 pin 42 à /CPU/SERVO_PWM.
+Ajout net /CPU/SERVO_PWM.
+Connecter U3 pin 48 à +3.3V.
+Ajout net /CPU/DEBUG_UART_RXD.
+Connecter U3 pin 8 à /CPU/nRESET.
+Connecter U3 pin 23 à unconnected-(U3-P2_13/TRIG_IN8/LPSPI1_SDO/LPUART1_TXD/CT0_MAT1-Pad23).
+Ajout net unconnected-(U3-P2_13/TRIG_IN8/LPSPI1_SDO/LPUART1_TXD/CT0_MAT1-Pad23).
+Connecter U3 pin 44 à /CPU/MOTOR_A_PWM.
+Connecter U3 pin 31 à unconnected-(U3-P3_30/TRIG_OUT6/CT0_MAT2/ADC0_A13-Pad31).
+Ajout net unconnected-(U3-P3_30/TRIG_OUT6/CT0_MAT2/ADC0_A13-Pad31).
+Connecter U3 pin 51 à /CPU/SWO.
+Connecter U3 pin 47 à GND.
+Connecter U3 pin 62 à /CPU/~{ONOFF_INT}.
+Connecter U3 pin 57 à /CPU/ALERT_LED.
+Connecter U3 pin 6 à unconnected-(U3-P1_12/WUU0_IN12/LPUART2_RXD/CT2_MAT2/ADC0_A10-Pad6).
+Ajout net unconnected-(U3-P1_12/WUU0_IN12/LPUART2_RXD/CT2_MAT2/ADC0_A10-Pad6).
+Connecter U3 pin 30 à unconnected-(U3-P3_31/LPTMR0_ALT2/TRIG_IN10/CT0_MAT3/ADC0_A12-Pad30).
+Ajout net unconnected-(U3-P3_31/LPTMR0_ALT2/TRIG_IN10/CT0_MAT3/ADC0_A12-Pad30).
+Connecter U3 pin 39 à unconnected-(U3-P3_11/WUU0_IN24/TRIG_IN6/LPSPI1_PCS0/LPUART1_CTS_B/CT1_MAT1/PWM0_B2-Pad39).
+Ajout net unconnected-(U3-P3_11/WUU0_IN24/TRIG_IN6/LPSPI1_PCS0/LPUART1_CTS_B/CT1_MAT1/PWM0_B2-Pad39).
+Modifie valeur U3 de LQFP-64_10x10mm_P0.5mm en MCXA153VLH.
+Ajout net unconnected-(U3-P1_10/LPUART1_RTS_B/LPI2C0_SDAS/CT2_MAT0/ADC0_A8-Pad4).
+Connecter U3 pin 1 à unconnected-(U3-P1_7/WUU0_IN9/TRIG_OUT2/LPUART2_CTS_B/CT_INP7/ADC0_A23-Pad1).
+Ajout net unconnected-(U3-P1_7/WUU0_IN9/TRIG_OUT2/LPUART2_CTS_B/CT_INP7/ADC0_A23-Pad1).
+Connecter U3 pin 43 à /CPU/MOTOR_B_PWM.
+Connecter U3 pin 58 à /CPU/ONOFF_IMX8MP.
+Mis à jour U3 fichier de feuille en cpu.kicad_sch.
+Mis à jour U3 nom de feuille en CPU.
+Mise a Jour des Champs de U3.
+Mise à jour U3 association de symbole de  à /4ebf8b14-4fd3-46f9-9345-d294b03d40c9/4c38a365-6f58-4102-8057-fd335481f070.
+Connecter U3 pin 4 à unconnected-(U3-P1_10/LPUART1_RTS_B/LPI2C0_SDAS/CT2_MAT0/ADC0_A8-Pad4).
+Change la référence schématique de REF** en U3.
+Ajouté U3 (empreinte 'Package_QFP:LQFP-64_10x10mm_P0.5mm').
+Connecter U2 pin 4 à /CPU/MOTOR_B_PWM.
+Ajout net /CPU/MOTOR_B_PWM.
+Connecter U2 pin 2 à /CPU/MOTOR_A_PWM.
+Ajout net /CPU/MOTOR_A_PWM.
+Connecter U2 pin 5 à Net-(U2-OUT_B).
+Connecter U2 pin 7 à Net-(U2-OUT_A).
+Ajout net unconnected-(U3-P1_30/TRIG_OUT3/LPI2C0_SDA/CT_INP16/I3C0_SDA/XTAL48M-Pad9).
+Connecter U3 pin 52 à unconnected-(U3-P0_3/TDI/LPUART0_TXD/LPSPI0_SDO/CT0_MAT1/UTICK_CAP1/CMP0_OUT/CMP1_IN1-Pad52).
+Ajout net unconnected-(U3-P0_3/TDI/LPUART0_TXD/LPSPI0_SDO/CT0_MAT1/UTICK_CAP1/CMP0_OUT/CMP1_IN1-Pad52).
+Connecter U3 pin 26 à unconnected-(U3-USB0_DM/WUU0_IN28-Pad26).
+Ajout net unconnected-(U3-USB0_DM/WUU0_IN28-Pad26).
+Connecter U3 pin 15 à /CPU/DEBUG_UART_TXD.
+Ajout net /CPU/DEBUG_UART_TXD.
+Connecter U3 pin 50 à /CPU/SWCLK.
+Connecter U3 pin 9 à unconnected-(U3-P1_30/TRIG_OUT3/LPI2C0_SDA/CT_INP16/I3C0_SDA/XTAL48M-Pad9).
+Ajouté R21 (empreinte 'Resistor_SMD:R_0805_2012Metric').
+Connecter U3 pin 11 à GND.
+Connecter U3 pin 2 à /CPU/I2C_SDA.
+Connecter U3 pin 54 à unconnected-(U3-P0_16/WUU0_IN2/LPI2C0_SDA/LPSPI0_PCS2/CT0_MAT0/UTICK_CAP2/I3C0_SDA-Pad54).
+Ajout net unconnected-(U3-P0_16/WUU0_IN2/LPI2C0_SDA/LPSPI0_PCS2/CT0_MAT0/UTICK_CAP2/I3C0_SDA-Pad54).
+Connecter U3 pin 5 à unconnected-(U3-P1_11/WUU0_IN11/TRIG_OUT2/LPUART1_CTS_B/LPI2C0_SCLS/CT2_MAT1/I3C0_PUR/ADC0_A9-Pad5).
+Ajout net unconnected-(U3-P1_11/WUU0_IN11/TRIG_OUT2/LPUART1_CTS_B/LPI2C0_SCLS/CT2_MAT1/I3C0_PUR/ADC0_A9-Pad5).
+Connecter U3 pin 49 à /CPU/SWDIO.
+Connecter U3 pin 61 à GND.
+Mis à jour C19 nom de feuille en CPU.
+Mise a Jour des Champs de C20.
+Mise à jour C20 association de symbole de  à /4ebf8b14-4fd3-46f9-9345-d294b03d40c9/1a6b3358-b3d5-4c54-992f-46e1cc2c7c78.
+Modifie valeur C20 de C_0805_2012Metric en 100nF.
+Change la référence schématique de REF** en C20.
+Ajouté C20 (empreinte 'Capacitor_SMD:C_0805_2012Metric').
+Connecter C19 pin 2 à GND.
+Connecter C19 pin 1 à +3.3V.
+Filtres d'empreinte C19 mis à jour en 'C_*'.
+Mis à jour C19 fichier de feuille en cpu.kicad_sch.
+Mis à jour C20 nom de feuille en CPU.
+Mise a Jour des Champs de C19.
+Mise à jour C19 association de symbole de  à /4ebf8b14-4fd3-46f9-9345-d294b03d40c9/3f2a2cc7-365d-4989-8898-94ca91620f1b.
+Modifie valeur C19 de C_0805_2012Metric en 470nF.
+Change la référence schématique de REF** en C19.
+Ajouté C19 (empreinte 'Capacitor_SMD:C_0805_2012Metric').
+Connecter C18 pin 2 à GND.
+Connecter C18 pin 1 à Net-(U3-VDD_ANA/VREFH).
+Filtres d'empreinte C18 mis à jour en 'C_*'.
+Mise a Jour des Champs de C21.
+Modifie valeur C22 de C_0805_2012Metric en 100nF.
+Change la référence schématique de REF** en C22.
+Ajouté C22 (empreinte 'Capacitor_SMD:C_0805_2012Metric').
+Connecter C21 pin 2 à GND.
+Connecter C21 pin 1 à +3.3V.
+Filtres d'empreinte C21 mis à jour en 'C_*'.
+Mis à jour C21 fichier de feuille en cpu.kicad_sch.
+Mis à jour C21 nom de feuille en CPU.
+Mis à jour C18 fichier de feuille en cpu.kicad_sch.
+Mise à jour C21 association de symbole de  à /4ebf8b14-4fd3-46f9-9345-d294b03d40c9/aed24d27-dbe0-41bd-bf43-20dd8a9c4a30.
+Modifie valeur C21 de C_0805_2012Metric en 100nF.
+Change la référence schématique de REF** en C21.
+Ajouté C21 (empreinte 'Capacitor_SMD:C_0805_2012Metric').
+Connecter C20 pin 1 à +3.3V.
+Connecter C20 pin 2 à GND.
+Filtres d'empreinte C20 mis à jour en 'C_*'.
+Mis à jour C20 fichier de feuille en cpu.kicad_sch.
+Ajouté C16 (empreinte 'Capacitor_SMD:CP_Elec_10x10').
+Connecter C16 pin 2 à GNDPWR.
+Filtres d'empreinte C16 mis à jour en 'CP_*'.
+Mis à jour C16 fichier de feuille en puissance.kicad_sch.
+Mis à jour C16 nom de feuille en Puissance.
+Mise a Jour des Champs de C16.
+Mise à jour C16 association de symbole de  à /79ff172e-6092-41ef-91e3-a41ed4e55444/b064bae5-959f-482c-b065-c724cb13fa5b.
+Modifie valeur C16 de CP_Elec_10x10 en 100µF.
+Change la référence schématique de REF** en C16.
+Connecter C16 pin 1 à +5V.
+Connecter C15 pin 2 à GNDPWR.
+Connecter C15 pin 1 à Net-(D4-A).
+Filtres d'empreinte C15 mis à jour en 'C_*'.
+Mis à jour C15 fichier de feuille en puissance.kicad_sch.
+Mis à jour C15 nom de feuille en Puissance.
+Mise a Jour des Champs de C15.
+Mise à jour C15 association de symbole de  à /79ff172e-6092-41ef-91e3-a41ed4e55444/d9823873-e767-4928-b326-c54dd428e5ea.
+Modifie valeur C15 de C_0805_2012Metric en 100nF.
+Connecter C17 pin 2 à GND.
+Mis à jour C18 nom de feuille en CPU.
+Mise a Jour des Champs de C18.
+Mise à jour C18 association de symbole de  à /4ebf8b14-4fd3-46f9-9345-d294b03d40c9/da5730a3-01bc-4080-abcd-f5ca364ba7f1.
+Modifie valeur C18 de C_0805_2012Metric en 100nF.
+Change la référence schématique de REF** en C18.
+Ajouté C18 (empreinte 'Capacitor_SMD:C_0805_2012Metric').
+Connecter C17 pin 1 à Net-(U3-VDD_ANA/VREFH).
+Ajout net Net-(U3-VDD_ANA/VREFH).
+Mise à jour C22 association de symbole de  à /4ebf8b14-4fd3-46f9-9345-d294b03d40c9/fec90a38-6993-4e41-8f7b-23287aa276f8.
+Filtres d'empreinte C17 mis à jour en 'C_*'.
+Mis à jour C17 fichier de feuille en cpu.kicad_sch.
+Mis à jour C17 nom de feuille en CPU.
+Mise a Jour des Champs de C17.
+Mise à jour C17 association de symbole de  à /4ebf8b14-4fd3-46f9-9345-d294b03d40c9/77e95c02-db7f-411b-a701-0135908f687c.
+Modifie valeur C17 de C_0805_2012Metric en 1µF.
+Change la référence schématique de REF** en C17.
+Ajouté C17 (empreinte 'Capacitor_SMD:C_0805_2012Metric').
+Connecter C26 pin 2 à GND.
+Mis à jour C27 nom de feuille en IO.
+Mise a Jour des Champs de C27.
+Mise à jour C27 association de symbole de  à /63de67ba-dfa1-4c66-8572-1a30f5cab1df/306721ec-959a-4903-bb4a-3650b166cf57.
+Modifie valeur C27 de C_0805_2012Metric en 10µF.
+Change la référence schématique de REF** en C27.
+Ajouté C27 (empreinte 'Capacitor_SMD:C_0805_2012Metric').
+Connecter C26 pin 1 à /CPU/MESURE_ADC.
+Ajout net /CPU/MESURE_ADC.
+Mis à jour C27 fichier de feuille en io.kicad_sch.
+Filtres d'empreinte C26 mis à jour en 'C_*'.
+Mis à jour C26 fichier de feuille en io.kicad_sch.
+Mis à jour C26 nom de feuille en IO.
+Mise a Jour des Champs de C26.
+Mise à jour C26 association de symbole de  à /63de67ba-dfa1-4c66-8572-1a30f5cab1df/6515f18b-326a-4375-b81f-d93157613f3b.
+Modifie valeur C26 de C_0805_2012Metric en 1µF.
+Change la référence schématique de REF** en C26.
+Ajouté C26 (empreinte 'Capacitor_SMD:C_0805_2012Metric').
+Mis à jour D1 nom de feuille en IO.
+Connecter Q2 pin 8 à Net-(J9-Pin_2).
+Modifie valeur D2 de LED_0805_2012Metric en LED Rouge.
+Change la référence schématique de REF** en D2.
+Ajouté D2 (empreinte 'LED_SMD:LED_0805_2012Metric').
+Connecter D1 pin 2 à +3.3V.
+Connecter D1 pin 1 à Net-(D1-K).
+Filtres d'empreinte D1 mis à jour en 'LED* LED_SMD:* LED_THT:*'.
+Mis à jour D1 fichier de feuille en io.kicad_sch.
+Connecter C25 pin 2 à GND.
+Mise a Jour des Champs de D1.
+Mise à jour D1 association de symbole de  à /63de67ba-dfa1-4c66-8572-1a30f5cab1df/097d10d6-456d-45f3-b2ee-ac47bed49d44.
+Modifie valeur D1 de LED_0805_2012Metric en LED Bleue.
+Change la référence schématique de REF** en D1.
+Ajouté D1 (empreinte 'LED_SMD:LED_0805_2012Metric').
+Connecter C27 pin 2 à +5V.
+Connecter C27 pin 1 à GNDPWR.
+Filtres d'empreinte C27 mis à jour en 'C_*'.
+Modifie valeur C23 de C_0805_2012Metric en 100nF.
+Ajouté C24 (empreinte 'Capacitor_SMD:C_0805_2012Metric').
+Connecter C23 pin 1 à +3.3V.
+Connecter C23 pin 2 à GND.
+Filtres d'empreinte C23 mis à jour en 'C_*'.
+Mis à jour C23 fichier de feuille en cpu.kicad_sch.
+Mis à jour C23 nom de feuille en CPU.
+Mise a Jour des Champs de C23.
+Mise à jour C23 association de symbole de  à /4ebf8b14-4fd3-46f9-9345-d294b03d40c9/90091ad7-0ad7-479c-aa94-4c1e512f1acd.
+Change la référence schématique de REF** en C24.
+Change la référence schématique de REF** en C23.
+Ajouté C23 (empreinte 'Capacitor_SMD:C_0805_2012Metric').
+Connecter C22 pin 1 à +3.3V.
+Connecter C22 pin 2 à GND.
+Filtres d'empreinte C22 mis à jour en 'C_*'.
+Mis à jour C22 fichier de feuille en cpu.kicad_sch.
+Mis à jour C22 nom de feuille en CPU.
+Mise a Jour des Champs de C22.
+Ajouté C25 (empreinte 'Capacitor_SMD:C_0805_2012Metric').
+Connecter C25 pin 1 à +3.3V.
+Filtres d'empreinte C25 mis à jour en 'C_*'.
+Mis à jour C25 fichier de feuille en io.kicad_sch.
+Mis à jour C25 nom de feuille en IO.
+Mise a Jour des Champs de C25.
+Mise à jour C25 association de symbole de  à /63de67ba-dfa1-4c66-8572-1a30f5cab1df/9d2465ee-1614-4fce-aaba-8091e694405c.
+Modifie valeur C25 de C_0805_2012Metric en 1µF.
+Change la référence schématique de REF** en C25.
+Change la référence schématique de REF** en C15.
+Connecter C24 pin 2 à GND.
+Connecter C24 pin 1 à +3.3V.
+Filtres d'empreinte C24 mis à jour en 'C_*'.
+Mis à jour C24 fichier de feuille en cpu.kicad_sch.
+Mis à jour C24 nom de feuille en CPU.
+Mise a Jour des Champs de C24.
+Mise à jour C24 association de symbole de  à /4ebf8b14-4fd3-46f9-9345-d294b03d40c9/7fe83e0c-3d97-45d8-9941-a058f85703ae.
+Modifie valeur C24 de C_0805_2012Metric en 100nF.
+Mise à jour C5 association de symbole de  à /79ff172e-6092-41ef-91e3-a41ed4e55444/d94ab1ed-e30f-49be-9b76-560406313eb8.
+Change la référence schématique de REF** en C6.
+Ajouté C6 (empreinte 'Capacitor_SMD:C_0805_2012Metric').
+Connecter C5 pin 2 à GND.
+Connecter C5 pin 1 à +3.3V.
+Filtres d'empreinte C5 mis à jour en 'C_*'.
+Mis à jour C5 fichier de feuille en puissance.kicad_sch.
+Mis à jour C5 nom de feuille en Puissance.
+Mise a Jour des Champs de C5.
+Modifie valeur C6 de C_0805_2012Metric en 10µF.
+Modifie valeur C5 de C_0805_2012Metric en 100nF.
+Change la référence schématique de REF** en C5.
+Ajouté C5 (empreinte 'Capacitor_SMD:C_0805_2012Metric').
+Connecter C4 pin 1 à VCC.
+Connecter C4 pin 2 à GND.
+Filtres d'empreinte C4 mis à jour en 'C_*'.
+Mis à jour C4 fichier de feuille en puissance.kicad_sch.
+Mis à jour C4 nom de feuille en Puissance.
+Change la référence schématique de REF** en C7.
+Connecter C7 pin 1 à VCC.
+Connecter C7 pin 2 à GNDPWR.
+Filtres d'empreinte C7 mis à jour en 'C_*'.
+Mis à jour C7 fichier de feuille en puissance.kicad_sch.
+Mis à jour C7 nom de feuille en Puissance.
+Mise a Jour des Champs de C7.
+Mise à jour C7 association de symbole de  à /79ff172e-6092-41ef-91e3-a41ed4e55444/f7a76d1b-cfe3-4f73-a416-b57c4650c4cc.
+Modifie valeur C7 de C_0805_2012Metric en 100nF.
+Mise a Jour des Champs de C4.
+Ajouté C7 (empreinte 'Capacitor_SMD:C_0805_2012Metric').
+Connecter C6 pin 1 à +3.3V.
+Connecter C6 pin 2 à GND.
+Filtres d'empreinte C6 mis à jour en 'C_*'.
+Mis à jour C6 fichier de feuille en puissance.kicad_sch.
+Mis à jour C6 nom de feuille en Puissance.
+Mise a Jour des Champs de C6.
+Mise à jour C6 association de symbole de  à /79ff172e-6092-41ef-91e3-a41ed4e55444/b2e17591-f03e-4cbb-9fb0-d9f921e611fa.
+Connecter C1 pin 2 à GNDPWR.
+Mis à jour C2 nom de feuille en Puissance.
+Mise a Jour des Champs de C2.
+Mise à jour C2 association de symbole de  à /79ff172e-6092-41ef-91e3-a41ed4e55444/cfa54ba5-94b6-4602-993d-f2f083e11081.
+Modifie valeur C2 de CP_Elec_10x10 en 100µF.
+Change la référence schématique de REF** en C2.
+Ajouté C2 (empreinte 'Capacitor_SMD:CP_Elec_10x10').
+Connecter C1 pin 1 à Net-(U1-PDT).
+Ajout net Net-(U1-PDT).
+Mis à jour C2 fichier de feuille en puissance.kicad_sch.
+Filtres d'empreinte C1 mis à jour en 'C_*'.
+Mis à jour C1 fichier de feuille en puissance.kicad_sch.
+Mis à jour C1 nom de feuille en Puissance.
+Mise a Jour des Champs de C1.
+Mise à jour C1 association de symbole de  à /79ff172e-6092-41ef-91e3-a41ed4e55444/37564089-e8f5-4fdc-8377-fc91f245ae57.
+Modifie valeur C1 de C_0805_2012Metric en 1µF.
+Change la référence schématique de REF** en C1.
+Ajouté C1 (empreinte 'Capacitor_SMD:C_0805_2012Metric').
+Mis à jour C3 nom de feuille en Puissance.
+Mise à jour C4 association de symbole de  à /79ff172e-6092-41ef-91e3-a41ed4e55444/a010f15a-6f14-47e3-82f8-0f6402cb3eb5.
+Modifie valeur C4 de C_0805_2012Metric en 100nF.
+Change la référence schématique de REF** en C4.
+Ajouté C4 (empreinte 'Capacitor_SMD:C_0805_2012Metric').
+Connecter C3 pin 1 à VCC.
+Connecter C3 pin 2 à GND.
+Filtres d'empreinte C3 mis à jour en 'C_*'.
+Mis à jour C3 fichier de feuille en puissance.kicad_sch.
+Ajouté C8 (empreinte 'Capacitor_SMD:C_0805_2012Metric').
+Mise a Jour des Champs de C3.
+Mise à jour C3 association de symbole de  à /79ff172e-6092-41ef-91e3-a41ed4e55444/bfd18878-3563-4cf7-99d6-1f6d19239140.
+Modifie valeur C3 de C_0805_2012Metric en 10µF.
+Change la référence schématique de REF** en C3.
+Ajouté C3 (empreinte 'Capacitor_SMD:C_0805_2012Metric').
+Connecter C2 pin 2 à GND.
+Connecter C2 pin 1 à VCC.
+Filtres d'empreinte C2 mis à jour en 'CP_*'.
+Mis à jour C12 nom de feuille en Puissance.
+Mise à jour C13 association de symbole de  à /79ff172e-6092-41ef-91e3-a41ed4e55444/e05f39b3-9963-492d-8b77-8e57ad141b0a.
+Modifie valeur C13 de C_0805_2012Metric en 100nF.
+Change la référence schématique de REF** en C13.
+Ajouté C13 (empreinte 'Capacitor_SMD:C_0805_2012Metric').
+Connecter C12 pin 2 à +BATT.
+Connecter C12 pin 1 à GNDPWR.
+Filtres d'empreinte C12 mis à jour en 'C_*'.
+Mis à jour C12 fichier de feuille en puissance.kicad_sch.
+Mise a Jour des Champs de C13.
+Mise a Jour des Champs de C12.
+Mise à jour C12 association de symbole de  à /79ff172e-6092-41ef-91e3-a41ed4e55444/a6f65a60-b820-4dc6-9624-2fa637053a1a.
+Modifie valeur C12 de C_0805_2012Metric en 100nF.
+Change la référence schématique de REF** en C12.
+Ajouté C12 (empreinte 'Capacitor_SMD:C_0805_2012Metric').
+Connecter C11 pin 1 à +BATT.
+Connecter C11 pin 2 à GNDPWR.
+Filtres d'empreinte C11 mis à jour en 'C_*'.
+Mise à jour C14 association de symbole de  à /79ff172e-6092-41ef-91e3-a41ed4e55444/cbcf3c37-a2d5-4573-9426-6a46c742c8ad.
+Ajouté C15 (empreinte 'Capacitor_SMD:C_0805_2012Metric').
+Connecter C14 pin 2 à GNDPWR.
+Connecter C14 pin 1 à Net-(D3-A).
+Ajout net Net-(D3-A).
+Filtres d'empreinte C14 mis à jour en 'C_*'.
+Mis à jour C14 fichier de feuille en puissance.kicad_sch.
+Mis à jour C14 nom de feuille en Puissance.
+Mise a Jour des Champs de C14.
+Mis à jour C11 fichier de feuille en puissance.kicad_sch.
+Modifie valeur C14 de C_0805_2012Metric en 100nF.
+Change la référence schématique de REF** en C14.
+Ajouté C14 (empreinte 'Capacitor_SMD:C_0805_2012Metric').
+Connecter C13 pin 1 à GNDPWR.
+Connecter C13 pin 2 à +BATT.
+Filtres d'empreinte C13 mis à jour en 'C_*'.
+Mis à jour C13 fichier de feuille en puissance.kicad_sch.
+Mis à jour C13 nom de feuille en Puissance.
+Connecter C8 pin 1 à +5V.
+Filtres d'empreinte C9 mis à jour en 'C_*'.
+Mis à jour C9 fichier de feuille en puissance.kicad_sch.
+Mis à jour C9 nom de feuille en Puissance.
+Mise a Jour des Champs de C9.
+Mise à jour C9 association de symbole de  à /79ff172e-6092-41ef-91e3-a41ed4e55444/5d175e8f-5ac1-40fa-9cf8-7f174bc437e6.
+Modifie valeur C9 de C_0805_2012Metric en 10µF.
+Change la référence schématique de REF** en C9.
+Ajouté C9 (empreinte 'Capacitor_SMD:C_0805_2012Metric').
+Connecter C9 pin 2 à GNDPWR.
+Connecter C8 pin 2 à GNDPWR.
+Filtres d'empreinte C8 mis à jour en 'C_*'.
+Mis à jour C8 fichier de feuille en puissance.kicad_sch.
+Mis à jour C8 nom de feuille en Puissance.
+Mise a Jour des Champs de C8.
+Mise à jour C8 association de symbole de  à /79ff172e-6092-41ef-91e3-a41ed4e55444/1a5e8b7a-a9e2-4205-8a61-0dd663935b69.
+Modifie valeur C8 de C_0805_2012Metric en 100nF.
+Change la référence schématique de REF** en C8.
+Filtres d'empreinte C10 mis à jour en 'C_*'.
+Mis à jour C11 nom de feuille en Puissance.
+Mise a Jour des Champs de C11.
+Mise à jour C11 association de symbole de  à /79ff172e-6092-41ef-91e3-a41ed4e55444/f71301b8-1707-4cbe-a1bd-59061eecb6e7.
+Modifie valeur C11 de C_0805_2012Metric en 10µF.
+Change la référence schématique de REF** en C11.
+Ajouté C11 (empreinte 'Capacitor_SMD:C_0805_2012Metric').
+Connecter C10 pin 1 à +BATT.
+Connecter C10 pin 2 à GNDPWR.
+Mise à jour D2 association de symbole de  à /63de67ba-dfa1-4c66-8572-1a30f5cab1df/71d4d064-8137-40e2-bc22-c51b4c3aff36.
+Mis à jour C10 fichier de feuille en puissance.kicad_sch.
+Mis à jour C10 nom de feuille en Puissance.
+Mise a Jour des Champs de C10.
+Mise à jour C10 association de symbole de  à /79ff172e-6092-41ef-91e3-a41ed4e55444/940713b7-501e-4377-9ab9-f734bdf6c806.
+Modifie valeur C10 de C_0805_2012Metric en 100nF.
+Change la référence schématique de REF** en C10.
+Ajouté C10 (empreinte 'Capacitor_SMD:C_0805_2012Metric').
+Connecter C9 pin 1 à +5V.
+Ajout net /IO/ENCODER_B_PHB.
+Mise à jour J9 association de symbole de  à /63de67ba-dfa1-4c66-8572-1a30f5cab1df/a3f8c0c2-d4ad-491a-8c31-a6cc9b1b2fc1.
+Modifie valeur J9 de JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical en B2B-XH-2.
+Change la référence schématique de REF** en J9.
+Ajouté J9 (empreinte 'Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical').
+Connecter J8 pin 1 à unconnected-(J8-Pad1).
+Ajout net unconnected-(J8-Pad1).
+Connecter J8 pin 5 à GND.
+Connecter J8 pin 2 à +3.3V.
+Connecter J8 pin 4 à /IO/ENCODER_B_PHB.
+Mise a Jour des Champs de J9.
+Connecter J8 pin 3 à Net-(J8-Pad3).
+Ajout net Net-(J8-Pad3).
+Mis à jour J8 fichier de feuille en io.kicad_sch.
+Mis à jour J8 nom de feuille en IO.
+Mise a Jour des Champs de J8.
+Mise à jour J8 association de symbole de  à /63de67ba-dfa1-4c66-8572-1a30f5cab1df/01d271d3-dd43-4bba-b17f-5f77414e87bd.
+Modifie valeur J8 de SHDRRA5W60P0X200_1X5_1200X720X530P en DF3A-5P-2DS.
+Change la référence schématique de J** en J8.
+Modifie valeur J10 de SolderWire-0.5sqmm_1x03_P4.8mm_D0.9mm_OD2.3mm en Cable Servomoteur JST.
+Ajout net Net-(J10-Pin_1).
+Connecter J10 pin 3 à GNDPWR.
+Connecter J10 pin 2 à +5V.
+Filtres d'empreinte J10 mis à jour en 'Connector*:*_1x??_*'.
+Mis à jour J10 fichier de feuille en io.kicad_sch.
+Mis à jour J10 nom de feuille en IO.
+Mise a Jour des Champs de J10.
+Mise à jour J10 association de symbole de  à /63de67ba-dfa1-4c66-8572-1a30f5cab1df/27a515e0-6d13-434a-afa2-175330c80906.
+Ajouté J8 (empreinte 'SHDRRA5W60P0X200_1X5_1200X720X530P').
+Change la référence schématique de REF** en J10.
+Ajouté J10 (empreinte 'Connector_Wire:SolderWire-0.5sqmm_1x03_P4.8mm_D0.9mm_OD2.3mm').
+Connecter J9 pin 1 à +BATT.
+Connecter J9 pin 2 à Net-(J9-Pin_2).
+Ajout net Net-(J9-Pin_2).
+Filtres d'empreinte J9 mis à jour en 'Connector*:*_1x??_*'.
+Mis à jour J9 fichier de feuille en io.kicad_sch.
+Mis à jour J9 nom de feuille en IO.
+Ajout net /IO/I2C3_SCL.
+Ajout net unconnected-(J6-Pin_5-Pad5).
+Connecter J6 pin 3 à unconnected-(J6-Pin_3-Pad3).
+Ajout net unconnected-(J6-Pin_3-Pad3).
+Connecter J6 pin 4 à Net-(J6-Pin_4).
+Ajout net Net-(J6-Pin_4).
+Connecter J6 pin 8 à unconnected-(J6-Pin_8-Pad8).
+Ajout net unconnected-(J6-Pin_8-Pad8).
+Connecter J6 pin 7 à /IO/I2C3_SCL.
+Connecter J6 pin 5 à unconnected-(J6-Pin_5-Pad5).
+Connecter J6 pin 1 à /IO/3V3_IMX8MP.
+Ajout net /IO/3V3_IMX8MP.
+Connecter J6 pin 2 à unconnected-(J6-Pin_2-Pad2).
+Ajout net unconnected-(J6-Pin_2-Pad2).
+Connecter J6 pin 9 à /IO/I2C3_SDA.
+Ajout net /IO/I2C3_SDA.
+Mise a Jour des Champs de D2.
+Filtres d'empreinte J6 mis à jour en 'Connector*:*_2x??_*'.
+Mis à jour J7 fichier de feuille en io.kicad_sch.
+Connecter J7 pin 1 à unconnected-(J7-Pad1).
+Ajout net unconnected-(J7-Pad1).
+Connecter J7 pin 4 à /IO/ENCODER_A_PHB.
+Ajout net /IO/ENCODER_A_PHB.
+Connecter J7 pin 2 à +3.3V.
+Connecter J7 pin 5 à GND.
+Connecter J7 pin 3 à Net-(J7-Pad3).
+Ajout net Net-(J7-Pad3).
+Connecter J10 pin 1 à Net-(J10-Pin_1).
+Mis à jour J7 nom de feuille en IO.
+Mise a Jour des Champs de J7.
+Mise à jour J7 association de symbole de  à /63de67ba-dfa1-4c66-8572-1a30f5cab1df/73859cc4-8083-4f1b-9c2c-c207d0a6569c.
+Modifie valeur J7 de SHDRRA5W60P0X200_1X5_1200X720X530P en DF3A-5P-2DS.
+Change la référence schématique de J** en J7.
+Ajouté J7 (empreinte 'SHDRRA5W60P0X200_1X5_1200X720X530P').
+Connecter J6 pin 10 à unconnected-(J6-Pin_10-Pad10).
+Ajout net unconnected-(J6-Pin_10-Pad10).
+Mise à jour PS2 association de symbole de  à /79ff172e-6092-41ef-91e3-a41ed4e55444/27d657a4-7e63-4f30-9491-cf7aa275cb1f.
+Modifie valeur Q1 de TO-252-2 en IPD50P04P413ATMA2.
+Change la référence schématique de REF** en Q1.
+Ajouté Q1 (empreinte 'Package_TO_SOT_SMD:TO-252-2').
+Connecter PS2 pin 1 à VCC.
+Connecter PS2 pin 3 à +5V.
+Mis à jour PS2 fichier de feuille en puissance.kicad_sch.
+Mis à jour PS2 nom de feuille en Puissance.
+Mise a Jour des Champs de PS2.
+Mise à jour Q1 association de symbole de  à /79ff172e-6092-41ef-91e3-a41ed4e55444/2f600e05-1a5b-4f04-9923-d942604d4f9e.
+Modifie valeur PS2 de TSR324xxN en TSR_3-2450N.
+Change la référence schématique de PS** en PS2.
+Ajouté PS2 (empreinte 'TSR_3-24xxN:TSR324xxN').
+Connecter PS1 pin 2 à GND.
+Connecter PS1 pin 3 à +3.3V.
+Connecter PS1 pin 1 à VCC.
+Mis à jour PS1 fichier de feuille en puissance.kicad_sch.
+Mis à jour PS1 nom de feuille en Puissance.
+Connecter Q1 pin 2 à +BATT.
+Mis à jour Q2 fichier de feuille en io.kicad_sch.
+Mis à jour Q2 nom de feuille en IO.
+Mise a Jour des Champs de Q2.
+Mise à jour Q2 association de symbole de  à /63de67ba-dfa1-4c66-8572-1a30f5cab1df/c1088fdb-7854-4112-8923-729932719277.
+Modifie valeur Q2 de SOP-8_5.28x5.23mm_P1.27mm en TPH2R506PL,L1Q.
+Change la référence schématique de REF** en Q2.
+Ajouté Q2 (empreinte 'Package_SO:SOP-8_5.28x5.23mm_P1.27mm').
+Connecter Q1 pin 3 à Net-(Q1-S).
+Mise a Jour des Champs de PS1.
+Connecter Q1 pin 2 à +BATT.
+Connecter Q1 pin 2 à +BATT.
+Connecter Q1 pin 2 à +BATT.
+Connecter Q1 pin 2 à +BATT.
+Connecter Q1 pin 1 à Net-(Q1-G).
+Mis à jour Q1 fichier de feuille en puissance.kicad_sch.
+Mis à jour Q1 nom de feuille en Puissance.
+Mise a Jour des Champs de Q1.
+Connecter J11 pin 4 à Net-(J11-Pad4).
+Connecter J11 pin 9 à GND.
+Connecter J11 pin 3 à GND.
+Connecter J11 pin 8 à unconnected-(J11-Pad8).
+Ajout net unconnected-(J11-Pad8).
+Connecter J11 pin 2 à Net-(J11-Pad2).
+Ajout net Net-(J11-Pad2).
+Connecter J11 pin 1 à +3.3V.
+Connecter J11 pin 5 à GND.
+Ajout net Net-(J11-Pad6).
+Ajout net Net-(J11-Pad4).
+Mis à jour J11 fichier de feuille en cpu.kicad_sch.
+Mis à jour J11 nom de feuille en CPU.
+Mise a Jour des Champs de J11.
+Mise à jour J11 association de symbole de  à /4ebf8b14-4fd3-46f9-9345-d294b03d40c9/34cebd69-6df1-4ef1-bc19-ad8a352f4497.
+Modifie valeur J11 de FTSH10501LDV007KTR en FTSH-105-01-L-DV-007-K-TR.
+Change la référence schématique de J** en J11.
+Ajouté J11 (empreinte 'FTSH-105-01-L-DV-007:FTSH10501LDV007KTR').
+Mis à jour JP1 nom de feuille en Puissance.
+Mise à jour PS1 association de symbole de  à /79ff172e-6092-41ef-91e3-a41ed4e55444/ee03eb7b-e1c5-4e14-9d6d-7a943dc3d6b5.
+Modifie valeur PS1 de TSR324xxN en TSR_3-2433N.
+Change la référence schématique de PS** en PS1.
+Ajouté PS1 (empreinte 'TSR_3-24xxN:TSR324xxN').
+Connecter JP1 pin 2 à GND.
+Connecter JP1 pin 1 à GNDPWR.
+Filtres d'empreinte JP1 mis à jour en 'SolderJumper*Bridged*'.
+Mis à jour JP1 fichier de feuille en puissance.kicad_sch.
+Connecter J6 pin 6 à GND.
+Mise a Jour des Champs de JP1.
+Mise à jour JP1 association de symbole de  à /79ff172e-6092-41ef-91e3-a41ed4e55444/927007b4-c7af-4c58-a42c-ac20c6a4a68c.
+Modifie valeur JP1 de SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm en SolderJumper_2_Bridged.
+Change la référence schématique de REF** en JP1.
+Ajouté JP1 (empreinte 'Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm').
+Connecter J11 pin 10 à Net-(J11-Pad10).
+Ajout net Net-(J11-Pad10).
+Connecter J11 pin 6 à Net-(J11-Pad6).
+Connecter F1 pin 3 à Net-(Q1-S).
+Mis à jour FB1 nom de feuille en Puissance.
+Mise a Jour des Champs de FB1.
+Mise à jour FB1 association de symbole de  à /79ff172e-6092-41ef-91e3-a41ed4e55444/a8e6a44e-353d-4b54-a70d-66ea1aa569f5.
+Modifie valeur FB1 de C_2220_5750Metric en 7427928801.
+Change la référence schématique de REF** en FB1.
+Ajouté FB1 (empreinte 'Capacitor_SMD:C_2220_5750Metric').
+Connecter F1 pin 2 à Net-(J1-Pin_2).
+Connecter F1 pin 1 à Net-(J1-Pin_2).
+Connecter F1 pin 4 à Net-(Q1-S).
+Mis à jour FB1 fichier de feuille en puissance.kicad_sch.
+Ajout net Net-(Q1-S).
+Mis à jour F1 fichier de feuille en puissance.kicad_sch.
+Mis à jour F1 nom de feuille en Puissance.
+Mise a Jour des Champs de F1.
+Mise à jour F1 association de symbole de  à /79ff172e-6092-41ef-91e3-a41ed4e55444/bee14a22-65fa-4d67-90a6-094679a8e552.
+Modifie valeur F1 de 3568 en Fuse - 5A.
+Change la référence schématique de U** en F1.
+Ajouté F1 (empreinte '3568:3568').
+Mis à jour FB2 nom de feuille en CPU.
+Mis à jour J6 fichier de feuille en io.kicad_sch.
+Ajouté attribut de fabrication 'Ne pas placer' pour H1 .
+Mis à jour H1 fichier de feuille en Carte_puissance.kicad_sch.
+Mise a Jour des Champs de H1.
+Connecter FB2 pin 1 à +3.3V.
+Connecter FB2 pin 2 à Net-(U3-VDD_ANA/VREFH).
+Filtres d'empreinte FB2 mis à jour en 'Inductor_* L_* *Ferrite*'.
+Mis à jour FB2 fichier de feuille en cpu.kicad_sch.
+Connecter D5 pin 2 à GND.
+Mise a Jour des Champs de FB2.
+Mise à jour FB2 association de symbole de  à /4ebf8b14-4fd3-46f9-9345-d294b03d40c9/8633fbac-e9f0-4dff-934c-403257879365.
+Modifie valeur FB2 de C_0805_2012Metric_Pad1.18x1.45mm_HandSolder en MH2029-401Y.
+Change la référence schématique de REF** en FB2.
+Ajouté FB2 (empreinte 'Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder').
+Connecter FB1 pin 1 à +BATT.
+Connecter FB1 pin 2 à VCC.
+Filtres d'empreinte FB1 mis à jour en 'Inductor_* L_* *Ferrite*'.
+Modifie valeur D3 de TO-277A en STPS1230SF.
+Ajouté D4 (empreinte 'Package_TO_SOT_SMD:TO-277A').
+Connecter D3 pin 2 à Net-(D3-A).
+Connecter D3 pin 1 à +BATT.
+Filtres d'empreinte D3 mis à jour en 'TO-???* *_Diode_* *SingleDiode* D_*'.
+Mis à jour D3 fichier de feuille en puissance.kicad_sch.
+Mis à jour D3 nom de feuille en Puissance.
+Mise a Jour des Champs de D3.
+Mise à jour D3 association de symbole de  à /79ff172e-6092-41ef-91e3-a41ed4e55444/74dc3e94-3d9c-450a-bf64-9ab60156981d.
+Change la référence schématique de REF** en D4.
+Change la référence schématique de REF** en D3.
+Ajouté D3 (empreinte 'Package_TO_SOT_SMD:TO-277A').
+Connecter D2 pin 1 à Net-(D2-K).
+Connecter D2 pin 2 à /CPU/ALERT_LED.
+Ajout net /CPU/ALERT_LED.
+Filtres d'empreinte D2 mis à jour en 'LED* LED_SMD:* LED_THT:*'.
+Mis à jour D2 fichier de feuille en io.kicad_sch.
+Mis à jour D2 nom de feuille en IO.
+Ajouté D5 (empreinte 'Diode_SMD:D_SOD-123').
+Connecter D5 pin 1 à /CPU/MESURE_ADC.
+Filtres d'empreinte D5 mis à jour en 'TO-???* *_Diode_* *SingleDiode* D_*'.
+Mis à jour D5 fichier de feuille en io.kicad_sch.
+Mis à jour D5 nom de feuille en IO.
+Mise a Jour des Champs de D5.
+Mise à jour D5 association de symbole de  à /63de67ba-dfa1-4c66-8572-1a30f5cab1df/eaa79184-7d66-40aa-9f04-34248cda55f8.
+Modifie valeur D5 de D_SOD-123 en MMSZ3V3T1G.
+Change la référence schématique de REF** en D5.
+Mise a Jour des Champs de H2.
+Connecter D4 pin 2 à Net-(D4-A).
+Connecter D4 pin 1 à +BATT.
+Filtres d'empreinte D4 mis à jour en 'TO-???* *_Diode_* *SingleDiode* D_*'.
+Mis à jour D4 fichier de feuille en puissance.kicad_sch.
+Mis à jour D4 nom de feuille en Puissance.
+Mise a Jour des Champs de D4.
+Mise à jour D4 association de symbole de  à /79ff172e-6092-41ef-91e3-a41ed4e55444/98fbc423-b2f6-4262-8e50-967611d0b4d4.
+Modifie valeur D4 de TO-277A en STPS1230SF.
+Mise à jour J4 association de symbole de  à /79ff172e-6092-41ef-91e3-a41ed4e55444/92360a2c-b84d-4028-8c52-7b4465c9e4fc.
+Change la référence schématique de REF** en J5.
+Ajouté J5 (empreinte 'Seeed Studio 110990037:SEEED_110990037').
+Connecter J4 pin 1 à +BATT.
+Connecter J4 pin 2 à Net-(D4-A).
+Filtres d'empreinte J4 mis à jour en 'Connector*:*_1x??_*'.
+Mis à jour J4 fichier de feuille en puissance.kicad_sch.
+Mis à jour J4 nom de feuille en Puissance.
+Mise a Jour des Champs de J4.
+Modifie valeur J5 de SEEED_110990037 en SeedStudio 110990037.
+Modifie valeur J4 de JST_VH_B2PS-VH_1x02_P3.96mm_Horizontal en B2PS-VH.
+Change la référence schématique de REF** en J4.
+Ajouté J4 (empreinte 'Connector_JST:JST_VH_B2PS-VH_1x02_P3.96mm_Horizontal').
+Connecter J3 pin 1 à +BATT.
+Connecter J3 pin 2 à Net-(D3-A).
+Filtres d'empreinte J3 mis à jour en 'Connector*:*_1x??_*'.
+Mis à jour J3 fichier de feuille en puissance.kicad_sch.
+Mis à jour H2 fichier de feuille en Carte_puissance.kicad_sch.
+Connecter J5 pin 1 à /CPU/I2C_SCL.
+Mis à jour J6 nom de feuille en IO.
+Mise a Jour des Champs de J6.
+Mise à jour J6 association de symbole de  à /63de67ba-dfa1-4c66-8572-1a30f5cab1df/22ffac25-228f-45e8-bb4c-ba4c9302576a.
+Modifie valeur J6 de IDC-Header_2x05_P2.54mm_Vertical_SMD en 72454-010VLF.
+Change la référence schématique de REF** en J6.
+Ajouté J6 (empreinte 'Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical_SMD').
+Connecter J5 pin 4 à GND.
+Connecter J5 pin 3 à +3.3V.
+Mis à jour J3 nom de feuille en Puissance.
+Ajout net /CPU/I2C_SCL.
+Connecter J5 pin 2 à /CPU/I2C_SDA.
+Ajout net /CPU/I2C_SDA.
+Filtres d'empreinte J5 mis à jour en 'Connector*:*_1x??_*'.
+Mis à jour J5 fichier de feuille en io.kicad_sch.
+Mis à jour J5 nom de feuille en IO.
+Mise a Jour des Champs de J5.
+Mise à jour J5 association de symbole de  à /63de67ba-dfa1-4c66-8572-1a30f5cab1df/448d382c-7f85-47ce-9fd1-ed1b5c6942cc.
+Ajouté J1 (empreinte 'Battery_Pads:Battery_Pads').
+Ajouté attribut de fabrication "exclure de BOM" pour J1 .
+Mise a Jour des Champs de J3.
+Mis à jour J1 fichier de feuille en puissance.kicad_sch.
+Mis à jour J1 nom de feuille en Puissance.
+Mise a Jour des Champs de J1.
+Mise à jour J1 association de symbole de  à /79ff172e-6092-41ef-91e3-a41ed4e55444/480f3b4e-f491-42ce-a196-a86919009720.
+Modifie valeur J1 de Battery_Pads en Cable XT60.
+Change la référence schématique de J** en J1.
+Filtres d'empreinte J1 mis à jour en 'Connector*:*_1x??_*'.
+Ajouté attribut de fabrication 'Ne pas placer' pour H4 .
+Mis à jour H4 fichier de feuille en Carte_puissance.kicad_sch.
+Mise a Jour des Champs de H4.
+Ajouté attribut de fabrication 'Ne pas placer' pour H3 .
+Mis à jour H3 fichier de feuille en Carte_puissance.kicad_sch.
+Mise a Jour des Champs de H3.
+Ajouté attribut de fabrication 'Ne pas placer' pour H2 .
+Mis à jour J2 fichier de feuille en puissance.kicad_sch.
+Mise à jour J3 association de symbole de  à /79ff172e-6092-41ef-91e3-a41ed4e55444/a26083b2-1881-4484-8006-3f422eadf45a.
+Modifie valeur J3 de JST_VH_B2PS-VH_1x02_P3.96mm_Horizontal en B2PS-VH.
+Change la référence schématique de REF** en J3.
+Ajouté J3 (empreinte 'Connector_JST:JST_VH_B2PS-VH_1x02_P3.96mm_Horizontal').
+Connecter J2 pin 2 à GND.
+Connecter J2 pin 1 à VCC.
+Filtres d'empreinte J2 mis à jour en 'Connector*:*_1x??_*'.
+Connecter J1 pin 1 à GNDPWR.
+Mis à jour J2 nom de feuille en Puissance.
+Mise a Jour des Champs de J2.
+Mise à jour J2 association de symbole de  à /79ff172e-6092-41ef-91e3-a41ed4e55444/d8f4af37-a3b3-4ab7-8ea6-a7f2a6a08101.
+Modifie valeur J2 de JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical en B2B-XH-2.
+Change la référence schématique de REF** en J2.
+Ajouté J2 (empreinte 'Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical').
+Connecter J1 pin 2 à Net-(J1-Pin_2).
+Attention: Pas d'équipotentielle pour composant 'D4' pad '3' (pas de pin 3 en symbole).
+Attention: Pas d'équipotentielle pour composant 'D3' pad '3' (pas de pin 3 en symbole).
+Erreur: Q2 pad 9 non trouvé en Package_SO:SOP-8_5.28x5.23mm_P1.27mm.
+Erreur: SW1 pad 3 non trouvé en Button_Switch_THT:SW_TH_Tactile_Omron_B3F-10xx.
+Erreur: SW1 pad 4 non trouvé en Button_Switch_THT:SW_TH_Tactile_Omron_B3F-10xx.
+
+
+Info: Total warnings: 2, erreurs: 3.

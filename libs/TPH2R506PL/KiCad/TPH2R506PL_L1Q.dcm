@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TPH2R506PL,L1Q
+D MOSFET N-Ch 60V 4180pF 60nC 160A 132W
+K
+F http://toshiba.semicon-storage.com/info/docget.jsp?did=55522&prodName=TPH2R506PL
+$ENDCMP
+#
+#End Doc Library

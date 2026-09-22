@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LTC2954CTS8-2#TRMPBF
+D Linear Technology LTC2954CTS8-2#TRMPBF, Voltage Controller 1V max., 8-Pin TSOT-23
+K
+F http://cds.linear.com/docs/en/datasheet/2954fb.pdf
+$ENDCMP
+#
+#End Doc Library

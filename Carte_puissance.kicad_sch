@@ -1,0 +1,1150 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "aaa0f7a4-a021-413b-80cf-aab59bb3339a")
+	(paper "A4")
+	(title_block
+		(title "ALAMAK Carte Puissance")
+		(date "2026-06-29")
+		(rev "2.3")
+		(company "INSA")
+	)
+	(lib_symbols
+		(symbol "Mechanical:MountingHole"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim yes)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 166.37 107.95) (xy 166.37 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07a60d33-f257-40d8-af0f-29cb75105fac")
+	)
+	(wire
+		(pts
+			(xy 92.71 138.43) (xy 139.7 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2030d166-fc47-4c48-aac7-88c1d5d5c7d6")
+	)
+	(wire
+		(pts
+			(xy 92.71 74.93) (xy 139.7 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "447456da-fad8-4432-acd1-795c797a4b8a")
+	)
+	(wire
+		(pts
+			(xy 92.71 144.78) (xy 139.7 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48e7bd72-ac26-45ad-aa1d-92310761baa2")
+	)
+	(wire
+		(pts
+			(xy 92.71 124.46) (xy 139.7 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5049009f-0c2a-4191-925c-7d5951da67af")
+	)
+	(wire
+		(pts
+			(xy 92.71 107.95) (xy 166.37 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "510ff004-9a82-4f76-977c-8380a72aeb1d")
+	)
+	(wire
+		(pts
+			(xy 92.71 83.82) (xy 139.7 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6572f5f2-68ab-4875-921e-fc0de75b0d32")
+	)
+	(wire
+		(pts
+			(xy 173.99 99.06) (xy 173.99 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6cc9fce9-4bd5-442a-8369-95b9e2d6776a")
+	)
+	(wire
+		(pts
+			(xy 92.71 118.11) (xy 139.7 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "901d5ac6-7e12-4548-9772-843a3d8d95df")
+	)
+	(wire
+		(pts
+			(xy 92.71 129.54) (xy 139.7 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d0cc7ac-690b-4614-a8b8-0bef39f98f30")
+	)
+	(wire
+		(pts
+			(xy 92.71 132.08) (xy 139.7 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a44c9358-3007-4fb0-b052-b17904f79170")
+	)
+	(wire
+		(pts
+			(xy 92.71 86.36) (xy 139.7 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b59a9f11-2e12-4ee3-85ee-810001c919eb")
+	)
+	(wire
+		(pts
+			(xy 92.71 71.12) (xy 139.7 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c03c2871-bef5-493e-b5f8-875163c331df")
+	)
+	(wire
+		(pts
+			(xy 176.53 96.52) (xy 176.53 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c658bb4a-1d05-43d1-9b84-6292b8960288")
+	)
+	(wire
+		(pts
+			(xy 92.71 147.32) (xy 139.7 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dac0d4ee-a0ca-491d-a7e8-f0cbb365e38f")
+	)
+	(wire
+		(pts
+			(xy 92.71 99.06) (xy 173.99 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed3086d6-1387-403b-9fcd-32b3bbebf928")
+	)
+	(wire
+		(pts
+			(xy 92.71 121.92) (xy 139.7 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb6d5de7-c6cb-4d1e-a7e6-9b450a5d711e")
+	)
+	(wire
+		(pts
+			(xy 92.71 96.52) (xy 176.53 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd5d47cc-7e93-49e5-b93d-3ace7e66b994")
+	)
+	(text "Carte Puissance\nAlamak"
+		(exclude_from_sim no)
+		(at 142.748 29.972 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 6.35 6.35)
+				(bold yes)
+			)
+		)
+		(uuid "9a105027-6c0a-479c-9cab-1c49d4bd23c9")
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 21.59 189.23 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "00000000-0000-0000-0000-00005d5ddcc8")
+		(property "Reference" "H4"
+			(at 24.13 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 24.13 190.373 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 21.59 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 21.59 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 21.59 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "-"
+			(at 21.59 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "-"
+			(at 21.59 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project ""
+				(path "/aaa0f7a4-a021-413b-80cf-aab59bb3339a"
+					(reference "H4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 30.48 189.23 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "00000000-0000-0000-0000-00005d5dded9")
+		(property "Reference" "H2"
+			(at 33.02 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 33.02 190.373 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 30.48 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 30.48 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 30.48 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "-"
+			(at 30.48 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "-"
+			(at 30.48 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project ""
+				(path "/aaa0f7a4-a021-413b-80cf-aab59bb3339a"
+					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 21.59 182.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "668dc27b-60cb-463e-94f6-c498a1dd0ad8")
+		(property "Reference" "H1"
+			(at 24.13 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 24.13 184.023 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 21.59 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 21.59 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 21.59 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "-"
+			(at 21.59 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "-"
+			(at 21.59 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "Carte_puissance"
+				(path "/aaa0f7a4-a021-413b-80cf-aab59bb3339a"
+					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 30.48 182.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "d8c00d29-1140-425e-9d23-b84bebcb455c")
+		(property "Reference" "H3"
+			(at 33.02 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 33.02 184.023 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 30.48 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 30.48 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 30.48 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "-"
+			(at 30.48 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "-"
+			(at 30.48 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "Carte_puissance"
+				(path "/aaa0f7a4-a021-413b-80cf-aab59bb3339a"
+					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet
+		(at 237.49 29.21)
+		(size 33.02 29.21)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 172 207 255 1.0000)
+		)
+		(uuid "3127d99b-3f05-4bee-9796-c2b1ece60f1a")
+		(property "Sheetname" "Vue globale du systeme"
+			(at 237.49 28.4984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "vue_gloable_sysml.kicad_sch"
+			(at 237.49 59.0046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Carte_puissance"
+				(path "/aaa0f7a4-a021-413b-80cf-aab59bb3339a"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 45.72 60.96)
+		(size 46.99 91.44)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 255 255 194 1.0000)
+		)
+		(uuid "4ebf8b14-4fd3-46f9-9345-d294b03d40c9")
+		(property "Sheetname" "CPU"
+			(at 45.72 60.2484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "cpu.kicad_sch"
+			(at 45.72 152.9846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "I2C_SDA" bidirectional
+			(at 92.71 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "e378a69c-ab19-4fc5-91fb-85e0b6c5b6d0")
+		)
+		(pin "I2C_SCL" input
+			(at 92.71 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "65792bc1-4a4a-4156-8618-b91c09e9bf27")
+		)
+		(pin "ENCODER_A_PHA" input
+			(at 92.71 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "5e3bfe41-8fa5-4091-b060-260a914fe85b")
+		)
+		(pin "ENCODER_B_PHA" input
+			(at 92.71 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "bf776d9a-7252-4171-ae2b-e6468fab934e")
+		)
+		(pin "MESURE_ADC" input
+			(at 92.71 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "ac9f2c82-8e9f-4ca1-8b95-e332640901d5")
+		)
+		(pin "DEBUG_UART_TXD" output
+			(at 92.71 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "81988d0c-e609-4bde-9415-2c11a7e888af")
+		)
+		(pin "DEBUG_UART_RXD" input
+			(at 92.71 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "845fbaa6-0645-4c25-92da-462b0568f7be")
+		)
+		(pin "ALERT_LED" output
+			(at 92.71 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "dd56c1b3-69e1-427a-a801-6424612e80e4")
+		)
+		(pin "ONOFF_IMX8MP" output
+			(at 92.71 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "71435684-b44a-4fab-bd16-ffe74d0e09fb")
+		)
+		(pin "CMD_CAMERA_LED" output
+			(at 92.71 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "37525360-3007-4b2d-9d0a-fd70527d2766")
+		)
+		(pin "~{ONOFF_INT}" input
+			(at 92.71 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "2e36b103-6597-491b-9e90-fa7abb5cdaf1")
+		)
+		(pin "~{ONOFF_KILL}" output
+			(at 92.71 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "d0ae05b7-46e1-4c4b-a56d-e997a5f49b8f")
+		)
+		(pin "MOTOR_A_PWM" output
+			(at 92.71 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "232b21c4-df71-4297-98d2-3e84d0b1562d")
+		)
+		(pin "MOTOR_B_PWM" output
+			(at 92.71 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "e6a50f57-8dc9-4719-95c3-a1f7f7b5a73d")
+		)
+		(pin "SERVO_PWM" output
+			(at 92.71 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "250a7058-f7e2-452a-b1f3-cca6bd7b0600")
+		)
+		(instances
+			(project "Carte_puissance"
+				(path "/aaa0f7a4-a021-413b-80cf-aab59bb3339a"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 139.7 114.3)
+		(size 44.45 46.99)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 206 255 183 1.0000)
+		)
+		(uuid "63de67ba-dfa1-4c66-8572-1a30f5cab1df")
+		(property "Sheetname" "IO"
+			(at 139.7 113.5884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "io.kicad_sch"
+			(at 139.7 161.8746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "MESURE_VBAT" output
+			(at 139.7 138.43 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "fa1ae02b-f7d2-4a95-b6c1-d82596bd4d0c")
+		)
+		(pin "LED_ROUGE" input
+			(at 139.7 129.54 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "a265fcb3-e544-45e3-876a-d813d28c4156")
+		)
+		(pin "SERVO_PWM" input
+			(at 139.7 118.11 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "2c3663d6-bd05-4dc7-abab-494d0d942e0a")
+		)
+		(pin "ONOFF_IMX8MP" input
+			(at 166.37 114.3 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "9b878a3c-8c84-4475-b7a2-465d4741fb67")
+		)
+		(pin "CMD_CAMERA_LED" input
+			(at 139.7 132.08 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "cb5820af-fbbf-475d-b0cb-56d735318ddb")
+		)
+		(pin "I2C_SCL" output
+			(at 139.7 147.32 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "568eaaaf-30d3-4354-96e5-d18d5ad84abc")
+		)
+		(pin "I2C_SDA" bidirectional
+			(at 139.7 144.78 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "a7450a27-6a46-4b15-b7bd-a3a532ab5546")
+		)
+		(pin "ENCODER_A_PHA" output
+			(at 139.7 121.92 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "3083234f-4926-4f4e-a2cf-ba8c9da134dd")
+		)
+		(pin "ENCODER_B_PHA" output
+			(at 139.7 124.46 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "876cb99c-c458-41bb-a0de-f710af3145d5")
+		)
+		(pin "UART_TX" input
+			(at 176.53 114.3 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "40870a54-4136-4e91-876a-972f2098d14c")
+		)
+		(pin "UART_RX" output
+			(at 173.99 114.3 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "fae699c0-1a9b-4a04-b56b-2968e2a3021b")
+		)
+		(instances
+			(project "Carte_puissance"
+				(path "/aaa0f7a4-a021-413b-80cf-aab59bb3339a"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 237.49 128.27)
+		(size 33.02 26.67)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 255 160 234 1.0000)
+		)
+		(uuid "721c0e07-fa7e-43d5-a4a6-6adee7b4b45a")
+		(property "Sheetname" "Liste des composants externes"
+			(at 237.49 127.5584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Composants externes.kicad_sch"
+			(at 237.49 155.5246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Carte_puissance"
+				(path "/aaa0f7a4-a021-413b-80cf-aab59bb3339a"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 139.7 66.04)
+		(size 44.45 26.67)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 255 181 181 1.0000)
+		)
+		(uuid "79ff172e-6092-41ef-91e3-a41ed4e55444")
+		(property "Sheetname" "Puissance"
+			(at 139.7 65.3284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "puissance.kicad_sch"
+			(at 139.7 93.2946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "CMD_MOTOR_A" input
+			(at 139.7 83.82 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "9d6e1983-7083-4f11-bd63-54c822a7a743")
+		)
+		(pin "CMD_MOTOR_B" input
+			(at 139.7 86.36 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "d02d9d38-9c3e-410c-9bc0-58f3bbf391e9")
+		)
+		(pin "~{ONOFF_INT}" output
+			(at 139.7 71.12 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "5759c5a5-a55c-4052-be6e-c87c193703f7")
+		)
+		(pin "~{ONOFF_KILL}" input
+			(at 139.7 74.93 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "00f0c4e4-8112-4266-9faa-de70e36dc151")
+		)
+		(instances
+			(project "Carte_puissance"
+				(path "/aaa0f7a4-a021-413b-80cf-aab59bb3339a"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 237.49 78.74)
+		(size 33.02 27.94)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 160 171 182 1.0000)
+		)
+		(uuid "ad605d1f-a41e-4ced-991c-7c782b4b7f49")
+		(property "Sheetname" "Revisions"
+			(at 237.49 78.0284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "revisions.kicad_sch"
+			(at 237.49 107.2646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Carte_puissance"
+				(path "/aaa0f7a4-a021-413b-80cf-aab59bb3339a"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)
