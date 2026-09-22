@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "ALAMAK - CPU")
-		(date "2026-05-28")
-		(rev "2.1")
+		(date "2026-09-22")
+		(rev "2.3b")
 		(company "INSA - GEI")
 	)
 	(lib_symbols
@@ -4571,7 +4571,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "CL21B474KBFNNNE"
+		(property "Part Number" "CL21B474KBFNNNG"
 			(at 200.66 99.06 0)
 			(effects
 				(font
@@ -4886,7 +4886,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "SW_Push"
+		(property "Value" "EVQ-P2602M"
 			(at 27.94 167.6399 90)
 			(effects
 				(font
@@ -4915,6 +4915,24 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
+			(at 26.67 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Panasonic"
+			(at 26.67 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "EVQ-P2602M"
 			(at 26.67 166.37 0)
 			(effects
 				(font
@@ -5187,7 +5205,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "CL21B105KBFNNNG"
+		(property "Part Number" "CL21B105KBFNNNF"
 			(at 187.96 30.48 0)
 			(effects
 				(font
@@ -5687,7 +5705,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Yageo"
+		(property "Manufacturer" "Vishay"
 			(at 21.59 175.26 0)
 			(effects
 				(font
@@ -5696,7 +5714,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "RT0805FRE10100KL"
+		(property "Part Number" "RCA080510K0JNEASR"
 			(at 21.59 175.26 0)
 			(effects
 				(font
@@ -5891,7 +5909,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "SW_Push"
+		(property "Value" "EVQ-P2602M"
 			(at 35.56 24.1299 90)
 			(effects
 				(font
@@ -5920,6 +5938,24 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
+			(at 34.29 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Panasonic"
+			(at 34.29 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "EVQ-P2602M"
 			(at 34.29 22.86 0)
 			(effects
 				(font
@@ -6180,7 +6216,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "RT0805DRE07100RL"
+		(property "Part Number" "RT0805FRE132K2L"
 			(at 212.09 106.68 0)
 			(effects
 				(font

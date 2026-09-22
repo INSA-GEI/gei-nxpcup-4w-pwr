@@ -4,6 +4,12 @@
 	(generator_version "8.0")
 	(uuid "6f13d742-0645-4979-ad4f-b3649a662d94")
 	(paper "A4")
+	(title_block
+		(title "Puissance")
+		(date "2026-09-22")
+		(rev "2.3b")
+		(company "INSA-GEI")
+	)
 	(lib_symbols
 		(symbol "3568:3568"
 			(exclude_from_sim no)
@@ -7412,7 +7418,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "CL21B105KBFNNNG"
+		(property "Part Number" "CL21B105KBFNNNF"
 			(at 113.03 55.88 0)
 			(effects
 				(font
@@ -7888,7 +7894,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "LTC2954CTS8-2#TRMPBF"
+		(property "Part Number" "LTC2954CTS8-2#TRPBF"
 			(at 81.28 40.64 0)
 			(effects
 				(font
@@ -8114,7 +8120,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Murata"
+		(property "Manufacturer" "TDK"
 			(at 53.34 179.07 0)
 			(effects
 				(font
@@ -8123,7 +8129,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "GRM21BR61H106KE43L"
+		(property "Part Number" "CGA4J1X7S1E106K125AE"
 			(at 53.34 179.07 0)
 			(effects
 				(font
@@ -8674,6 +8680,24 @@
 			)
 		)
 		(property "Description" "Solder Jumper, 2-pole, open"
+			(at 118.11 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "-"
+			(at 118.11 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "-"
 			(at 118.11 48.26 0)
 			(effects
 				(font
@@ -9638,7 +9662,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "MIC4427"
+		(property "Part Number" "MIC4427ZM"
 			(at 123.19 115.57 0)
 			(effects
 				(font
@@ -11266,7 +11290,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "RT0805FRE10100KL"
+		(property "Part Number" "RT0805FRE1310RL"
 			(at 137.16 43.18 0)
 			(effects
 				(font
@@ -11344,7 +11368,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Murata"
+		(property "Manufacturer" "TDK"
 			(at 63.5 125.73 0)
 			(effects
 				(font
@@ -11353,7 +11377,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "GRM21BR61H106KE43L"
+		(property "Part Number" "CGA4J1X7S1E106K125AE"
 			(at 63.5 125.73 0)
 			(effects
 				(font
@@ -11593,7 +11617,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Murata"
+		(property "Manufacturer" "TDK"
 			(at 187.96 39.37 0)
 			(effects
 				(font
@@ -11602,7 +11626,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "GRM21BR61H106KE43L"
+		(property "Part Number" "CGA4J1X7S1E106K125AE"
 			(at 187.96 39.37 0)
 			(effects
 				(font
@@ -12905,7 +12929,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Murata"
+		(property "Manufacturer" "TDK"
 			(at 129.54 152.4 0)
 			(effects
 				(font
@@ -12914,7 +12938,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "GRM21BR61H106KE43L"
+		(property "Part Number" "CGA4J1X7S1E106K125AE"
 			(at 129.54 152.4 0)
 			(effects
 				(font

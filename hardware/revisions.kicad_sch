@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Revisions")
-		(date "2026-06-29")
-		(rev "2.3")
+		(date "2026-09-22")
+		(rev "2.3b")
 		(company "INSA - GEI")
 	)
 	(lib_symbols)
@@ -42,6 +42,31 @@
 			)
 		)
 		(uuid "1519f74e-0963-4961-932b-1bb7632eebe9")
+	)
+	(text "Mise à jour des references de la BOM"
+		(exclude_from_sim no)
+		(at 113.792 106.172 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 2.54 2.54)
+				(color 0 0 0 1)
+			)
+			(justify left)
+		)
+		(uuid "1858542b-a15d-4798-8d54-bb7e3bb916d4")
+	)
+	(text "Version 2.3b"
+		(exclude_from_sim no)
+		(at 151.638 100.076 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 3.81 3.81)
+				(bold yes)
+			)
+		)
+		(uuid "2e47f305-2a01-4057-be5e-fa2425037830")
 	)
 	(text "Version 2.1"
 		(exclude_from_sim no)
