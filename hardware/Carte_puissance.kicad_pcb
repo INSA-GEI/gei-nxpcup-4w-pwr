@@ -853,7 +853,7 @@
 				)
 			)
 		)
-		(property "Part Number" "CL21B474KBFNNNE"
+		(property "Part Number" "CL21B474KBFNNNG"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1268,7 +1268,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_Push"
+		(property "Value" "EVQ-P2602M"
 			(at 0 3 90)
 			(layer "F.Fab")
 			(uuid "a37d6e39-28a3-4b98-9932-9e8275746b58")
@@ -1314,6 +1314,32 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Panasonic"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "644d3470-fe17-441e-9ef3-ace2baca5663")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part Number" "EVQ-P2602M"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8da2f0d6-4616-4f74-bac5-e79c2e65b0d4")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -1599,7 +1625,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Murata"
+		(property "Manufacturer" "TDK"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1612,7 +1638,7 @@
 				)
 			)
 		)
-		(property "Part Number" "GRM21BR61H106KE43L"
+		(property "Part Number" "CGA4J1X7S1E106K125AE"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2577,7 +2603,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Yageo"
+		(property "Manufacturer" "Vishay"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2590,7 +2616,7 @@
 				)
 			)
 		)
-		(property "Part Number" "RT0805FRE10100KL"
+		(property "Part Number" "RCA080510K0JNEASR"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2766,7 +2792,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_Push"
+		(property "Value" "EVQ-P2602M"
 			(at 0 3 90)
 			(layer "F.Fab")
 			(uuid "b0711b42-075e-4fea-a2d4-9f7d5b5fd507")
@@ -2812,6 +2838,32 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Panasonic"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0e450351-5cac-49aa-8553-2bf183312cdc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part Number" "EVQ-P2602M"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d49a4715-e6ab-4473-bb32-b264d87dedcb")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -3110,7 +3162,7 @@
 				)
 			)
 		)
-		(property "Part Number" "RT0805FRE10100KL"
+		(property "Part Number" "RT0805DRE07100RL "
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4442,7 +4494,7 @@
 				)
 			)
 		)
-		(property "Value" "Conn_01x03_Pin"
+		(property "Value" "TestPoint"
 			(at 0 7.41 0)
 			(layer "F.Fab")
 			(uuid "d4501f21-9407-441b-aed1-d7ab08882976")
@@ -4824,7 +4876,7 @@
 				)
 			)
 		)
-		(property "Part Number" "PCA9306DP"
+		(property "Part Number" "PCA9306DP,118"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7210,7 +7262,7 @@
 				)
 			)
 		)
-		(property "Part Number" "CL21B105KBFNNNG"
+		(property "Part Number" "CL21B105KBFNNNF"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7914,7 +7966,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Yageo"
+		(property "Manufacturer" "Vishay"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7927,7 +7979,7 @@
 				)
 			)
 		)
-		(property "Part Number" "RT0805FRE10100KL"
+		(property "Part Number" "RCA080510K0JNEASR"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8103,7 +8155,7 @@
 				)
 			)
 		)
-		(property "Value" "Conn_01x03_Pin"
+		(property "Value" "TestPoint"
 			(at 0 7.41 0)
 			(layer "F.Fab")
 			(uuid "c7b6c4e2-c159-4df6-8e91-7673a35d8c6f")
@@ -9637,7 +9689,7 @@
 				)
 			)
 		)
-		(property "Part Number" "RT0805DRE07100RL"
+		(property "Part Number" "RT0805FRE132K2L"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -10570,7 +10622,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Yageo"
+		(property "Manufacturer" "Vishay"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -10583,7 +10635,7 @@
 				)
 			)
 		)
-		(property "Part Number" "RT0805FRE10100KL"
+		(property "Part Number" "RCA080510K0JNEASR"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11132,7 +11184,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Murata"
+		(property "Manufacturer" "TDK"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11145,7 +11197,7 @@
 				)
 			)
 		)
-		(property "Part Number" "GRM21BR61H106KE43L"
+		(property "Part Number" "CGA4J1X7S1E106K125AE"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11371,7 +11423,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Murata"
+		(property "Manufacturer" "TDK"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11384,7 +11436,7 @@
 				)
 			)
 		)
-		(property "Part Number" "GRM21BR61H106KE43L"
+		(property "Part Number" "CGA4J1X7S1E106K125AE"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -15587,7 +15639,7 @@
 				)
 			)
 		)
-		(property "Part Number" "RT0805FRE10100KL"
+		(property "Part Number" "RT0805DRE0715KL"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -17104,7 +17156,7 @@
 				)
 			)
 		)
-		(property "Part Number" "RT0805FRE10100KL"
+		(property "Part Number" "RT0805FRE1310RL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -18853,7 +18905,7 @@
 				)
 			)
 		)
-		(property "Part Number" "CL21B105KBFNNNG"
+		(property "Part Number" "CL21B105KBFNNNF"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -22979,7 +23031,7 @@
 				)
 			)
 		)
-		(property "Part Number" "CL21B105KBFNNNG"
+		(property "Part Number" "CL21B105KBFNNNF"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -23205,7 +23257,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Murata"
+		(property "Manufacturer" "TDK"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -23218,7 +23270,7 @@
 				)
 			)
 		)
-		(property "Part Number" "GRM21BR61H106KE43L"
+		(property "Part Number" "CGA4J1X7S1E106K125AE"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -24267,7 +24319,7 @@
 				)
 			)
 		)
-		(property "Part Number" "MIC4427"
+		(property "Part Number" "MIC4427ZM"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -24610,7 +24662,7 @@
 				)
 			)
 		)
-		(property "Part Number" "RT0805FRE10100KL"
+		(property "Part Number" "RT0805DRE07100RL "
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -25423,7 +25475,7 @@
 				)
 			)
 		)
-		(property "Part Number" "RT0805FRE10100KL"
+		(property "Part Number" "RT0805DRE0715KL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -27562,7 +27614,7 @@
 				)
 			)
 		)
-		(property "Part Number" "LTC2954CTS8-2#TRMPBF"
+		(property "Part Number" "LTC2954CTS8-2#TRPBF"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -28178,7 +28230,7 @@
 				)
 			)
 		)
-		(property "Part Number" "CL21B105KBFNNNG"
+		(property "Part Number" "CL21B105KBFNNNF"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -29767,6 +29819,34 @@
 				(justify mirror)
 			)
 		)
+		(property "Manufacturer" "-"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "8af6a384-e91d-4f22-b349-e619e1429c6c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Part Number" "-"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "f2be1e34-1758-481c-935e-b9e7eccea81e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "Jumper* TestPoint*3Pads* TestPoint*Bridge*")
 		(path "/63de67ba-dfa1-4c66-8572-1a30f5cab1df/d02fc327-88e7-430a-8431-6cedd582ba62")
 		(sheetname "IO")
@@ -30328,6 +30408,34 @@
 				(justify mirror)
 			)
 		)
+		(property "Manufacturer" "-"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "5e82c03c-0caa-410b-9049-7e971ffd7d5b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Part Number" "-"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "54eff39a-5c75-4d26-bdbc-5e6319994cb5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "SolderJumper*Open*")
 		(path "/79ff172e-6092-41ef-91e3-a41ed4e55444/6a6eefd2-c7f2-4d0c-8135-3f3846694b25")
 		(sheetname "Puissance")
@@ -30603,7 +30711,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Manufacturer" "Murata"
+		(property "Manufacturer" "TDK"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -30617,7 +30725,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Part Number" "GRM21BR61H106KE43L"
+		(property "Part Number" "CGA4J1X7S1E106K125AE"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -31586,6 +31694,34 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer" "-"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "8851496c-e118-40a4-adcd-24c1044c1175")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Part Number" "-"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "c68d6ab0-6991-4db4-82c3-381ddc49c67b")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 				(justify mirror)
